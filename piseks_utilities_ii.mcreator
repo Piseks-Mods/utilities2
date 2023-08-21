@@ -1,0 +1,293 @@
+{
+  "mod_elements": [
+    {
+      "name": "Recycle",
+      "type": "enchantment",
+      "sortid": 1,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "recycle",
+      "path": "~/Enchants"
+    },
+    {
+      "name": "RecycleTrigger",
+      "type": "procedure",
+      "sortid": 2,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "recycle_trigger",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Enchants"
+    },
+    {
+      "name": "CharcoalBlock",
+      "type": "block",
+      "sortid": 3,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "charcoal_block",
+      "path": "~/Basic Storage Blocks"
+    },
+    {
+      "name": "CharcoalBlockCraft",
+      "type": "recipe",
+      "sortid": 4,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "charcoal_block_craft",
+      "path": "~/Basic Storage Blocks"
+    },
+    {
+      "name": "CharcoalCraft",
+      "type": "recipe",
+      "sortid": 5,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "charcoal_craft",
+      "path": "~/Basic Storage Blocks"
+    },
+    {
+      "name": "CharcoalBlockExtension",
+      "type": "itemextension",
+      "sortid": 6,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "charcoal_block_extension",
+      "path": "~/Basic Storage Blocks"
+    },
+    {
+      "name": "RottenFleshBlock",
+      "type": "block",
+      "sortid": 7,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "rotten_flesh_block",
+      "path": "~/Basic Storage Blocks"
+    },
+    {
+      "name": "RottenFleshBlockCraft",
+      "type": "recipe",
+      "sortid": 8,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "rotten_flesh_block_craft",
+      "path": "~/Basic Storage Blocks"
+    },
+    {
+      "name": "RottenFleshCraft",
+      "type": "recipe",
+      "sortid": 9,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "rotten_flesh_craft",
+      "path": "~/Basic Storage Blocks"
+    },
+    {
+      "name": "Ash",
+      "type": "block",
+      "sortid": 10,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ash",
+      "path": "~/Basic Storage Blocks"
+    },
+    {
+      "name": "AshRedstone",
+      "type": "procedure",
+      "sortid": 11,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ash_redstone",
+      "metadata": {
+        "return_type": "number",
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Basic Storage Blocks"
+    },
+    {
+      "name": "AshBlow",
+      "type": "procedure",
+      "sortid": 12,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ash_blow",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Basic Storage Blocks"
+    },
+    {
+      "name": "AshCraft",
+      "type": "recipe",
+      "sortid": 13,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ash_craft",
+      "path": "~/Basic Storage Blocks"
+    },
+    {
+      "name": "GunpowderCraft",
+      "type": "recipe",
+      "sortid": 14,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "gunpowder_craft",
+      "path": "~/Basic Storage Blocks"
+    },
+    {
+      "name": "Mud",
+      "type": "block",
+      "sortid": 15,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "mud",
+      "path": "~/Mud"
+    },
+    {
+      "name": "MudGenerationCondition",
+      "type": "procedure",
+      "sortid": 16,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "mud_generation_condition",
+      "metadata": {
+        "return_type": "logic",
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Mud"
+    },
+    {
+      "name": "MudBall",
+      "type": "rangeditem",
+      "sortid": 17,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "mud_ball",
+      "path": "~/Mud"
+    },
+    {
+      "name": "Config",
+      "type": "config",
+      "sortid": 18,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "config"
+    }
+  ],
+  "variable_elements": [],
+  "sound_elements": [],
+  "language_map": {
+    "en_us": {
+      "block.piseks_utilities_ii.rotten_flesh_block": "Block of Rotten Flesh",
+      "block.piseks_utilities_ii.charcoal_block": "Block of Charcoal",
+      "block.piseks_utilities_ii.mud": "Mud",
+      "item.piseks_utilities_ii.mud_ball": "Mud Ball",
+      "enchantment.piseks_utilities_ii.recycle": "Recycle",
+      "config.piseks_utilities_ii.config": "piseks_utilities_ii_conf",
+      "block.piseks_utilities_ii.ash": "Ash"
+    }
+  },
+  "foldersRoot": {
+    "name": "~",
+    "children": [
+      {
+        "name": "Enchants",
+        "children": []
+      },
+      {
+        "name": "Basic Storage Blocks",
+        "children": []
+      },
+      {
+        "name": "Mud",
+        "children": []
+      }
+    ]
+  },
+  "workspaceSettings": {
+    "modid": "piseks_utilities_ii",
+    "modName": "Pisek\u0027s Utilities 2",
+    "version": "2.0a5",
+    "description": "Just some useful items and blocks.",
+    "author": "Písek Pískovec",
+    "websiteURL": "https://mcreator.net",
+    "license": "MIT License",
+    "disableForgeVersionCheck": true,
+    "serverSideOnly": false,
+    "requiredMods": [],
+    "dependencies": [],
+    "dependants": [],
+    "mcreatorDependencies": [],
+    "currentGenerator": "forge-1.16.5",
+    "credits": "Created using mod maker MCreator - https://mcreator.net/about",
+    "modElementsPackage": "cz.pisekpiskovec.piseksutilities",
+    "lockBaseModFiles": false
+  },
+  "mcreatorVersion": 202200348217
+}

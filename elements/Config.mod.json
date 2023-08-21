@@ -1,0 +1,33 @@
+{
+  "_fv": 34,
+  "_type": "config",
+  "definition": {
+    "pools": [
+      {
+        "category": "Storage Blocks",
+        "entries": [
+          {
+            "item": {
+              "value": ""
+            },
+            "silkTouchMode": 0,
+            "block": {
+              "value": ""
+            },
+            "logicField": 0,
+            "numberField": 0.0,
+            "textDefault": "",
+            "comment": "Enable Ash block exploding when mining?",
+            "vardisplay": "Ash Explodes",
+            "varname": "ash_explodes",
+            "enablecomment": true,
+            "onlyComment": false,
+            "entityType": "EntityAgeable"
+          }
+        ]
+      }
+    ],
+    "file": "piseks_utilities_ii_conf",
+    "configType": 1
+  }
+}
