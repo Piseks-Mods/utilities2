@@ -1,0 +1,46 @@
+{
+  "_fv": 34,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Crafting",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "recipeRetstackSize": 4,
+    "group": "",
+    "recipeShapeless": false,
+    "recipeSlots": [
+      {
+        "value": "CUSTOM:MudBricks"
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": "CUSTOM:MudBricks"
+      },
+      {
+        "value": "CUSTOM:MudBricks"
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": "CUSTOM:MudBricks"
+      },
+      {
+        "value": "CUSTOM:MudBricks"
+      },
+      {
+        "value": "CUSTOM:MudBricks"
+      }
+    ],
+    "recipeReturnStack": {
+      "value": "CUSTOM:MudBrickStairs"
+    },
+    "name": "mud_brick_stairs",
+    "namespace": "mod"
+  }
+}

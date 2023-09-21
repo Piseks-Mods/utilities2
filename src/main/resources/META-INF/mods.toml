@@ -1,14 +1,16 @@
 modLoader="javafml"
 loaderVersion="[36,)"
-license="Academic Free License v3.0"
+license="MIT License"
 
 [[mods]]
 modId="piseks_utilities_ii"
-version="1.0.0"
+version="2.0.0.0.5"
 displayName="Pisek's Utilities 2"
 credits="Created using mod maker MCreator - https://mcreator.net/about"
 displayURL="https://mcreator.net"
-authors="pisek, MCreator"
+logoFile="logo.png"
+authors="Písek Pískovec"
+description='''Just some useful items and blocks.'''
 
 [[dependencies.piseks_utilities_ii]]
     modId="minecraft"

@@ -1,0 +1,7 @@
+{
+  "parent": "block/cube_all",
+  "textures": {
+    "all": "piseks_utilities_ii:blocks/mud_bricks",
+    "particle": "piseks_utilities_ii:blocks/mud_bricks"
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "_fv": 34,
+  "_type": "tab",
+  "definition": {
+    "name": "Pisek's Utilities II: Machines",
+    "icon": {
+      "value": "CUSTOM:MachineGrid"
+    },
+    "showSearch": false
+  }
+}

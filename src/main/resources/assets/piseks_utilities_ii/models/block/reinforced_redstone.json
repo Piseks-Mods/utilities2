@@ -1,0 +1,7 @@
+{
+  "parent": "block/cube_all",
+  "textures": {
+    "all": "piseks_utilities_ii:blocks/reinforced_redstone",
+    "particle": "piseks_utilities_ii:blocks/reinforced_redstone"
+  }
+}

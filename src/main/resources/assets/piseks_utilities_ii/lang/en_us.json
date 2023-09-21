@@ -1,9 +1,25 @@
 {
   "block.piseks_utilities_ii.rotten_flesh_block": "Block of Rotten Flesh",
-  "block.piseks_utilities_ii.charcoal_block": "Block of Charcoal",
+  "block.piseks_utilities_ii.urn": "Urn",
   "block.piseks_utilities_ii.mud": "Mud",
-  "item.piseks_utilities_ii.mud_ball": "Mud Ball",
+  "block.piseks_utilities_ii.mud_brick_wall": "Brick Wall",
   "enchantment.piseks_utilities_ii.recycle": "Recycle",
   "config.piseks_utilities_ii.config": "piseks_utilities_ii_conf",
-  "block.piseks_utilities_ii.ash": "Ash"
+  "enchantment.piseks_utilities_ii.scrapper": "Scrapper",
+  "block.piseks_utilities_ii.mud_brick_stairs": "Brick Stairs",
+  "block.piseks_utilities_ii.ash": "Ash",
+  "itemGroup.tabp_uii_machines": "Pisek\u0027s Utilities II: Machines",
+  "block.piseks_utilities_ii.reinforced_glowstone": "Reinforced Glowstone",
+  "block.piseks_utilities_ii.reinforced_glass": "Reinforced Glowstone",
+  "block.piseks_utilities_ii.charcoal_block": "Block of Charcoal",
+  "block.piseks_utilities_ii.mud_bricks": "Bricks",
+  "block.piseks_utilities_ii.machine_grid": "Machine Grid",
+  "block.piseks_utilities_ii.reinforced_wood": "Reinforced Wood",
+  "block.piseks_utilities_ii.lightning_rod_t1": "Lightning Rod",
+  "block.piseks_utilities_ii.mud_brick_slab": "Brick Slab",
+  "block.piseks_utilities_ii.reinforced_stone": "Reinforced Stone",
+  "item.piseks_utilities_ii.mud_brick": "Brick",
+  "block.piseks_utilities_ii.reinforced_redstone": "Reinforced Redstone",
+  "item.piseks_utilities_ii.mud_ball": "Mud Ball",
+  "block.piseks_utilities_ii.soul_glass": "Soul Glass"
 }

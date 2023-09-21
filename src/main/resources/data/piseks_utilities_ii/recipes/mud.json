@@ -1,0 +1,25 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "01",
+    "23"
+  ],
+  "key": {
+    "0": {
+      "item": "piseks_utilities_ii:mud_ball"
+    },
+    "1": {
+      "item": "piseks_utilities_ii:mud_ball"
+    },
+    "2": {
+      "item": "piseks_utilities_ii:mud_ball"
+    },
+    "3": {
+      "item": "piseks_utilities_ii:mud_ball"
+    }
+  },
+  "result": {
+    "item": "piseks_utilities_ii:mud",
+    "count": 1
+  }
+}

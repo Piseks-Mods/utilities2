@@ -1,0 +1,32 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "0  ",
+    "34 ",
+    "678"
+  ],
+  "key": {
+    "0": {
+      "item": "piseks_utilities_ii:mud_bricks"
+    },
+    "3": {
+      "item": "piseks_utilities_ii:mud_bricks"
+    },
+    "4": {
+      "item": "piseks_utilities_ii:mud_bricks"
+    },
+    "6": {
+      "item": "piseks_utilities_ii:mud_bricks"
+    },
+    "7": {
+      "item": "piseks_utilities_ii:mud_bricks"
+    },
+    "8": {
+      "item": "piseks_utilities_ii:mud_bricks"
+    }
+  },
+  "result": {
+    "item": "piseks_utilities_ii:mud_brick_stairs",
+    "count": 4
+  }
+}

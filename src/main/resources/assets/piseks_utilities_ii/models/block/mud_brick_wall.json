@@ -1,0 +1,7 @@
+{
+  "parent": "block/template_wall_side",
+  "textures": {
+    "wall": "piseks_utilities_ii:blocks/mud_bricks",
+    "particle": "piseks_utilities_ii:blocks/mud_bricks"
+  }
+}

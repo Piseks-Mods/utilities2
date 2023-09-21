@@ -1,0 +1,19 @@
+{
+  "group": "lightning_rod",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "01"
+  ],
+  "key": {
+    "0": {
+      "item": "piseks_utilities_ii:machine_grid"
+    },
+    "1": {
+      "item": "piseks_utilities_ii:mud_brick"
+    }
+  },
+  "result": {
+    "item": "piseks_utilities_ii:lightning_rod_t1",
+    "count": 1
+  }
+}

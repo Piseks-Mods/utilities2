@@ -36,7 +36,7 @@ public class AshBlowProcedure {
 		double x = dependencies.get("x") instanceof Integer ? (int) dependencies.get("x") : (double) dependencies.get("x");
 		double y = dependencies.get("y") instanceof Integer ? (int) dependencies.get("y") : (double) dependencies.get("y");
 		double z = dependencies.get("z") instanceof Integer ? (int) dependencies.get("z") : (double) dependencies.get("z");
-		if (Math.random() < 0.05 && ConfigConfiguration.ASH_EXPLODES.get()) {
+		if (Math.random() < (double) ConfigConfiguration.ASH_EXPLODE_CHANCE.get() && ConfigConfiguration.ASH_EXPLODES.get()) {
 			if (world instanceof World && !((World) world).isRemote) {
 				((World) world).createExplosion(null, (int) x, (int) y, (int) z, (float) 7.2, Explosion.Mode.BREAK);
 			}

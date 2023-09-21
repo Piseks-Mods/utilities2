@@ -1,0 +1,8 @@
+{
+  "parent": "piseks_utilities_ii:custom/machine_grid",
+  "textures": {
+    "all": "piseks_utilities_ii:blocks/none",
+    "particle": "piseks_utilities_ii:blocks/none",
+    "0": "piseks_utilities_ii:blocks/machine_grid"
+  }
+}

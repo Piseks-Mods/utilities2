@@ -1,0 +1,8 @@
+{
+  "type": "minecraft:stonecutting",
+  "count": 1,
+  "ingredient": {
+    "item": "piseks_utilities_ii:mud_bricks"
+  },
+  "result": "piseks_utilities_ii:mud_brick_wall"
+}

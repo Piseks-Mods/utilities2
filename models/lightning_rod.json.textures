@@ -1,0 +1,22 @@
+{
+  "mappings": {
+    "default": {
+      "map": {
+        "0": "",
+        "1": "",
+        "2": "",
+        "3": ""
+      },
+      "name": "default"
+    },
+    "tier1": {
+      "map": {
+        "0": "machine_grid",
+        "1": "copper_rod",
+        "2": "generator_part",
+        "3": "x_generator_part_bottom"
+      },
+      "name": "tier1"
+    }
+  }
+}

@@ -238,6 +238,442 @@
       "compiles": true,
       "locked_code": false,
       "registry_name": "config"
+    },
+    {
+      "name": "MudCraft",
+      "type": "recipe",
+      "sortid": 19,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "mud_craft",
+      "path": "~/Mud"
+    },
+    {
+      "name": "MudBlockInstrument",
+      "type": "procedure",
+      "sortid": 20,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "mud_block_instrument",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Mud"
+    },
+    {
+      "name": "MudBrick",
+      "type": "item",
+      "sortid": 21,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "mud_brick",
+      "path": "~/Mud"
+    },
+    {
+      "name": "MudBrickSmelt",
+      "type": "recipe",
+      "sortid": 22,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "mud_brick_smelt",
+      "path": "~/Mud"
+    },
+    {
+      "name": "MudBricks",
+      "type": "block",
+      "sortid": 23,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "mud_bricks",
+      "path": "~/Mud/Mud Bricks"
+    },
+    {
+      "name": "MudBrickSlab",
+      "type": "block",
+      "sortid": 24,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "mud_brick_slab",
+      "path": "~/Mud/Mud Bricks"
+    },
+    {
+      "name": "MudBrickStairs",
+      "type": "block",
+      "sortid": 25,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "mud_brick_stairs",
+      "path": "~/Mud/Mud Bricks"
+    },
+    {
+      "name": "MudBrickWall",
+      "type": "block",
+      "sortid": 26,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "mud_brick_wall",
+      "path": "~/Mud/Mud Bricks"
+    },
+    {
+      "name": "MudBricksCraft",
+      "type": "recipe",
+      "sortid": 27,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "mud_bricks_craft",
+      "path": "~/Mud/Mud Bricks"
+    },
+    {
+      "name": "MudBrickSlabCraft",
+      "type": "recipe",
+      "sortid": 28,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "mud_brick_slab_craft",
+      "path": "~/Mud/Mud Bricks"
+    },
+    {
+      "name": "MudBrickStairsCraft",
+      "type": "recipe",
+      "sortid": 29,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "mud_brick_stairs_craft",
+      "path": "~/Mud/Mud Bricks"
+    },
+    {
+      "name": "MudBrickWallCraft",
+      "type": "recipe",
+      "sortid": 30,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "mud_brick_wall_craft",
+      "path": "~/Mud/Mud Bricks"
+    },
+    {
+      "name": "MudBrickSlabCut",
+      "type": "recipe",
+      "sortid": 31,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "mud_brick_slab_cut",
+      "path": "~/Mud/Mud Bricks"
+    },
+    {
+      "name": "MudBrickStairsCut",
+      "type": "recipe",
+      "sortid": 32,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "mud_brick_stairs_cut",
+      "path": "~/Mud/Mud Bricks"
+    },
+    {
+      "name": "MudBrickWallCut",
+      "type": "recipe",
+      "sortid": 33,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "mud_brick_wall_cut",
+      "path": "~/Mud/Mud Bricks"
+    },
+    {
+      "name": "Urn",
+      "type": "block",
+      "sortid": 34,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "urn",
+      "path": "~/Mud"
+    },
+    {
+      "name": "UrnPlacement",
+      "type": "procedure",
+      "sortid": 35,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "urn_placement",
+      "metadata": {
+        "return_type": "logic",
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Mud"
+    },
+    {
+      "name": "UrnGui",
+      "type": "gui",
+      "sortid": 36,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "urn_gui",
+      "path": "~/Mud"
+    },
+    {
+      "name": "UrnCraft",
+      "type": "recipe",
+      "sortid": 37,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "urn_craft",
+      "path": "~/Mud"
+    },
+    {
+      "name": "SoulGlass",
+      "type": "block",
+      "sortid": 38,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "soul_glass",
+      "path": "~/Soul Glass"
+    },
+    {
+      "name": "SoulGlassPass",
+      "type": "procedure",
+      "sortid": 39,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "soul_glass_pass",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Soul Glass"
+    },
+    {
+      "name": "SoulGlassSmelt",
+      "type": "recipe",
+      "sortid": 40,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "soul_glass_smelt",
+      "path": "~/Soul Glass"
+    },
+    {
+      "name": "Scrapper",
+      "type": "enchantment",
+      "sortid": 41,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "scrapper",
+      "path": "~/Enchants"
+    },
+    {
+      "name": "ScrapperTrigger",
+      "type": "procedure",
+      "sortid": 42,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "scrapper_trigger",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Enchants"
+    },
+    {
+      "name": "MachineGrid",
+      "type": "block",
+      "sortid": 43,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "machine_grid",
+      "path": "~/Machines"
+    },
+    {
+      "name": "MachineGridCraft",
+      "type": "recipe",
+      "sortid": 44,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "machine_grid_craft",
+      "path": "~/Machines"
+    },
+    {
+      "name": "PUiiMachines",
+      "type": "tab",
+      "sortid": 45,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "p_uii_machines"
+    },
+    {
+      "name": "RottenFleshBlockTransform",
+      "type": "procedure",
+      "sortid": 46,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "rotten_flesh_block_transform",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Basic Storage Blocks"
+    },
+    {
+      "name": "LightningRodT1",
+      "type": "block",
+      "sortid": 47,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "lightning_rod_t1",
+      "path": "~/Machines/Generators/Tier 1"
+    },
+    {
+      "name": "LightningRodGenerate",
+      "type": "procedure",
+      "sortid": 48,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "lightning_rod_generate",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Machines/Generators/Tier 1"
+    },
+    {
+      "name": "LightningRodT1Craft",
+      "type": "recipe",
+      "sortid": 49,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "lightning_rod_t_1_craft",
+      "path": "~/Machines/Generators/Tier 1"
+    },
+    {
+      "name": "ReinforcedWood",
+      "type": "block",
+      "sortid": 50,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "reinforced_wood",
+      "path": "~/Reinforced Blocks"
+    },
+    {
+      "name": "ReinforcedGlowstone",
+      "type": "block",
+      "sortid": 51,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "reinforced_glowstone",
+      "path": "~/Reinforced Blocks"
+    },
+    {
+      "name": "ReinforcedRedstone",
+      "type": "block",
+      "sortid": 52,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "reinforced_redstone",
+      "path": "~/Reinforced Blocks"
+    },
+    {
+      "name": "ReinforcedGlass",
+      "type": "block",
+      "sortid": 53,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "reinforced_glass",
+      "path": "~/Reinforced Blocks"
+    },
+    {
+      "name": "ReinforcedStone",
+      "type": "block",
+      "sortid": 54,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "reinforced_stone",
+      "path": "~/Reinforced Blocks"
     }
   ],
   "variable_elements": [],
@@ -245,12 +681,28 @@
   "language_map": {
     "en_us": {
       "block.piseks_utilities_ii.rotten_flesh_block": "Block of Rotten Flesh",
-      "block.piseks_utilities_ii.charcoal_block": "Block of Charcoal",
+      "block.piseks_utilities_ii.urn": "Urn",
       "block.piseks_utilities_ii.mud": "Mud",
-      "item.piseks_utilities_ii.mud_ball": "Mud Ball",
+      "block.piseks_utilities_ii.mud_brick_wall": "Brick Wall",
       "enchantment.piseks_utilities_ii.recycle": "Recycle",
       "config.piseks_utilities_ii.config": "piseks_utilities_ii_conf",
-      "block.piseks_utilities_ii.ash": "Ash"
+      "enchantment.piseks_utilities_ii.scrapper": "Scrapper",
+      "block.piseks_utilities_ii.mud_brick_stairs": "Brick Stairs",
+      "block.piseks_utilities_ii.ash": "Ash",
+      "itemGroup.tabp_uii_machines": "Pisek\u0027s Utilities II: Machines",
+      "block.piseks_utilities_ii.reinforced_glowstone": "Reinforced Glowstone",
+      "block.piseks_utilities_ii.reinforced_glass": "Reinforced Glowstone",
+      "block.piseks_utilities_ii.charcoal_block": "Block of Charcoal",
+      "block.piseks_utilities_ii.mud_bricks": "Bricks",
+      "block.piseks_utilities_ii.machine_grid": "Machine Grid",
+      "block.piseks_utilities_ii.reinforced_wood": "Reinforced Wood",
+      "block.piseks_utilities_ii.lightning_rod_t1": "Lightning Rod",
+      "block.piseks_utilities_ii.mud_brick_slab": "Brick Slab",
+      "block.piseks_utilities_ii.reinforced_stone": "Reinforced Stone",
+      "item.piseks_utilities_ii.mud_brick": "Brick",
+      "block.piseks_utilities_ii.reinforced_redstone": "Reinforced Redstone",
+      "item.piseks_utilities_ii.mud_ball": "Mud Ball",
+      "block.piseks_utilities_ii.soul_glass": "Soul Glass"
     }
   },
   "foldersRoot": {
@@ -266,6 +718,33 @@
       },
       {
         "name": "Mud",
+        "children": [
+          {
+            "name": "Mud Bricks",
+            "children": []
+          }
+        ]
+      },
+      {
+        "name": "Soul Glass",
+        "children": []
+      },
+      {
+        "name": "Machines",
+        "children": [
+          {
+            "name": "Generators",
+            "children": [
+              {
+                "name": "Tier 1",
+                "children": []
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Reinforced Blocks",
         "children": []
       }
     ]
@@ -273,13 +752,14 @@
   "workspaceSettings": {
     "modid": "piseks_utilities_ii",
     "modName": "Pisek\u0027s Utilities 2",
-    "version": "2.0a5",
+    "version": "2.0.0.0.5",
     "description": "Just some useful items and blocks.",
     "author": "Písek Pískovec",
     "websiteURL": "https://mcreator.net",
     "license": "MIT License",
     "disableForgeVersionCheck": true,
     "serverSideOnly": false,
+    "modPicture": "a5",
     "requiredMods": [],
     "dependencies": [],
     "dependants": [],

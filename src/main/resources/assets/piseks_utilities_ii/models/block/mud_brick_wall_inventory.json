@@ -1,0 +1,7 @@
+{
+  "parent": "block/wall_inventory",
+  "textures": {
+    "wall": "piseks_utilities_ii:blocks/mud_bricks",
+    "particle": "piseks_utilities_ii:blocks/mud_bricks"
+  }
+}

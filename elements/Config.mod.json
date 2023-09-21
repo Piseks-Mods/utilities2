@@ -23,6 +23,119 @@
             "enablecomment": true,
             "onlyComment": false,
             "entityType": "EntityAgeable"
+          },
+          {
+            "item": {
+              "value": ""
+            },
+            "silkTouchMode": 1,
+            "block": {
+              "value": ""
+            },
+            "logicField": 0,
+            "numberField": 0.05,
+            "textDefault": "",
+            "comment": "Chance for Ash block to explode",
+            "vardisplay": "Ash Explode Chance",
+            "varname": "ash_explode_chance",
+            "enablecomment": true,
+            "onlyComment": false,
+            "entityType": "EntityAgeable"
+          },
+          {
+            "item": {
+              "value": ""
+            },
+            "silkTouchMode": 0,
+            "block": {
+              "value": ""
+            },
+            "logicField": 0,
+            "numberField": 0.0,
+            "textDefault": "",
+            "comment": "Enable Rotten Flesh block transforming to dirt",
+            "vardisplay": "Rotten Flesh Block Transforms",
+            "varname": "rotten_transforms",
+            "enablecomment": true,
+            "onlyComment": false,
+            "entityType": "EntityAgeable"
+          },
+          {
+            "item": {
+              "value": ""
+            },
+            "silkTouchMode": 1,
+            "block": {
+              "value": ""
+            },
+            "logicField": 0,
+            "numberField": 0.35,
+            "textDefault": "",
+            "comment": "Chance for Rotten Flesh block to transform to dirt",
+            "vardisplay": "Rotten Flesh Block Transfom Chance",
+            "varname": "rotten_transform_chance",
+            "enablecomment": true,
+            "onlyComment": false,
+            "entityType": "EntityAgeable"
+          },
+          {
+            "item": {
+              "value": ""
+            },
+            "silkTouchMode": 0,
+            "block": {
+              "value": ""
+            },
+            "logicField": 1,
+            "numberField": 0.0,
+            "textDefault": "",
+            "comment": "Enable Rotten Flesh block spawn zombies after transforming",
+            "vardisplay": "Rotten Flesh Block Spawn",
+            "varname": "rotten_transform_spawn",
+            "enablecomment": true,
+            "onlyComment": false,
+            "entityType": "EntityAgeable"
+          }
+        ]
+      },
+      {
+        "category": "Soul Glass",
+        "entries": [
+          {
+            "item": {
+              "value": ""
+            },
+            "silkTouchMode": 0,
+            "block": {
+              "value": ""
+            },
+            "logicField": 1,
+            "numberField": 0.0,
+            "textDefault": "",
+            "comment": "",
+            "vardisplay": "Enable Damage",
+            "varname": "enable_damage",
+            "enablecomment": false,
+            "onlyComment": false,
+            "entityType": "EntityAgeable"
+          },
+          {
+            "item": {
+              "value": ""
+            },
+            "silkTouchMode": 1,
+            "block": {
+              "value": ""
+            },
+            "logicField": 0,
+            "numberField": 1.0,
+            "textDefault": "",
+            "comment": "",
+            "vardisplay": "Damage",
+            "varname": "damage",
+            "enablecomment": false,
+            "onlyComment": false,
+            "entityType": "EntityAgeable"
           }
         ]
       }
