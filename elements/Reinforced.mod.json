@@ -1,0 +1,74 @@
+{
+  "_fv": 34,
+  "_type": "armor",
+  "definition": {
+    "enableHelmet": true,
+    "textureHelmet": "hard_hat",
+    "enableBody": false,
+    "textureBody": "",
+    "enableLeggings": false,
+    "textureLeggings": "",
+    "enableBoots": false,
+    "textureBoots": "",
+    "creativeTab": {
+      "value": "TOOLS"
+    },
+    "armorTextureFile": "empty_",
+    "helmetName": "Hard Hat",
+    "bodyName": "Reinforced Body",
+    "leggingsName": "Reinforced Leggings",
+    "bootsName": "Reinforced Boots",
+    "helmetSpecialInfo": [],
+    "bodySpecialInfo": [],
+    "leggingsSpecialInfo": [],
+    "bootsSpecialInfo": [],
+    "helmetModelName": "hard_hat",
+    "helmetModelPart": "Head",
+    "helmetModelTexture": "hard_hat.png",
+    "bodyModelName": "Default",
+    "bodyModelPart": "Body",
+    "armsModelPartL": "Arms L",
+    "armsModelPartR": "Arms R",
+    "bodyModelTexture": "From armor",
+    "leggingsModelName": "Default",
+    "leggingsModelPartL": "Leggings L",
+    "leggingsModelPartR": "Leggings R",
+    "leggingsModelTexture": "From armor",
+    "bootsModelName": "Default",
+    "bootsModelPartL": "Boots L",
+    "bootsModelPartR": "Boots R",
+    "bootsModelTexture": "From armor",
+    "helmetImmuneToFire": false,
+    "bodyImmuneToFire": false,
+    "leggingsImmuneToFire": false,
+    "bootsImmuneToFire": false,
+    "maxDamage": 25,
+    "damageValueHelmet": 1,
+    "damageValueBody": 6,
+    "damageValueLeggings": 5,
+    "damageValueBoots": 2,
+    "enchantability": 1,
+    "toughness": 0.0,
+    "knockbackResistance": 0.2,
+    "equipSound": {
+      "value": "block.wood.place"
+    },
+    "repairItems": [
+      {
+        "value": "CUSTOM:ReinforcedWood"
+      },
+      {
+        "value": "CUSTOM:ReinforcedGlowstone"
+      },
+      {
+        "value": "CUSTOM:ReinforcedRedstone"
+      },
+      {
+        "value": "CUSTOM:ReinforcedGlass"
+      },
+      {
+        "value": "CUSTOM:ReinforcedStone"
+      }
+    ]
+  }
+}

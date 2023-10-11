@@ -3,6 +3,7 @@ package cz.pisekpiskovec.piseksutilities.block;
 
 import net.minecraftforge.registries.ObjectHolder;
 import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
+import net.minecraftforge.common.ToolType;
 import net.minecraftforge.api.distmarker.OnlyIn;
 import net.minecraftforge.api.distmarker.Dist;
 
@@ -62,7 +63,8 @@ public class MachineGridBlock extends PiseksUtilitiesIiModElements.ModElement {
 
 		public CustomBlock() {
 			super(Block.Properties.create(Material.IRON).sound(SoundType.METAL).hardnessAndResistance(1.0493827160493827f, 1.259259259259259f)
-					.setLightLevel(s -> 0).notSolid().setOpaque((bs, br, bp) -> false));
+					.setLightLevel(s -> 0).harvestLevel(1).harvestTool(ToolType.PICKAXE).setRequiresTool().notSolid()
+					.setOpaque((bs, br, bp) -> false));
 			this.setDefaultState(this.stateContainer.getBaseState().with(WATERLOGGED, false));
 			setRegistryName("machine_grid");
 		}

@@ -1,0 +1,23 @@
+{
+  "_fv": 34,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Smithing",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "recipeRetstackSize": 1,
+    "group": "drill_head",
+    "recipeShapeless": false,
+    "smithingInputStack": {
+      "value": "CUSTOM:DiamondDrillHead"
+    },
+    "smithingInputAdditionStack": {
+      "value": "Blocks.NETHERITE_BLOCK"
+    },
+    "smithingReturnStack": {
+      "value": "CUSTOM:NetheriteDrillHead"
+    },
+    "name": "netherite_drill_head",
+    "namespace": "mod"
+  }
+}

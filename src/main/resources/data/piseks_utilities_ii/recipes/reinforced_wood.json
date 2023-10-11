@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:smithing",
+  "base": {
+    "item": "piseks_utilities_ii:machine_grid"
+  },
+  "addition": {
+    "tag": "minecraft:planks"
+  },
+  "result": {
+    "item": "piseks_utilities_ii:reinforced_wood"
+  }
+}

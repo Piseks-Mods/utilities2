@@ -1,0 +1,26 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "0  ",
+    "  5",
+    "67 "
+  ],
+  "key": {
+    "0": {
+      "item": "minecraft:water_bucket"
+    },
+    "5": {
+      "item": "minecraft:lava_bucket"
+    },
+    "6": {
+      "item": "piseks_utilities_ii:machine_grid"
+    },
+    "7": {
+      "item": "piseks_utilities_ii:iron_drill_head"
+    }
+  },
+  "result": {
+    "item": "piseks_utilities_ii:cobblestone_farm",
+    "count": 1
+  }
+}

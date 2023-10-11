@@ -1,0 +1,27 @@
+{
+  "group": "cactus_farm",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "  2",
+    " 4 ",
+    "67 "
+  ],
+  "key": {
+    "2": {
+      "item": "minecraft:shears"
+    },
+    "4": {
+      "item": "minecraft:cactus"
+    },
+    "6": {
+      "item": "piseks_utilities_ii:machine_grid"
+    },
+    "7": {
+      "tag": "minecraft:sand"
+    }
+  },
+  "result": {
+    "item": "piseks_utilities_ii:cactus_farm",
+    "count": 1
+  }
+}

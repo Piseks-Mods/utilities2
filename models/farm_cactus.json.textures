@@ -1,0 +1,12 @@
+{
+  "mappings": {
+    "default": {
+      "map": {
+        "0": "machine_grid",
+        "1": "cactus_side",
+        "3": "sand"
+      },
+      "name": "default"
+    }
+  }
+}

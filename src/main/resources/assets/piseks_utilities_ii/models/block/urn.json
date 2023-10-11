@@ -1,8 +1,8 @@
 {
   "parent": "piseks_utilities_ii:custom/urn",
   "textures": {
-    "all": "piseks_utilities_ii:blocks/none",
-    "particle": "piseks_utilities_ii:blocks/none",
+    "all": "piseks_utilities_ii:blocks/urn",
+    "particle": "piseks_utilities_ii:blocks/mud",
     "0": "piseks_utilities_ii:blocks/mud"
   }
 }

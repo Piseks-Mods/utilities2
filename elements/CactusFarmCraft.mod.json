@@ -1,0 +1,46 @@
+{
+  "_fv": 34,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Crafting",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "recipeRetstackSize": 1,
+    "group": "cactus_farm",
+    "recipeShapeless": false,
+    "recipeSlots": [
+      {
+        "value": ""
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": "Items.SHEARS"
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": "Blocks.CACTUS"
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": "CUSTOM:MachineGrid"
+      },
+      {
+        "value": "Blocks.SAND"
+      },
+      {
+        "value": ""
+      }
+    ],
+    "recipeReturnStack": {
+      "value": "CUSTOM:CactusFarm"
+    },
+    "name": "cactus_farm",
+    "namespace": "mod"
+  }
+}

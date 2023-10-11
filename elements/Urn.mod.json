@@ -2,7 +2,7 @@
   "_fv": 34,
   "_type": "block",
   "definition": {
-    "texture": "none",
+    "texture": "urn",
     "textureTop": "",
     "textureLeft": "",
     "textureFront": "",
@@ -15,7 +15,7 @@
     "emissiveRendering": false,
     "displayFluidOverlay": true,
     "itemTexture": "",
-    "particleTexture": "",
+    "particleTexture": "mud",
     "tintType": "No tint",
     "isItemTinted": false,
     "hasTransparency": true,

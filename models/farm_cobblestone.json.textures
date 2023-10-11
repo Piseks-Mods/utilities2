@@ -1,0 +1,28 @@
+{
+  "mappings": {
+    "default": {
+      "map": {
+        "0": "machine_grid",
+        "1": "iron_block",
+        "2": "cobblestone",
+        "3": "water_still",
+        "4": "water_flow",
+        "5": "lava_still",
+        "6": "lava_flow"
+      },
+      "name": "default"
+    },
+    "obsidian": {
+      "map": {
+        "0": "machine_grid",
+        "1": "diamond_block",
+        "2": "obsidian",
+        "3": "lava_still",
+        "4": "lava_flow",
+        "5": "water_still",
+        "6": "water_flow"
+      },
+      "name": "obsidian"
+    }
+  }
+}

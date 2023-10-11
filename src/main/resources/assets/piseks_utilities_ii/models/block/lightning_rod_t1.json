@@ -1,8 +1,8 @@
 {
   "parent": "piseks_utilities_ii:custom/lightning_rod",
   "textures": {
-    "all": "piseks_utilities_ii:blocks/none",
-    "particle": "piseks_utilities_ii:blocks/none",
+    "all": "piseks_utilities_ii:blocks/lightning_rod",
+    "particle": "piseks_utilities_ii:blocks/lightning_rod",
     "0": "piseks_utilities_ii:blocks/machine_grid",
     "1": "piseks_utilities_ii:blocks/copper_rod",
     "2": "piseks_utilities_ii:blocks/generator_part",

@@ -674,35 +674,348 @@
       "locked_code": false,
       "registry_name": "reinforced_stone",
       "path": "~/Reinforced Blocks"
+    },
+    {
+      "name": "ReinforcedWoodSmith",
+      "type": "recipe",
+      "sortid": 55,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "reinforced_wood_smith",
+      "path": "~/Reinforced Blocks"
+    },
+    {
+      "name": "ReinforcedGlowstoneSmith",
+      "type": "recipe",
+      "sortid": 56,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "reinforced_glowstone_smith",
+      "path": "~/Reinforced Blocks"
+    },
+    {
+      "name": "ReinforcedRedstoneSmith",
+      "type": "recipe",
+      "sortid": 57,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "reinforced_redstone_smith",
+      "path": "~/Reinforced Blocks"
+    },
+    {
+      "name": "ReinforcedGlassSmith",
+      "type": "recipe",
+      "sortid": 58,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "reinforced_glass_smith",
+      "path": "~/Reinforced Blocks"
+    },
+    {
+      "name": "ReinforcedStoneSmith",
+      "type": "recipe",
+      "sortid": 59,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "reinforced_stone_smith",
+      "path": "~/Reinforced Blocks"
+    },
+    {
+      "name": "Reinforced",
+      "type": "armor",
+      "sortid": 60,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "reinforced",
+      "metadata": {
+        "eh": true,
+        "el": false,
+        "eb": false,
+        "ec": false
+      },
+      "path": "~/Reinforced Blocks"
+    },
+    {
+      "name": "IronDrillHead",
+      "type": "block",
+      "sortid": 61,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "iron_drill_head",
+      "path": "~/Machines/Parts"
+    },
+    {
+      "name": "IronDrillHeadBreak",
+      "type": "procedure",
+      "sortid": 62,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "iron_drill_head_break",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Machines/Parts"
+    },
+    {
+      "name": "IronDrillHeadCraft",
+      "type": "recipe",
+      "sortid": 63,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "iron_drill_head_craft",
+      "path": "~/Machines/Parts"
+    },
+    {
+      "name": "DiamondDrillHead",
+      "type": "block",
+      "sortid": 64,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "diamond_drill_head",
+      "path": "~/Machines/Parts"
+    },
+    {
+      "name": "DiamondDrillHeadBreak",
+      "type": "procedure",
+      "sortid": 65,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "diamond_drill_head_break",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Machines/Parts"
+    },
+    {
+      "name": "DiamondDrillHeadCraft",
+      "type": "recipe",
+      "sortid": 66,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "diamond_drill_head_craft",
+      "path": "~/Machines/Parts"
+    },
+    {
+      "name": "NetheriteDrillHead",
+      "type": "block",
+      "sortid": 67,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "netherite_drill_head",
+      "path": "~/Machines/Parts"
+    },
+    {
+      "name": "NetheriteDrillHeadBreak",
+      "type": "procedure",
+      "sortid": 68,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "netherite_drill_head_break",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Machines/Parts"
+    },
+    {
+      "name": "NetheriteDrillHeadSmith",
+      "type": "recipe",
+      "sortid": 69,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "netherite_drill_head_smith",
+      "path": "~/Machines/Parts"
+    },
+    {
+      "name": "CactusFarm",
+      "type": "block",
+      "sortid": 70,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cactus_farm",
+      "path": "~/Machines/Farms"
+    },
+    {
+      "name": "CactusFarmTick",
+      "type": "procedure",
+      "sortid": 71,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cactus_farm_tick",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Machines/Farms"
+    },
+    {
+      "name": "CactusFarmCraft",
+      "type": "recipe",
+      "sortid": 72,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cactus_farm_craft",
+      "path": "~/Machines/Farms"
+    },
+    {
+      "name": "CactusFarmCraftAlt",
+      "type": "recipe",
+      "sortid": 73,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cactus_farm_craft_alt",
+      "path": "~/Machines/Farms"
+    },
+    {
+      "name": "CobblestoneFarm",
+      "type": "block",
+      "sortid": 74,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cobblestone_farm",
+      "path": "~/Machines/Farms"
+    },
+    {
+      "name": "CobblestoneFarmTick",
+      "type": "procedure",
+      "sortid": 75,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cobblestone_farm_tick",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Machines/Farms"
+    },
+    {
+      "name": "CobblestoneFarmCraft",
+      "type": "recipe",
+      "sortid": 76,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cobblestone_farm_craft",
+      "path": "~/Machines/Farms"
     }
   ],
   "variable_elements": [],
   "sound_elements": [],
   "language_map": {
     "en_us": {
-      "block.piseks_utilities_ii.rotten_flesh_block": "Block of Rotten Flesh",
+      "block.piseks_utilities_ii.cobblestone_farm": "Cobblestone Farm",
       "block.piseks_utilities_ii.urn": "Urn",
       "block.piseks_utilities_ii.mud": "Mud",
       "block.piseks_utilities_ii.mud_brick_wall": "Brick Wall",
-      "enchantment.piseks_utilities_ii.recycle": "Recycle",
+      "block.piseks_utilities_ii.iron_drill_head": "Iron Drill Head",
       "config.piseks_utilities_ii.config": "piseks_utilities_ii_conf",
-      "enchantment.piseks_utilities_ii.scrapper": "Scrapper",
-      "block.piseks_utilities_ii.mud_brick_stairs": "Brick Stairs",
+      "block.piseks_utilities_ii.cactus_farm": "Cactus Farm",
       "block.piseks_utilities_ii.ash": "Ash",
+      "block.piseks_utilities_ii.netherite_drill_head": "Netherite Drill Head",
       "itemGroup.tabp_uii_machines": "Pisek\u0027s Utilities II: Machines",
-      "block.piseks_utilities_ii.reinforced_glowstone": "Reinforced Glowstone",
-      "block.piseks_utilities_ii.reinforced_glass": "Reinforced Glowstone",
-      "block.piseks_utilities_ii.charcoal_block": "Block of Charcoal",
+      "item.piseks_utilities_ii.reinforced_boots": "Reinforced Boots",
       "block.piseks_utilities_ii.mud_bricks": "Bricks",
       "block.piseks_utilities_ii.machine_grid": "Machine Grid",
-      "block.piseks_utilities_ii.reinforced_wood": "Reinforced Wood",
       "block.piseks_utilities_ii.lightning_rod_t1": "Lightning Rod",
       "block.piseks_utilities_ii.mud_brick_slab": "Brick Slab",
       "block.piseks_utilities_ii.reinforced_stone": "Reinforced Stone",
-      "item.piseks_utilities_ii.mud_brick": "Brick",
       "block.piseks_utilities_ii.reinforced_redstone": "Reinforced Redstone",
-      "item.piseks_utilities_ii.mud_ball": "Mud Ball",
-      "block.piseks_utilities_ii.soul_glass": "Soul Glass"
+      "block.piseks_utilities_ii.soul_glass": "Soul Glass",
+      "item.piseks_utilities_ii.reinforced_helmet": "Hard Hat",
+      "block.piseks_utilities_ii.rotten_flesh_block": "Block of Rotten Flesh",
+      "item.piseks_utilities_ii.reinforced_leggings": "Reinforced Leggings",
+      "enchantment.piseks_utilities_ii.recycle": "Recycle",
+      "enchantment.piseks_utilities_ii.scrapper": "Scrapper",
+      "block.piseks_utilities_ii.mud_brick_stairs": "Brick Stairs",
+      "block.piseks_utilities_ii.reinforced_glowstone": "Reinforced Glowstone",
+      "item.piseks_utilities_ii.reinforced_chestplate": "Reinforced Body",
+      "block.piseks_utilities_ii.reinforced_glass": "Reinforced Glass",
+      "block.piseks_utilities_ii.diamond_drill_head": "Diamond Drill Head",
+      "block.piseks_utilities_ii.charcoal_block": "Block of Charcoal",
+      "block.piseks_utilities_ii.reinforced_wood": "Reinforced Wood",
+      "item.piseks_utilities_ii.mud_brick": "Brick",
+      "item.piseks_utilities_ii.mud_ball": "Mud Ball"
     }
   },
   "foldersRoot": {
@@ -740,6 +1053,14 @@
                 "children": []
               }
             ]
+          },
+          {
+            "name": "Parts",
+            "children": []
+          },
+          {
+            "name": "Farms",
+            "children": []
           }
         ]
       },

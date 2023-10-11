@@ -1,0 +1,28 @@
+{
+  "mappings": {
+    "default": {
+      "map": {
+        "missing": "reinforced_wood"
+      },
+      "name": "default"
+    },
+    "iron": {
+      "map": {
+        "missing": "iron_block"
+      },
+      "name": "iron"
+    },
+    "diamond": {
+      "map": {
+        "missing": "diamond_block"
+      },
+      "name": "diamond"
+    },
+    "netherite": {
+      "map": {
+        "missing": "netherite_block"
+      },
+      "name": "netherite"
+    }
+  }
+}

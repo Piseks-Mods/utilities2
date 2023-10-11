@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:smithing",
+  "base": {
+    "item": "piseks_utilities_ii:diamond_drill_head"
+  },
+  "addition": {
+    "item": "minecraft:netherite_block"
+  },
+  "result": {
+    "item": "piseks_utilities_ii:netherite_drill_head"
+  }
+}

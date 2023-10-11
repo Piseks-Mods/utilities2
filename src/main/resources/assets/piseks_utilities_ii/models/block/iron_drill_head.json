@@ -1,0 +1,8 @@
+{
+  "parent": "piseks_utilities_ii:custom/drill_head",
+  "textures": {
+    "all": "piseks_utilities_ii:blocks/iron_drill_head",
+    "particle": "piseks_utilities_ii:blocks/iron_block",
+    "missing": "piseks_utilities_ii:blocks/iron_block"
+  }
+}
