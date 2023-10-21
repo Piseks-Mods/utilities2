@@ -1119,20 +1119,6 @@
         ]
       },
       "path": "~/Machines/Farms"
-    },
-    {
-      "name": "Fins",
-      "type": "armor",
-      "sortid": 86,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "fins",
-      "metadata": {
-        "eh": false,
-        "el": false,
-        "eb": true,
-        "ec": false
-      }
     }
   ],
   "variable_elements": [],
@@ -1142,9 +1128,7 @@
       "block.piseks_utilities_ii.cobblestone_farm": "Cobblestone Farm",
       "block.piseks_utilities_ii.urn": "Urn",
       "block.piseks_utilities_ii.chorus_farm": "Chorus Farm",
-      "item.piseks_utilities_ii.fins_helmet": "Fins Helmet",
       "block.piseks_utilities_ii.mud": "Mud",
-      "item.piseks_utilities_ii.fins_boots": "Fins",
       "block.piseks_utilities_ii.mud_brick_wall": "Brick Wall",
       "block.piseks_utilities_ii.iron_drill_head": "Iron Drill Head",
       "config.piseks_utilities_ii.config": "piseks_utilities_ii_conf",
@@ -1154,7 +1138,6 @@
       "itemGroup.tabp_uii_machines": "Pisek\u0027s Utilities II: Machines",
       "item.piseks_utilities_ii.reinforced_boots": "Reinforced Boots",
       "block.piseks_utilities_ii.egg_farm": "Egg Farm",
-      "item.piseks_utilities_ii.fins_chestplate": "Fins Body",
       "block.piseks_utilities_ii.mud_bricks": "Bricks",
       "block.piseks_utilities_ii.machine_grid": "Machine Grid",
       "block.piseks_utilities_ii.lightning_rod_t1": "Lightning Rod",
@@ -1165,7 +1148,6 @@
       "block.piseks_utilities_ii.soul_glass": "Soul Glass",
       "item.piseks_utilities_ii.reinforced_helmet": "Hard Hat",
       "block.piseks_utilities_ii.rotten_flesh_block": "Block of Rotten Flesh",
-      "item.piseks_utilities_ii.fins_leggings": "Fins Leggings",
       "item.piseks_utilities_ii.reinforced_leggings": "Reinforced Leggings",
       "enchantment.piseks_utilities_ii.recycle": "Recycle",
       "enchantment.piseks_utilities_ii.scrapper": "Scrapper",
