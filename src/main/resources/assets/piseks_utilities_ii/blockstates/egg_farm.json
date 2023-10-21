@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "piseks_utilities_ii:block/egg_farm"
+    },
+    "facing=east": {
+      "model": "piseks_utilities_ii:block/egg_farm",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "piseks_utilities_ii:block/egg_farm",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "piseks_utilities_ii:block/egg_farm",
+      "y": 270
+    }
+  }
+}

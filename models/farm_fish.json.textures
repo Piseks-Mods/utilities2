@@ -1,0 +1,11 @@
+{
+  "mappings": {
+    "default": {
+      "map": {
+        "0": "machine_grid",
+        "1": "mesh"
+      },
+      "name": "default"
+    }
+  }
+}

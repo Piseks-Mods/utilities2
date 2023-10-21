@@ -1,0 +1,9 @@
+{
+  "parent": "piseks_utilities_ii:custom/farm_fish",
+  "textures": {
+    "all": "piseks_utilities_ii:blocks/farm_fish",
+    "particle": "piseks_utilities_ii:blocks/farm_fish",
+    "0": "piseks_utilities_ii:blocks/machine_grid",
+    "1": "piseks_utilities_ii:blocks/mesh"
+  }
+}

@@ -45,6 +45,7 @@ public class DiamondDrillHeadBreakProcedure {
 						|| Items.DIAMOND_PICKAXE.canHarvestBlock((world.getBlockState(new BlockPos(x, y + 1, z))))
 						|| Items.DIAMOND_AXE.canHarvestBlock((world.getBlockState(new BlockPos(x, y + 1, z))))
 						|| Items.DIAMOND_HOE.canHarvestBlock((world.getBlockState(new BlockPos(x, y + 1, z)))))) {
+			world.playEvent(2001, new BlockPos(x, y, z), Block.getStateId((world.getBlockState(new BlockPos(x, y, z)))));
 			if (world instanceof World) {
 				Block.spawnDrops(world.getBlockState(new BlockPos(x, y + 1, z)), (World) world, new BlockPos(x, y, z));
 				world.destroyBlock(new BlockPos(x, y + 1, z), false);

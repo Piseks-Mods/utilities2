@@ -1,0 +1,46 @@
+{
+  "_fv": 34,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Crafting",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "recipeRetstackSize": 1,
+    "group": "egg_farm",
+    "recipeShapeless": false,
+    "recipeSlots": [
+      {
+        "value": ""
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": "TAG:wooden_fences"
+      },
+      {
+        "value": "Items.EGG"
+      },
+      {
+        "value": "TAG:wooden_fences"
+      },
+      {
+        "value": "CUSTOM:MachineGrid"
+      },
+      {
+        "value": "Blocks.GRASS"
+      },
+      {
+        "value": ""
+      }
+    ],
+    "recipeReturnStack": {
+      "value": "CUSTOM:EggFarm"
+    },
+    "name": "egg_farm",
+    "namespace": "mod"
+  }
+}

@@ -11,18 +11,6 @@
         "6": "lava_flow"
       },
       "name": "default"
-    },
-    "obsidian": {
-      "map": {
-        "0": "machine_grid",
-        "1": "diamond_block",
-        "2": "obsidian",
-        "3": "lava_still",
-        "4": "lava_flow",
-        "5": "water_still",
-        "6": "water_flow"
-      },
-      "name": "obsidian"
     }
   }
 }

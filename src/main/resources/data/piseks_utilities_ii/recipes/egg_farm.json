@@ -1,0 +1,29 @@
+{
+  "group": "egg_farm",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "012",
+    "34 "
+  ],
+  "key": {
+    "0": {
+      "tag": "wooden_fences"
+    },
+    "1": {
+      "item": "minecraft:egg"
+    },
+    "2": {
+      "tag": "wooden_fences"
+    },
+    "3": {
+      "item": "piseks_utilities_ii:machine_grid"
+    },
+    "4": {
+      "item": "minecraft:grass_block"
+    }
+  },
+  "result": {
+    "item": "piseks_utilities_ii:egg_farm",
+    "count": 1
+  }
+}
