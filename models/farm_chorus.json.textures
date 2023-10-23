@@ -1,0 +1,13 @@
+{
+  "mappings": {
+    "default": {
+      "map": {
+        "0": "machine_grid",
+        "1": "chorus_flower",
+        "3": "end_stone",
+        "4": "chorus_plant"
+      },
+      "name": "default"
+    }
+  }
+}

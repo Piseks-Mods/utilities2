@@ -138,6 +138,29 @@
             "entityType": "EntityAgeable"
           }
         ]
+      },
+      {
+        "category": "experiments",
+        "entries": [
+          {
+            "item": {
+              "value": ""
+            },
+            "silkTouchMode": 0,
+            "block": {
+              "value": ""
+            },
+            "logicField": 1,
+            "numberField": 0.0,
+            "textDefault": "",
+            "comment": "Setting this to True will make Thermoemittor placable",
+            "vardisplay": "Enable Thermoemittor",
+            "varname": "enable_thermoemittor",
+            "enablecomment": true,
+            "onlyComment": false,
+            "entityType": "EntityAgeable"
+          }
+        ]
       }
     ],
     "file": "piseks_utilities_ii_conf",

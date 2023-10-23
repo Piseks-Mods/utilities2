@@ -1119,6 +1119,100 @@
         ]
       },
       "path": "~/Machines/Farms"
+    },
+    {
+      "name": "ChorusFarmCraft",
+      "type": "recipe",
+      "sortid": 86,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "chorus_farm_craft",
+      "path": "~/Machines/Farms"
+    },
+    {
+      "name": "Thermoemittor",
+      "type": "block",
+      "sortid": 88,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "thermoemitor",
+      "path": "~/Experimental"
+    },
+    {
+      "name": "ThermoemittorEnabled",
+      "type": "procedure",
+      "sortid": 89,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "thermoemitor_enabled",
+      "metadata": {
+        "return_type": "logic",
+        "dependencies": []
+      },
+      "path": "~/Experimental"
+    },
+    {
+      "name": "ThermoemittorEmmit",
+      "type": "procedure",
+      "sortid": 90,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "thermoemitor_emitt",
+      "metadata": {
+        "return_type": "number",
+        "dependencies": [
+          {
+            "name": "blockstate",
+            "type": "blockstate"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Experimental"
+    },
+    {
+      "name": "ThermoemittorUpdate",
+      "type": "procedure",
+      "sortid": 91,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "thermoemitor_update",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Experimental"
     }
   ],
   "variable_elements": [],
@@ -1146,6 +1240,7 @@
       "block.piseks_utilities_ii.reinforced_stone": "Reinforced Stone",
       "block.piseks_utilities_ii.reinforced_redstone": "Reinforced Redstone",
       "block.piseks_utilities_ii.soul_glass": "Soul Glass",
+      "block.piseks_utilities_ii.thermoemitor": "Thermoemittor",
       "item.piseks_utilities_ii.reinforced_helmet": "Hard Hat",
       "block.piseks_utilities_ii.rotten_flesh_block": "Block of Rotten Flesh",
       "item.piseks_utilities_ii.reinforced_leggings": "Reinforced Leggings",
@@ -1210,6 +1305,10 @@
       },
       {
         "name": "Reinforced Blocks",
+        "children": []
+      },
+      {
+        "name": "Experimental",
         "children": []
       }
     ]

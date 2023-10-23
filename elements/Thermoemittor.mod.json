@@ -2,23 +2,23 @@
   "_fv": 34,
   "_type": "block",
   "definition": {
-    "texture": "farm_chorus",
-    "textureTop": "",
-    "textureLeft": "",
-    "textureFront": "",
-    "textureRight": "",
-    "textureBack": "",
-    "renderType": 2,
-    "customModelName": "farm_chorus:default",
-    "rotationMode": 0,
+    "texture": "placeholder",
+    "textureTop": "placeholder",
+    "textureLeft": "placeholder",
+    "textureFront": "chorus_flower",
+    "textureRight": "placeholder",
+    "textureBack": "placeholder",
+    "renderType": 10,
+    "customModelName": "Normal",
+    "rotationMode": 1,
     "enablePitch": false,
     "emissiveRendering": false,
     "displayFluidOverlay": false,
     "itemTexture": "",
     "particleTexture": "",
     "tintType": "No tint",
-    "isItemTinted": true,
-    "hasTransparency": true,
+    "isItemTinted": false,
+    "hasTransparency": false,
     "connectedSides": false,
     "transparencyType": "SOLID",
     "disableOffset": false,
@@ -33,14 +33,16 @@
         "subtract": false
       }
     ],
-    "name": "Chorus Farm",
-    "specialInfo": [],
-    "hardness": 1.049,
-    "resistance": 1.259,
+    "name": "Thermoemittor",
+    "specialInfo": [
+      "§2Experimental feature"
+    ],
+    "hardness": 3.0,
+    "resistance": 3.0,
     "hasGravity": false,
     "isWaterloggable": false,
     "creativeTab": {
-      "value": "CUSTOM:PUiiMachines"
+      "value": "REDSTONE"
     },
     "destroyTool": "pickaxe",
     "customDrop": {
@@ -51,24 +53,25 @@
     "requiresCorrectTool": true,
     "enchantPowerBonus": 0.0,
     "plantsGrowOn": false,
-    "canRedstoneConnect": false,
-    "lightOpacity": 0,
+    "canRedstoneConnect": true,
+    "lightOpacity": 15,
     "material": {
-      "value": "IRON"
+      "value": "ANVIL"
     },
-    "tickRate": 12000,
+    "tickRate": 0,
     "tickRandomly": false,
     "isReplaceable": false,
-    "canProvidePower": false,
+    "canProvidePower": true,
     "emittedRedstonePower": {
-      "fixedValue": 15.0
+      "fixedValue": 15.0,
+      "name": "ThermoemittorEmmit"
     },
     "colorOnMap": "DEFAULT",
     "creativePickItem": {
       "value": ""
     },
     "offsetType": "NONE",
-    "aiPathNodeType": "DANGER_OTHER",
+    "aiPathNodeType": "DEFAULT",
     "flammability": 0,
     "fireSpreadSpeed": 0,
     "isLadder": false,
@@ -79,7 +82,7 @@
     "isNotColidable": false,
     "isCustomSoundType": false,
     "soundOnStep": {
-      "value": "METAL"
+      "value": "STONE"
     },
     "breakSound": {
       "value": ""
@@ -98,7 +101,7 @@
     },
     "luminance": 0,
     "unbreakable": false,
-    "breakHarvestLevel": 1,
+    "breakHarvestLevel": 0,
     "spawnParticles": false,
     "particleToSpawn": {
       "value": "EXPLOSION_NORMAL"
@@ -106,17 +109,14 @@
     "particleSpawningShape": "Spread",
     "particleSpawningRadious": 0.5,
     "particleAmount": 4,
-    "hasInventory": true,
+    "hasInventory": false,
     "guiBoundTo": "<NONE>",
     "openGUIOnRightClick": false,
-    "inventorySize": 2,
+    "inventorySize": 9,
     "inventoryStackSize": 64,
     "inventoryDropWhenDestroyed": true,
     "inventoryComparatorPower": true,
-    "inventoryOutSlotIDs": [
-      0,
-      1
-    ],
+    "inventoryOutSlotIDs": [],
     "inventoryInSlotIDs": [],
     "hasEnergyStorage": false,
     "energyInitial": 0,
@@ -126,8 +126,8 @@
     "isFluidTank": false,
     "fluidCapacity": 8000,
     "fluidRestrictions": [],
-    "onTickUpdate": {
-      "name": "ChorusFarmTick"
+    "onNeighbourBlockChanges": {
+      "name": "ThermoemittorUpdate"
     },
     "spawnWorldTypes": [],
     "restrictionBiomes": [],

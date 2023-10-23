@@ -34,7 +34,9 @@
       }
     ],
     "name": "Egg Farm",
-    "specialInfo": [],
+    "specialInfo": [
+      "§eWill be edited"
+    ],
     "hardness": 1.049,
     "resistance": 1.259,
     "hasGravity": false,

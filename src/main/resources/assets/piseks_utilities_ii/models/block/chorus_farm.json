@@ -1,14 +1,11 @@
 {
-  "parent": "piseks_utilities_ii:custom/farm_cobblestone",
+  "parent": "piseks_utilities_ii:custom/farm_chorus",
   "textures": {
-    "all": "piseks_utilities_ii:blocks/farm_cobblestone",
-    "particle": "piseks_utilities_ii:blocks/farm_cobblestone",
+    "all": "piseks_utilities_ii:blocks/farm_chorus",
+    "particle": "piseks_utilities_ii:blocks/farm_chorus",
     "0": "piseks_utilities_ii:blocks/machine_grid",
-    "1": "piseks_utilities_ii:blocks/iron_block",
-    "2": "piseks_utilities_ii:blocks/cobblestone",
-    "3": "piseks_utilities_ii:blocks/water_still",
-    "4": "piseks_utilities_ii:blocks/water_flow",
-    "5": "piseks_utilities_ii:blocks/lava_still",
-    "6": "piseks_utilities_ii:blocks/lava_flow"
+    "1": "piseks_utilities_ii:blocks/chorus_flower",
+    "3": "piseks_utilities_ii:blocks/end_stone",
+    "4": "piseks_utilities_ii:blocks/chorus_plant"
   }
 }
