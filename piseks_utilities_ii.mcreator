@@ -1135,7 +1135,7 @@
       "sortid": 88,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "thermoemitor",
+      "registry_name": "thermoemittor",
       "path": "~/Experimental"
     },
     {
@@ -1144,7 +1144,7 @@
       "sortid": 89,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "thermoemitor_enabled",
+      "registry_name": "thermoemittor_enabled",
       "metadata": {
         "return_type": "logic",
         "dependencies": []
@@ -1152,12 +1152,12 @@
       "path": "~/Experimental"
     },
     {
-      "name": "ThermoemittorEmmit",
+      "name": "ThermoemittorEmitt",
       "type": "procedure",
       "sortid": 90,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "thermoemitor_emitt",
+      "registry_name": "thermoemittor_emitt",
       "metadata": {
         "return_type": "number",
         "dependencies": [
@@ -1191,7 +1191,7 @@
       "sortid": 91,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "thermoemitor_update",
+      "registry_name": "thermoemittor_update",
       "metadata": {
         "dependencies": [
           {
@@ -1243,6 +1243,7 @@
       "block.piseks_utilities_ii.thermoemitor": "Thermoemittor",
       "item.piseks_utilities_ii.reinforced_helmet": "Hard Hat",
       "block.piseks_utilities_ii.rotten_flesh_block": "Block of Rotten Flesh",
+      "block.piseks_utilities_ii.thermoemittor": "Thermoemittor",
       "item.piseks_utilities_ii.reinforced_leggings": "Reinforced Leggings",
       "enchantment.piseks_utilities_ii.recycle": "Recycle",
       "enchantment.piseks_utilities_ii.scrapper": "Scrapper",

@@ -1,18 +1,18 @@
 {
   "variants": {
     "facing=north": {
-      "model": "piseks_utilities_ii:block/thermoemitor"
+      "model": "piseks_utilities_ii:block/thermoemittor"
     },
     "facing=east": {
-      "model": "piseks_utilities_ii:block/thermoemitor",
+      "model": "piseks_utilities_ii:block/thermoemittor",
       "y": 90
     },
     "facing=south": {
-      "model": "piseks_utilities_ii:block/thermoemitor",
+      "model": "piseks_utilities_ii:block/thermoemittor",
       "y": 180
     },
     "facing=west": {
-      "model": "piseks_utilities_ii:block/thermoemitor",
+      "model": "piseks_utilities_ii:block/thermoemittor",
       "y": 270
     }
   }

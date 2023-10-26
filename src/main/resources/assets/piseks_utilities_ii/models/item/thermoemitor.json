@@ -1,5 +1,5 @@
 {
-  "parent": "piseks_utilities_ii:block/thermoemittor",
+  "parent": "piseks_utilities_ii:block/thermoemitor",
   "display": {
     "thirdperson": {
       "rotation": [

@@ -63,8 +63,7 @@
     "isReplaceable": false,
     "canProvidePower": true,
     "emittedRedstonePower": {
-      "fixedValue": 15.0,
-      "name": "ThermoemittorEmmit"
+      "fixedValue": 15.0
     },
     "colorOnMap": "DEFAULT",
     "creativePickItem": {
@@ -128,6 +127,9 @@
     "fluidRestrictions": [],
     "onNeighbourBlockChanges": {
       "name": "ThermoemittorUpdate"
+    },
+    "onTickUpdate": {
+      "name": "ThermoemittorEmitt"
     },
     "spawnWorldTypes": [],
     "restrictionBiomes": [],
