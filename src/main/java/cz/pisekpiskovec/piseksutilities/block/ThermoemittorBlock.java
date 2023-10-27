@@ -6,8 +6,9 @@ import net.minecraftforge.common.ToolType;
 import net.minecraftforge.api.distmarker.OnlyIn;
 import net.minecraftforge.api.distmarker.Dist;
 
-import net.minecraft.world.server.ServerWorld;
 import net.minecraft.world.World;
+import net.minecraft.world.IWorldReader;
+import net.minecraft.world.IWorld;
 import net.minecraft.world.IBlockReader;
 import net.minecraft.util.text.StringTextComponent;
 import net.minecraft.util.text.ITextComponent;
@@ -27,11 +28,11 @@ import net.minecraft.client.util.ITooltipFlag;
 import net.minecraft.block.material.Material;
 import net.minecraft.block.SoundType;
 import net.minecraft.block.HorizontalBlock;
+import net.minecraft.block.Blocks;
 import net.minecraft.block.BlockState;
 import net.minecraft.block.Block;
 
 import java.util.stream.Stream;
-import java.util.Random;
 import java.util.Map;
 import java.util.List;
 import java.util.HashMap;
@@ -39,6 +40,7 @@ import java.util.Collections;
 import java.util.AbstractMap;
 
 import cz.pisekpiskovec.piseksutilities.procedures.ThermoemittorUpdateProcedure;
+import cz.pisekpiskovec.piseksutilities.procedures.ThermoemittorEnabledProcedure;
 import cz.pisekpiskovec.piseksutilities.procedures.ThermoemittorEmittProcedure;
 import cz.pisekpiskovec.piseksutilities.PiseksUtilitiesIiModElements;
 
@@ -98,13 +100,40 @@ public class ThermoemittorBlock extends PiseksUtilitiesIiModElements.ModElement 
 		}
 
 		@Override
+		public boolean isValidPosition(BlockState blockstate, IWorldReader worldIn, BlockPos pos) {
+			if (worldIn instanceof IWorld) {
+				IWorld world = (IWorld) worldIn;
+				int x = pos.getX();
+				int y = pos.getY();
+				int z = pos.getZ();
+				return ThermoemittorEnabledProcedure.executeProcedure(Collections.emptyMap());
+			}
+			return super.isValidPosition(blockstate, worldIn, pos);
+		}
+
+		@Override
+		public BlockState updatePostPlacement(BlockState state, Direction facing, BlockState facingState, IWorld world, BlockPos currentPos,
+				BlockPos facingPos) {
+			return !state.isValidPosition(world, currentPos)
+					? Blocks.AIR.getDefaultState()
+					: super.updatePostPlacement(state, facing, facingState, world, currentPos, facingPos);
+		}
+
+		@Override
 		public boolean canProvidePower(BlockState state) {
 			return true;
 		}
 
 		@Override
 		public int getWeakPower(BlockState blockstate, IBlockReader blockAccess, BlockPos pos, Direction direction) {
-			return 15;
+			int x = pos.getX();
+			int y = pos.getY();
+			int z = pos.getZ();
+			World world = (World) blockAccess;
+			return (int) ThermoemittorEmittProcedure.executeProcedure(Stream
+					.of(new AbstractMap.SimpleEntry<>("world", world), new AbstractMap.SimpleEntry<>("x", x), new AbstractMap.SimpleEntry<>("y", y),
+							new AbstractMap.SimpleEntry<>("z", z), new AbstractMap.SimpleEntry<>("blockstate", blockstate))
+					.collect(HashMap::new, (_m, _e) -> _m.put(_e.getKey(), _e.getValue()), Map::putAll));
 		}
 
 		@Override
@@ -133,19 +162,6 @@ public class ThermoemittorBlock extends PiseksUtilitiesIiModElements.ModElement 
 			ThermoemittorUpdateProcedure.executeProcedure(Stream
 					.of(new AbstractMap.SimpleEntry<>("world", world), new AbstractMap.SimpleEntry<>("x", x), new AbstractMap.SimpleEntry<>("y", y),
 							new AbstractMap.SimpleEntry<>("z", z))
-					.collect(HashMap::new, (_m, _e) -> _m.put(_e.getKey(), _e.getValue()), Map::putAll));
-		}
-
-		@Override
-		public void tick(BlockState blockstate, ServerWorld world, BlockPos pos, Random random) {
-			super.tick(blockstate, world, pos, random);
-			int x = pos.getX();
-			int y = pos.getY();
-			int z = pos.getZ();
-
-			ThermoemittorEmittProcedure.executeProcedure(Stream
-					.of(new AbstractMap.SimpleEntry<>("world", world), new AbstractMap.SimpleEntry<>("x", x), new AbstractMap.SimpleEntry<>("y", y),
-							new AbstractMap.SimpleEntry<>("z", z), new AbstractMap.SimpleEntry<>("blockstate", blockstate))
 					.collect(HashMap::new, (_m, _e) -> _m.put(_e.getKey(), _e.getValue()), Map::putAll));
 		}
 	}

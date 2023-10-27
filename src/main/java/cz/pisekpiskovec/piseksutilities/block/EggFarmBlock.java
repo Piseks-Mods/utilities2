@@ -320,7 +320,7 @@ public class EggFarmBlock extends PiseksUtilitiesIiModElements.ModElement {
 
 		@Override
 		public int getInventoryStackLimit() {
-			return 16;
+			return 64;
 		}
 
 		@Override

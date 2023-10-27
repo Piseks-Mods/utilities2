@@ -1,0 +1,46 @@
+{
+  "_fv": 34,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Crafting",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "recipeRetstackSize": 1,
+    "group": "",
+    "recipeShapeless": false,
+    "recipeSlots": [
+      {
+        "value": ""
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": "Items.NETHER_WART"
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": "CUSTOM:MachineGrid"
+      },
+      {
+        "value": "Blocks.SOUL_SAND"
+      },
+      {
+        "value": ""
+      }
+    ],
+    "recipeReturnStack": {
+      "value": "CUSTOM:NetherWartFarm"
+    },
+    "name": "nether_wart_farm",
+    "namespace": "mod"
+  }
+}

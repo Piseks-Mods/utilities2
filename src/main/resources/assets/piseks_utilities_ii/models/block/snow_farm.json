@@ -1,0 +1,13 @@
+{
+  "parent": "piseks_utilities_ii:custom/farm_snow",
+  "textures": {
+    "all": "piseks_utilities_ii:blocks/farm_snow",
+    "particle": "piseks_utilities_ii:blocks/farm_snow",
+    "0": "piseks_utilities_ii:blocks/machine_grid",
+    "1": "piseks_utilities_ii:blocks/snow",
+    "2": "piseks_utilities_ii:blocks/pumpkin_side",
+    "3": "piseks_utilities_ii:blocks/pumpkin_top",
+    "4": "piseks_utilities_ii:blocks/carved_pumpkin",
+    "5": "piseks_utilities_ii:blocks/charcoal_block"
+  }
+}

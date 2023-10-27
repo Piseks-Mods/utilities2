@@ -1,0 +1,29 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " 12",
+    " 4 ",
+    "67 "
+  ],
+  "key": {
+    "1": {
+      "item": "minecraft:carved_pumpkin"
+    },
+    "2": {
+      "item": "minecraft:wooden_shovel"
+    },
+    "4": {
+      "item": "minecraft:snow_block"
+    },
+    "6": {
+      "item": "piseks_utilities_ii:machine_grid"
+    },
+    "7": {
+      "item": "minecraft:snow_block"
+    }
+  },
+  "result": {
+    "item": "piseks_utilities_ii:snow_farm",
+    "count": 1
+  }
+}

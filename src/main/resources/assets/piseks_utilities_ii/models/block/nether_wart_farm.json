@@ -1,0 +1,10 @@
+{
+  "parent": "piseks_utilities_ii:custom/farm_nether_wart",
+  "textures": {
+    "all": "piseks_utilities_ii:blocks/farm_nether_wart",
+    "particle": "piseks_utilities_ii:blocks/farm_nether_wart",
+    "0": "piseks_utilities_ii:blocks/machine_grid",
+    "1": "piseks_utilities_ii:blocks/nether_wart_stage1",
+    "3": "piseks_utilities_ii:blocks/soul_sand"
+  }
+}

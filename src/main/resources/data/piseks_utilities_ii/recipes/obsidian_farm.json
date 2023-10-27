@@ -1,0 +1,26 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "  2",
+    "3  ",
+    "67 "
+  ],
+  "key": {
+    "2": {
+      "item": "minecraft:lava_bucket"
+    },
+    "3": {
+      "item": "minecraft:water_bucket"
+    },
+    "6": {
+      "item": "piseks_utilities_ii:machine_grid"
+    },
+    "7": {
+      "item": "piseks_utilities_ii:diamond_drill_head"
+    }
+  },
+  "result": {
+    "item": "piseks_utilities_ii:obsidian_farm",
+    "count": 1
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " 1 ",
+    "345"
+  ],
+  "key": {
+    "1": {
+      "item": "minecraft:sugar_cane"
+    },
+    "3": {
+      "item": "piseks_utilities_ii:machine_grid"
+    },
+    "4": {
+      "tag": "minecraft:sand"
+    },
+    "5": {
+      "item": "minecraft:water_bucket"
+    }
+  },
+  "result": {
+    "item": "piseks_utilities_ii:sugar_cane_farm",
+    "count": 1
+  }
+}

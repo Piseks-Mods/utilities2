@@ -1,0 +1,46 @@
+{
+  "_fv": 34,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Crafting",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "recipeRetstackSize": 4,
+    "group": "",
+    "recipeShapeless": true,
+    "recipeSlots": [
+      {
+        "value": ""
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": "Items.DIAMOND"
+      },
+      {
+        "value": "CUSTOM:SoulGlass"
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": "CUSTOM:SoulGlass"
+      },
+      {
+        "value": "CUSTOM:SoulGlass"
+      },
+      {
+        "value": ""
+      }
+    ],
+    "recipeReturnStack": {
+      "value": "CUSTOM:BrushedSoulGlass"
+    },
+    "name": "brushed_soul_glass",
+    "namespace": "mod"
+  }
+}

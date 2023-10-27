@@ -1,0 +1,14 @@
+{
+  "mappings": {
+    "default": {
+      "map": {
+        "0": "machine_grid",
+        "1": "brown_mushroom",
+        "3": "mycelium_top",
+        "4": "darkened_glass",
+        "5": "dirt"
+      },
+      "name": "default"
+    }
+  }
+}

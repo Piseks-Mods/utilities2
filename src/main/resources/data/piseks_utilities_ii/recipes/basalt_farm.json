@@ -1,0 +1,29 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " 1 ",
+    "3 5",
+    "67 "
+  ],
+  "key": {
+    "1": {
+      "item": "minecraft:blue_ice"
+    },
+    "3": {
+      "item": "minecraft:lava_bucket"
+    },
+    "5": {
+      "item": "piseks_utilities_ii:iron_drill_head"
+    },
+    "6": {
+      "item": "piseks_utilities_ii:machine_grid"
+    },
+    "7": {
+      "item": "minecraft:soul_soil"
+    }
+  },
+  "result": {
+    "item": "piseks_utilities_ii:basalt_farm",
+    "count": 1
+  }
+}

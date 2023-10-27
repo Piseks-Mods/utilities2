@@ -49,7 +49,6 @@ import net.minecraft.fluid.Fluids;
 import net.minecraft.fluid.FluidState;
 import net.minecraft.entity.player.PlayerInventory;
 import net.minecraft.entity.MobEntity;
-import net.minecraft.client.util.ITooltipFlag;
 import net.minecraft.client.renderer.RenderTypeLookup;
 import net.minecraft.client.renderer.RenderType;
 import net.minecraft.block.material.Material;
@@ -113,13 +112,6 @@ public class FishFarmBlock extends PiseksUtilitiesIiModElements.ModElement {
 					.harvestLevel(1).harvestTool(ToolType.PICKAXE).setRequiresTool().notSolid().tickRandomly().setOpaque((bs, br, bp) -> false));
 			this.setDefaultState(this.stateContainer.getBaseState().with(WATERLOGGED, false));
 			setRegistryName("fish_farm");
-		}
-
-		@Override
-		@OnlyIn(Dist.CLIENT)
-		public void addInformation(ItemStack itemstack, IBlockReader world, List<ITextComponent> list, ITooltipFlag flag) {
-			super.addInformation(itemstack, world, list, flag);
-			list.add(new StringTextComponent("\u00A7cNot Working"));
 		}
 
 		@Override
@@ -304,7 +296,7 @@ public class FishFarmBlock extends PiseksUtilitiesIiModElements.ModElement {
 
 		@Override
 		public ITextComponent getDisplayName() {
-			return new StringTextComponent("Fish Farm");
+			return new StringTextComponent("Fish Net");
 		}
 
 		@Override

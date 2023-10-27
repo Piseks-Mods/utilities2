@@ -1,0 +1,46 @@
+{
+  "_fv": 34,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Crafting",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "recipeRetstackSize": 1,
+    "group": "",
+    "recipeShapeless": false,
+    "recipeSlots": [
+      {
+        "value": ""
+      },
+      {
+        "value": "Blocks.BLUE_ICE"
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": "Items.LAVA_BUCKET"
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": "CUSTOM:IronDrillHead"
+      },
+      {
+        "value": "CUSTOM:MachineGrid"
+      },
+      {
+        "value": "Blocks.SOUL_SOIL"
+      },
+      {
+        "value": ""
+      }
+    ],
+    "recipeReturnStack": {
+      "value": "CUSTOM:BasaltFarm"
+    },
+    "name": "basalt_farm",
+    "namespace": "mod"
+  }
+}

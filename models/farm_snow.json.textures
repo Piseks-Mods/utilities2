@@ -1,0 +1,15 @@
+{
+  "mappings": {
+    "default": {
+      "map": {
+        "0": "machine_grid",
+        "1": "snow",
+        "2": "pumpkin_side",
+        "3": "pumpkin_top",
+        "4": "carved_pumpkin",
+        "5": "charcoal_block"
+      },
+      "name": "default"
+    }
+  }
+}

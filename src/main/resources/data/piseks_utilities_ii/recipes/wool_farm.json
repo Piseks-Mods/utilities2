@@ -1,0 +1,25 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " 12",
+    "34 "
+  ],
+  "key": {
+    "1": {
+      "tag": "minecraft:wool"
+    },
+    "2": {
+      "item": "minecraft:shears"
+    },
+    "3": {
+      "item": "piseks_utilities_ii:machine_grid"
+    },
+    "4": {
+      "item": "minecraft:grass_block"
+    }
+  },
+  "result": {
+    "item": "piseks_utilities_ii:wool_farm",
+    "count": 1
+  }
+}

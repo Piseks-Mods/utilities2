@@ -1,0 +1,46 @@
+{
+  "_fv": 34,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Crafting",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "recipeRetstackSize": 1,
+    "group": "",
+    "recipeShapeless": false,
+    "recipeSlots": [
+      {
+        "value": ""
+      },
+      {
+        "value": "Blocks.CARVED_PUMPKIN"
+      },
+      {
+        "value": "Items.WOODEN_SHOVEL"
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": "Blocks.SNOW"
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": "CUSTOM:MachineGrid"
+      },
+      {
+        "value": "Blocks.SNOW"
+      },
+      {
+        "value": ""
+      }
+    ],
+    "recipeReturnStack": {
+      "value": "CUSTOM:SnowFarm"
+    },
+    "name": "snow_farm",
+    "namespace": "mod"
+  }
+}

@@ -1213,6 +1213,353 @@
         ]
       },
       "path": "~/Experimental"
+    },
+    {
+      "name": "MushroomFarm",
+      "type": "block",
+      "sortid": 92,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "mushroom_farm",
+      "path": "~/Machines/Farms"
+    },
+    {
+      "name": "BrushedSoulGlass",
+      "type": "block",
+      "sortid": 93,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "brushed_soul_glass",
+      "path": "~/Soul Glass"
+    },
+    {
+      "name": "MushroomFarmTick",
+      "type": "procedure",
+      "sortid": 94,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "mushroom_farm_tick",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Machines/Farms"
+    },
+    {
+      "name": "MushroomFarmCraft",
+      "type": "recipe",
+      "sortid": 95,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "mushroom_farm_craft",
+      "path": "~/Machines/Farms"
+    },
+    {
+      "name": "BrushedSoulGlassCraft",
+      "type": "recipe",
+      "sortid": 96,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "brushed_soul_glass_craft",
+      "path": "~/Soul Glass"
+    },
+    {
+      "name": "NetherWartFarm",
+      "type": "block",
+      "sortid": 97,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "nether_wart_farm",
+      "path": "~/Machines/Farms"
+    },
+    {
+      "name": "NetherWartFarmTick",
+      "type": "procedure",
+      "sortid": 98,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "nether_wart_farm_tick",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Machines/Farms"
+    },
+    {
+      "name": "NetherWartFarmCraft",
+      "type": "recipe",
+      "sortid": 99,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "nether_wart_farm_craft",
+      "path": "~/Machines/Farms"
+    },
+    {
+      "name": "ObsidianFarm",
+      "type": "block",
+      "sortid": 100,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "obsidian_farm",
+      "path": "~/Machines/Farms"
+    },
+    {
+      "name": "ObsidianFarmTick",
+      "type": "procedure",
+      "sortid": 101,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "obsidian_farm_tick",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Machines/Farms"
+    },
+    {
+      "name": "SnowFarm",
+      "type": "block",
+      "sortid": 103,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "snow_farm",
+      "path": "~/Machines/Farms"
+    },
+    {
+      "name": "SnowFarmTick",
+      "type": "procedure",
+      "sortid": 104,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "snow_farm_tick",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Machines/Farms"
+    },
+    {
+      "name": "SnowFarmCraft",
+      "type": "recipe",
+      "sortid": 105,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "snow_farm_craft",
+      "path": "~/Machines/Farms"
+    },
+    {
+      "name": "SugarCaneFarm",
+      "type": "block",
+      "sortid": 106,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "sugar_cane_farm",
+      "path": "~/Machines/Farms"
+    },
+    {
+      "name": "SugarCaneFarmTick",
+      "type": "procedure",
+      "sortid": 107,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "sugar_cane_farm_tick",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Machines/Farms"
+    },
+    {
+      "name": "SugarCaneFarmCraft",
+      "type": "recipe",
+      "sortid": 108,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "sugar_cane_farm_craft",
+      "path": "~/Machines/Farms"
+    },
+    {
+      "name": "WoolFarm",
+      "type": "block",
+      "sortid": 109,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "wool_farm",
+      "path": "~/Machines/Farms"
+    },
+    {
+      "name": "WoolFarmTick",
+      "type": "procedure",
+      "sortid": 110,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "wool_farm_tick",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Machines/Farms"
+    },
+    {
+      "name": "WoolFarmCraft",
+      "type": "recipe",
+      "sortid": 111,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "wool_farm_craft",
+      "path": "~/Machines/Farms"
+    },
+    {
+      "name": "ObsidianFarmCraft",
+      "type": "recipe",
+      "sortid": 102,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "obsidian_farm_craft",
+      "path": "~/Machines/Farms"
+    },
+    {
+      "name": "BasaltFarm",
+      "type": "block",
+      "sortid": 112,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "basalt_farm",
+      "path": "~/Machines/Farms"
+    },
+    {
+      "name": "BasaltFarmTick",
+      "type": "procedure",
+      "sortid": 113,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "basalt_farm_tick",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Machines/Farms"
+    },
+    {
+      "name": "BasaltFarmCraft",
+      "type": "recipe",
+      "sortid": 114,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "basalt_farm_craft",
+      "path": "~/Machines/Farms"
     }
   ],
   "variable_elements": [],
@@ -1221,9 +1568,11 @@
     "en_us": {
       "block.piseks_utilities_ii.cobblestone_farm": "Cobblestone Farm",
       "block.piseks_utilities_ii.urn": "Urn",
+      "block.piseks_utilities_ii.mushroom_farm": "Mushroom Farm",
       "block.piseks_utilities_ii.chorus_farm": "Chorus Farm",
       "block.piseks_utilities_ii.mud": "Mud",
       "block.piseks_utilities_ii.mud_brick_wall": "Brick Wall",
+      "block.piseks_utilities_ii.brushed_soul_glass": "Brushed Soul Glass",
       "block.piseks_utilities_ii.iron_drill_head": "Iron Drill Head",
       "config.piseks_utilities_ii.config": "piseks_utilities_ii_conf",
       "block.piseks_utilities_ii.cactus_farm": "Cactus Farm",
@@ -1235,25 +1584,31 @@
       "block.piseks_utilities_ii.mud_bricks": "Bricks",
       "block.piseks_utilities_ii.machine_grid": "Machine Grid",
       "block.piseks_utilities_ii.lightning_rod_t1": "Lightning Rod",
-      "block.piseks_utilities_ii.fish_farm": "Fish Farm",
+      "block.piseks_utilities_ii.fish_farm": "Fish Net",
       "block.piseks_utilities_ii.mud_brick_slab": "Brick Slab",
       "block.piseks_utilities_ii.reinforced_stone": "Reinforced Stone",
       "block.piseks_utilities_ii.reinforced_redstone": "Reinforced Redstone",
       "block.piseks_utilities_ii.soul_glass": "Soul Glass",
       "block.piseks_utilities_ii.thermoemitor": "Thermoemittor",
       "item.piseks_utilities_ii.reinforced_helmet": "Hard Hat",
+      "block.piseks_utilities_ii.nether_wart_farm": "Nether Wart Farm",
       "block.piseks_utilities_ii.rotten_flesh_block": "Block of Rotten Flesh",
       "block.piseks_utilities_ii.thermoemittor": "Thermoemittor",
       "item.piseks_utilities_ii.reinforced_leggings": "Reinforced Leggings",
       "enchantment.piseks_utilities_ii.recycle": "Recycle",
       "enchantment.piseks_utilities_ii.scrapper": "Scrapper",
       "block.piseks_utilities_ii.mud_brick_stairs": "Brick Stairs",
+      "block.piseks_utilities_ii.obsidian_farm": "Obsidian Farm",
+      "block.piseks_utilities_ii.basalt_farm": "Basalt Farm",
+      "block.piseks_utilities_ii.sugar_cane_farm": "Sugar Cane Farm",
       "block.piseks_utilities_ii.reinforced_glowstone": "Reinforced Glowstone",
       "item.piseks_utilities_ii.reinforced_chestplate": "Reinforced Body",
       "block.piseks_utilities_ii.reinforced_glass": "Reinforced Glass",
+      "block.piseks_utilities_ii.snow_farm": "Snow Farm",
       "block.piseks_utilities_ii.diamond_drill_head": "Diamond Drill Head",
       "block.piseks_utilities_ii.charcoal_block": "Block of Charcoal",
       "block.piseks_utilities_ii.reinforced_wood": "Reinforced Wood",
+      "block.piseks_utilities_ii.wool_farm": "Wool Farm",
       "item.piseks_utilities_ii.mud_brick": "Brick",
       "item.piseks_utilities_ii.mud_ball": "Mud Ball"
     }

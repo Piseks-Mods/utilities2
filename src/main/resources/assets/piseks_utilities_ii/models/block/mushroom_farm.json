@@ -1,0 +1,12 @@
+{
+  "parent": "piseks_utilities_ii:custom/farm_mushroom",
+  "textures": {
+    "all": "piseks_utilities_ii:blocks/farm_mushroom",
+    "particle": "piseks_utilities_ii:blocks/farm_mushroom",
+    "0": "piseks_utilities_ii:blocks/machine_grid",
+    "1": "piseks_utilities_ii:blocks/brown_mushroom",
+    "3": "piseks_utilities_ii:blocks/mycelium_top",
+    "4": "piseks_utilities_ii:blocks/darkened_glass",
+    "5": "piseks_utilities_ii:blocks/dirt"
+  }
+}

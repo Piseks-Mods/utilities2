@@ -1,0 +1,12 @@
+{
+  "mappings": {
+    "default": {
+      "map": {
+        "0": "machine_grid",
+        "1": "nether_wart_stage1",
+        "3": "soul_sand"
+      },
+      "name": "default"
+    }
+  }
+}

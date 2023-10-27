@@ -1,0 +1,10 @@
+{
+  "parent": "piseks_utilities_ii:custom/farm_sugar_cane",
+  "textures": {
+    "all": "piseks_utilities_ii:blocks/farm_sugar_cane",
+    "particle": "piseks_utilities_ii:blocks/farm_sugar_cane",
+    "0": "piseks_utilities_ii:blocks/machine_grid",
+    "1": "piseks_utilities_ii:blocks/sugar_cane",
+    "3": "piseks_utilities_ii:blocks/sand"
+  }
+}

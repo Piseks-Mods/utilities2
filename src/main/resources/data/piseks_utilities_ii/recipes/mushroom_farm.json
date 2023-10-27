@@ -1,0 +1,32 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "  2",
+    "345",
+    "67 "
+  ],
+  "key": {
+    "2": {
+      "item": "minecraft:iron_axe"
+    },
+    "3": {
+      "item": "piseks_utilities_ii:brushed_soul_glass"
+    },
+    "4": {
+      "tag": "forge:mushrooms"
+    },
+    "5": {
+      "item": "piseks_utilities_ii:brushed_soul_glass"
+    },
+    "6": {
+      "item": "piseks_utilities_ii:machine_grid"
+    },
+    "7": {
+      "tag": "minecraft:mushroom_growth_block"
+    }
+  },
+  "result": {
+    "item": "piseks_utilities_ii:mushroom_farm",
+    "count": 1
+  }
+}

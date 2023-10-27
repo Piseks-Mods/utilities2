@@ -1,0 +1,12 @@
+{
+  "mappings": {
+    "default": {
+      "map": {
+        "0": "machine_grid",
+        "1": "sugar_cane",
+        "3": "sand"
+      },
+      "name": "default"
+    }
+  }
+}

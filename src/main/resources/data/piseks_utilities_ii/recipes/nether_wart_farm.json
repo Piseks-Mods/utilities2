@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " 1",
+    "23"
+  ],
+  "key": {
+    "1": {
+      "item": "minecraft:nether_wart"
+    },
+    "2": {
+      "item": "piseks_utilities_ii:machine_grid"
+    },
+    "3": {
+      "item": "minecraft:soul_sand"
+    }
+  },
+  "result": {
+    "item": "piseks_utilities_ii:nether_wart_farm",
+    "count": 1
+  }
+}

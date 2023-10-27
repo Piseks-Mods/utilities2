@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "minecraft:diamond"
+    },
+    {
+      "item": "piseks_utilities_ii:soul_glass"
+    },
+    {
+      "item": "piseks_utilities_ii:soul_glass"
+    },
+    {
+      "item": "piseks_utilities_ii:soul_glass"
+    }
+  ],
+  "result": {
+    "item": "piseks_utilities_ii:brushed_soul_glass",
+    "count": 4
+  }
+}
