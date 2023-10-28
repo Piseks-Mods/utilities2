@@ -1,0 +1,16 @@
+{
+  "mappings": {
+    "default": {
+      "map": {
+        "0": "machine_grid",
+        "1": "iron_block",
+        "2": "basalt_side",
+        "5": "lava_still",
+        "6": "lava_flow",
+        "7": "soul_soil",
+        "8": "blue_ice"
+      },
+      "name": "default"
+    }
+  }
+}

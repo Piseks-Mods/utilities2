@@ -12,20 +12,27 @@ import net.minecraftforge.event.RegistryEvent;
 import net.minecraftforge.common.util.LazyOptional;
 import net.minecraftforge.common.capabilities.Capability;
 import net.minecraftforge.common.ToolType;
+import net.minecraftforge.client.event.ColorHandlerEvent;
 import net.minecraftforge.api.distmarker.OnlyIn;
 import net.minecraftforge.api.distmarker.Dist;
 
 import net.minecraft.world.server.ServerWorld;
+import net.minecraft.world.biome.BiomeColors;
 import net.minecraft.world.World;
 import net.minecraft.world.IBlockReader;
+import net.minecraft.world.GrassColors;
 import net.minecraft.util.text.StringTextComponent;
 import net.minecraft.util.text.ITextComponent;
 import net.minecraft.util.math.BlockPos;
+import net.minecraft.util.Rotation;
 import net.minecraft.util.NonNullList;
+import net.minecraft.util.Mirror;
 import net.minecraft.util.Direction;
 import net.minecraft.tileentity.TileEntityType;
 import net.minecraft.tileentity.TileEntity;
 import net.minecraft.tileentity.LockableLootTileEntity;
+import net.minecraft.state.StateContainer;
+import net.minecraft.state.DirectionProperty;
 import net.minecraft.pathfinding.PathNodeType;
 import net.minecraft.network.play.server.SUpdateTileEntityPacket;
 import net.minecraft.network.NetworkManager;
@@ -33,6 +40,7 @@ import net.minecraft.nbt.CompoundNBT;
 import net.minecraft.loot.LootContext;
 import net.minecraft.item.ItemStack;
 import net.minecraft.item.Item;
+import net.minecraft.item.BlockItemUseContext;
 import net.minecraft.item.BlockItem;
 import net.minecraft.inventory.container.INamedContainerProvider;
 import net.minecraft.inventory.container.Container;
@@ -46,6 +54,7 @@ import net.minecraft.client.renderer.RenderTypeLookup;
 import net.minecraft.client.renderer.RenderType;
 import net.minecraft.block.material.Material;
 import net.minecraft.block.SoundType;
+import net.minecraft.block.HorizontalBlock;
 import net.minecraft.block.BlockState;
 import net.minecraft.block.Block;
 
@@ -72,8 +81,10 @@ public class WoolFarmBlock extends PiseksUtilitiesIiModElements.ModElement {
 	public static final TileEntityType<CustomTileEntity> tileEntityType = null;
 
 	public WoolFarmBlock(PiseksUtilitiesIiModElements instance) {
-		super(instance, 108);
+		super(instance, 109);
 		FMLJavaModLoadingContext.get().getModEventBus().register(new TileEntityRegisterHandler());
+		FMLJavaModLoadingContext.get().getModEventBus().register(new BlockColorRegisterHandler());
+		FMLJavaModLoadingContext.get().getModEventBus().register(new ItemColorRegisterHandler());
 	}
 
 	@Override
@@ -96,10 +107,33 @@ public class WoolFarmBlock extends PiseksUtilitiesIiModElements.ModElement {
 		RenderTypeLookup.setRenderLayer(block, RenderType.getCutout());
 	}
 
+	private static class BlockColorRegisterHandler {
+		@OnlyIn(Dist.CLIENT)
+		@SubscribeEvent
+		public void blockColorLoad(ColorHandlerEvent.Block event) {
+			event.getBlockColors().register((bs, world, pos, index) -> {
+				return world != null && pos != null ? BiomeColors.getGrassColor(world, pos) : GrassColors.get(0.5D, 1.0D);
+			}, block);
+		}
+	}
+
+	private static class ItemColorRegisterHandler {
+		@OnlyIn(Dist.CLIENT)
+		@SubscribeEvent
+		public void itemColorLoad(ColorHandlerEvent.Item event) {
+			event.getItemColors().register((stack, index) -> {
+				return GrassColors.get(0.5D, 1.0D);
+			}, block);
+		}
+	}
+
 	public static class CustomBlock extends Block {
+		public static final DirectionProperty FACING = HorizontalBlock.HORIZONTAL_FACING;
+
 		public CustomBlock() {
 			super(Block.Properties.create(Material.IRON).sound(SoundType.METAL).hardnessAndResistance(1.049f, 1.259f).setLightLevel(s -> 0)
 					.harvestLevel(1).harvestTool(ToolType.PICKAXE).setRequiresTool().notSolid().setOpaque((bs, br, bp) -> false));
+			this.setDefaultState(this.stateContainer.getBaseState().with(FACING, Direction.NORTH));
 			setRegistryName("wool_farm");
 		}
 
@@ -111,6 +145,24 @@ public class WoolFarmBlock extends PiseksUtilitiesIiModElements.ModElement {
 		@Override
 		public int getOpacity(BlockState state, IBlockReader worldIn, BlockPos pos) {
 			return 0;
+		}
+
+		@Override
+		protected void fillStateContainer(StateContainer.Builder<Block, BlockState> builder) {
+			builder.add(FACING);
+		}
+
+		@Override
+		public BlockState getStateForPlacement(BlockItemUseContext context) {
+			return this.getDefaultState().with(FACING, context.getPlacementHorizontalFacing().getOpposite());
+		}
+
+		public BlockState rotate(BlockState state, Rotation rot) {
+			return state.with(FACING, rot.rotate(state.get(FACING)));
+		}
+
+		public BlockState mirror(BlockState state, Mirror mirrorIn) {
+			return state.rotate(mirrorIn.toRotation(state.get(FACING)));
 		}
 
 		@Override
@@ -201,7 +253,7 @@ public class WoolFarmBlock extends PiseksUtilitiesIiModElements.ModElement {
 	}
 
 	public static class CustomTileEntity extends LockableLootTileEntity implements ISidedInventory {
-		private NonNullList<ItemStack> stacks = NonNullList.<ItemStack>withSize(1, ItemStack.EMPTY);
+		private NonNullList<ItemStack> stacks = NonNullList.<ItemStack>withSize(8, ItemStack.EMPTY);
 
 		protected CustomTileEntity() {
 			super(tileEntityType);
@@ -286,6 +338,20 @@ public class WoolFarmBlock extends PiseksUtilitiesIiModElements.ModElement {
 		@Override
 		public boolean isItemValidForSlot(int index, ItemStack stack) {
 			if (index == 0)
+				return false;
+			if (index == 1)
+				return false;
+			if (index == 2)
+				return false;
+			if (index == 3)
+				return false;
+			if (index == 4)
+				return false;
+			if (index == 5)
+				return false;
+			if (index == 6)
+				return false;
+			if (index == 7)
 				return false;
 			return true;
 		}

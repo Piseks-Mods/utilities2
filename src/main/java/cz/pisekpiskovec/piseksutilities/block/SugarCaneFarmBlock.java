@@ -72,7 +72,7 @@ public class SugarCaneFarmBlock extends PiseksUtilitiesIiModElements.ModElement 
 	public static final TileEntityType<CustomTileEntity> tileEntityType = null;
 
 	public SugarCaneFarmBlock(PiseksUtilitiesIiModElements instance) {
-		super(instance, 105);
+		super(instance, 106);
 		FMLJavaModLoadingContext.get().getModEventBus().register(new TileEntityRegisterHandler());
 	}
 

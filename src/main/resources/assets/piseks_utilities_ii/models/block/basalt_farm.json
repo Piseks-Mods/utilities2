@@ -1,14 +1,14 @@
 {
-  "parent": "piseks_utilities_ii:custom/farm_cobblestone",
+  "parent": "piseks_utilities_ii:custom/farm_basalt",
   "textures": {
-    "all": "piseks_utilities_ii:blocks/farm_cobblestone",
-    "particle": "piseks_utilities_ii:blocks/farm_cobblestone",
+    "all": "piseks_utilities_ii:blocks/farm_basalt",
+    "particle": "piseks_utilities_ii:blocks/farm_basalt",
     "0": "piseks_utilities_ii:blocks/machine_grid",
     "1": "piseks_utilities_ii:blocks/iron_block",
-    "2": "piseks_utilities_ii:blocks/cobblestone",
-    "3": "piseks_utilities_ii:blocks/water_still",
-    "4": "piseks_utilities_ii:blocks/water_flow",
+    "2": "piseks_utilities_ii:blocks/basalt_side",
     "5": "piseks_utilities_ii:blocks/lava_still",
-    "6": "piseks_utilities_ii:blocks/lava_flow"
+    "6": "piseks_utilities_ii:blocks/lava_flow",
+    "7": "piseks_utilities_ii:blocks/soul_soil",
+    "8": "piseks_utilities_ii:blocks/blue_ice"
   }
 }

@@ -1,0 +1,15 @@
+{
+  "mappings": {
+    "default": {
+      "map": {
+        "0": "machine_grid",
+        "1": "sheep",
+        "2": "dirt",
+        "3": "grass_block_top",
+        "4": "reinforced_wood",
+        "5": "sheep_wool"
+      },
+      "name": "default"
+    }
+  }
+}

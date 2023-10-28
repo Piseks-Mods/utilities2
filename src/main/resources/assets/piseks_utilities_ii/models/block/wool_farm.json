@@ -1,10 +1,13 @@
 {
-  "parent": "piseks_utilities_ii:custom/farm_sugar_cane",
+  "parent": "piseks_utilities_ii:custom/farm_wool",
   "textures": {
-    "all": "piseks_utilities_ii:blocks/farm_sugar_cane",
-    "particle": "piseks_utilities_ii:blocks/farm_sugar_cane",
+    "all": "piseks_utilities_ii:blocks/farm_wool",
+    "particle": "piseks_utilities_ii:blocks/farm_wool",
     "0": "piseks_utilities_ii:blocks/machine_grid",
-    "1": "piseks_utilities_ii:blocks/sugar_cane",
-    "3": "piseks_utilities_ii:blocks/sand"
+    "1": "piseks_utilities_ii:blocks/sheep",
+    "2": "piseks_utilities_ii:blocks/dirt",
+    "3": "piseks_utilities_ii:blocks/grass_block_top",
+    "4": "piseks_utilities_ii:blocks/reinforced_wood",
+    "5": "piseks_utilities_ii:blocks/sheep_wool"
   }
 }

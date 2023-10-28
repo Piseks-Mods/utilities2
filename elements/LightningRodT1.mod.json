@@ -34,9 +34,7 @@
       }
     ],
     "name": "Lightning Rod",
-    "specialInfo": [
-      "§eTier 1"
-    ],
+    "specialInfo": [],
     "hardness": 4.049,
     "resistance": 7.259,
     "hasGravity": false,

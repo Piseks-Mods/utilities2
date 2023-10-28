@@ -2,18 +2,13 @@ package cz.pisekpiskovec.piseksutilities.procedures;
 
 import net.minecraftforge.items.IItemHandlerModifiable;
 import net.minecraftforge.items.CapabilityItemHandler;
-import net.minecraftforge.fml.server.ServerLifecycleHooks;
 
 import net.minecraft.world.IWorld;
-import net.minecraft.util.text.StringTextComponent;
-import net.minecraft.util.text.ChatType;
 import net.minecraft.util.math.MathHelper;
 import net.minecraft.util.math.BlockPos;
-import net.minecraft.util.Util;
 import net.minecraft.tileentity.TileEntity;
 import net.minecraft.state.Property;
 import net.minecraft.state.BooleanProperty;
-import net.minecraft.server.MinecraftServer;
 import net.minecraft.item.Items;
 import net.minecraft.item.ItemStack;
 import net.minecraft.enchantment.EnchantmentHelper;
@@ -250,13 +245,6 @@ public class FishFarmTickProcedure {
 							}
 						});
 					}
-				}
-				if (!world.isRemote()) {
-					MinecraftServer mcserv = ServerLifecycleHooks.getCurrentServer();
-					if (mcserv != null)
-						mcserv.getPlayerList().func_232641_a_(
-								new StringTextComponent(("Added " + (rolledItem).getDisplayName().getString() + " to slot " + slotID)),
-								ChatType.SYSTEM, Util.DUMMY_UUID);
 				}
 				break;
 			} else {

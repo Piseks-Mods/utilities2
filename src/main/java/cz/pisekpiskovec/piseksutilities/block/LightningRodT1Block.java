@@ -10,8 +10,6 @@ import net.minecraftforge.api.distmarker.Dist;
 import net.minecraft.world.server.ServerWorld;
 import net.minecraft.world.IBlockReader;
 import net.minecraft.world.IBlockDisplayReader;
-import net.minecraft.util.text.StringTextComponent;
-import net.minecraft.util.text.ITextComponent;
 import net.minecraft.util.math.vector.Vector3d;
 import net.minecraft.util.math.shapes.VoxelShapes;
 import net.minecraft.util.math.shapes.VoxelShape;
@@ -24,7 +22,6 @@ import net.minecraft.item.Item;
 import net.minecraft.item.BlockItem;
 import net.minecraft.fluid.FluidState;
 import net.minecraft.entity.MobEntity;
-import net.minecraft.client.util.ITooltipFlag;
 import net.minecraft.client.renderer.RenderTypeLookup;
 import net.minecraft.client.renderer.RenderType;
 import net.minecraft.block.material.Material;
@@ -71,13 +68,6 @@ public class LightningRodT1Block extends PiseksUtilitiesIiModElements.ModElement
 			super(Block.Properties.create(Material.ANVIL).sound(SoundType.METAL).hardnessAndResistance(4.049f, 7.259f).setLightLevel(s -> 0)
 					.harvestLevel(1).harvestTool(ToolType.PICKAXE).setRequiresTool().notSolid().tickRandomly().setOpaque((bs, br, bp) -> false));
 			setRegistryName("lightning_rod_t1");
-		}
-
-		@Override
-		@OnlyIn(Dist.CLIENT)
-		public void addInformation(ItemStack itemstack, IBlockReader world, List<ITextComponent> list, ITooltipFlag flag) {
-			super.addInformation(itemstack, world, list, flag);
-			list.add(new StringTextComponent("\u00A7eTier 1"));
 		}
 
 		@Override
