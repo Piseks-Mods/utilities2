@@ -40,7 +40,7 @@
     "hasGravity": false,
     "isWaterloggable": false,
     "creativeTab": {
-      "value": "DECORATIONS"
+      "value": "CUSTOM:PUiiBuildingBlocks"
     },
     "destroyTool": "Not specified",
     "customDrop": {

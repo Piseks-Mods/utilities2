@@ -8,7 +8,7 @@
     "name": "Mud Ball",
     "specialInfo": [],
     "creativeTab": {
-      "value": "MATERIALS"
+      "value": "CUSTOM:PUiiMisc"
     },
     "stackSize": 64,
     "ammoItem": {

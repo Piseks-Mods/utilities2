@@ -1,0 +1,12 @@
+{
+  "mappings": {
+    "default": {
+      "map": {
+        "0": "uppper_inside",
+        "1": "uppper_outside",
+        "2": "uppper_top"
+      },
+      "name": "default"
+    }
+  }
+}

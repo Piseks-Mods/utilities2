@@ -78,7 +78,7 @@ public class SnowFarmBlock extends PiseksUtilitiesIiModElements.ModElement {
 	public static final TileEntityType<CustomTileEntity> tileEntityType = null;
 
 	public SnowFarmBlock(PiseksUtilitiesIiModElements instance) {
-		super(instance, 102);
+		super(instance, 103);
 		FMLJavaModLoadingContext.get().getModEventBus().register(new TileEntityRegisterHandler());
 	}
 

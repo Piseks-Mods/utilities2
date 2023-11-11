@@ -17,7 +17,6 @@ import net.minecraft.state.BooleanProperty;
 import net.minecraft.pathfinding.PathNodeType;
 import net.minecraft.loot.LootContext;
 import net.minecraft.item.ItemStack;
-import net.minecraft.item.ItemGroup;
 import net.minecraft.item.Item;
 import net.minecraft.item.BlockItemUseContext;
 import net.minecraft.item.BlockItem;
@@ -35,6 +34,7 @@ import net.minecraft.block.Block;
 import java.util.List;
 import java.util.Collections;
 
+import cz.pisekpiskovec.piseksutilities.itemgroup.PUiiMiscItemGroup;
 import cz.pisekpiskovec.piseksutilities.PiseksUtilitiesIiModElements;
 
 @PiseksUtilitiesIiModElements.ModElement.Tag
@@ -49,7 +49,7 @@ public class MachineGridBlock extends PiseksUtilitiesIiModElements.ModElement {
 	@Override
 	public void initElements() {
 		elements.blocks.add(() -> new CustomBlock());
-		elements.items.add(() -> new BlockItem(block, new Item.Properties().group(ItemGroup.MATERIALS)).setRegistryName(block.getRegistryName()));
+		elements.items.add(() -> new BlockItem(block, new Item.Properties().group(PUiiMiscItemGroup.tab)).setRegistryName(block.getRegistryName()));
 	}
 
 	@Override

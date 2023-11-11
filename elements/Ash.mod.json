@@ -40,7 +40,7 @@
     "hasGravity": true,
     "isWaterloggable": false,
     "creativeTab": {
-      "value": "BUILDING_BLOCKS"
+      "value": "CUSTOM:PUiiBuildingBlocks"
     },
     "destroyTool": "shovel",
     "customDrop": {

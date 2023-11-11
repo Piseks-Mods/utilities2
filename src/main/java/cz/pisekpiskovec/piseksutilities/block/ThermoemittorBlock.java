@@ -73,7 +73,7 @@ public class ThermoemittorBlock extends PiseksUtilitiesIiModElements.ModElement 
 		@OnlyIn(Dist.CLIENT)
 		public void addInformation(ItemStack itemstack, IBlockReader world, List<ITextComponent> list, ITooltipFlag flag) {
 			super.addInformation(itemstack, world, list, flag);
-			list.add(new StringTextComponent("\u00A72Experimental feature"));
+			list.add(new StringTextComponent("\u00A72Experimental Feature"));
 		}
 
 		@Override

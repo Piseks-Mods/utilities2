@@ -35,12 +35,12 @@
     ],
     "name": "Diamond Drill Head",
     "specialInfo": [],
-    "hardness": 255.556,
-    "resistance": 6006.667,
+    "hardness": 8.336,
+    "resistance": 10.002,
     "hasGravity": false,
     "isWaterloggable": false,
     "creativeTab": {
-      "value": "TOOLS"
+      "value": "CUSTOM:PUiiTools"
     },
     "destroyTool": "pickaxe",
     "customDrop": {

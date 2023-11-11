@@ -95,6 +95,24 @@
             "enablecomment": true,
             "onlyComment": false,
             "entityType": "EntityAgeable"
+          },
+          {
+            "item": {
+              "value": ""
+            },
+            "silkTouchMode": 0,
+            "block": {
+              "value": ""
+            },
+            "logicField": 0,
+            "numberField": 0.0,
+            "textDefault": "",
+            "comment": "Enable damaging entity touching Charged Iron Block near water",
+            "vardisplay": "Charged Iron Block Shocks",
+            "varname": "charged_iron_shock",
+            "enablecomment": true,
+            "onlyComment": false,
+            "entityType": "EntityAgeable"
           }
         ]
       },

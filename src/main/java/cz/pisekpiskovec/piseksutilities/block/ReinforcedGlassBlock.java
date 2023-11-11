@@ -10,7 +10,6 @@ import net.minecraft.world.IBlockReader;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.loot.LootContext;
 import net.minecraft.item.ItemStack;
-import net.minecraft.item.ItemGroup;
 import net.minecraft.item.Item;
 import net.minecraft.item.BlockItem;
 import net.minecraft.client.renderer.RenderTypeLookup;
@@ -23,6 +22,7 @@ import net.minecraft.block.Block;
 import java.util.List;
 import java.util.Collections;
 
+import cz.pisekpiskovec.piseksutilities.itemgroup.PUiiBuildingBlocksItemGroup;
 import cz.pisekpiskovec.piseksutilities.PiseksUtilitiesIiModElements;
 
 @PiseksUtilitiesIiModElements.ModElement.Tag
@@ -37,7 +37,8 @@ public class ReinforcedGlassBlock extends PiseksUtilitiesIiModElements.ModElemen
 	@Override
 	public void initElements() {
 		elements.blocks.add(() -> new CustomBlock());
-		elements.items.add(() -> new BlockItem(block, new Item.Properties().group(ItemGroup.DECORATIONS)).setRegistryName(block.getRegistryName()));
+		elements.items.add(
+				() -> new BlockItem(block, new Item.Properties().group(PUiiBuildingBlocksItemGroup.tab)).setRegistryName(block.getRegistryName()));
 	}
 
 	@Override

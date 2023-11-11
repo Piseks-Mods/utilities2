@@ -1,0 +1,10 @@
+{
+  "parent": "piseks_utilities_ii:custom/upper_bend",
+  "textures": {
+    "all": "piseks_utilities_ii:blocks/uppper_outside",
+    "particle": "piseks_utilities_ii:blocks/uppper_outside",
+    "0": "piseks_utilities_ii:blocks/uppper_inside",
+    "1": "piseks_utilities_ii:blocks/uppper_outside",
+    "2": "piseks_utilities_ii:blocks/uppper_top"
+  }
+}

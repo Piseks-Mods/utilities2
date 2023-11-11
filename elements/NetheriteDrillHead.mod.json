@@ -35,12 +35,12 @@
     ],
     "name": "Netherite Drill Head",
     "specialInfo": [],
-    "hardness": 305.556,
-    "resistance": 7206.667,
+    "hardness": 58.336,
+    "resistance": 1210.002,
     "hasGravity": false,
     "isWaterloggable": false,
     "creativeTab": {
-      "value": "TOOLS"
+      "value": "CUSTOM:PUiiTools"
     },
     "destroyTool": "pickaxe",
     "customDrop": {

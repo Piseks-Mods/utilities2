@@ -12,7 +12,6 @@ import net.minecraft.world.IBlockDisplayReader;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.Direction;
 import net.minecraft.pathfinding.PathNodeType;
-import net.minecraft.item.ItemGroup;
 import net.minecraft.item.Item;
 import net.minecraft.item.BlockItem;
 import net.minecraft.fluid.FluidState;
@@ -32,6 +31,7 @@ import java.util.HashMap;
 import java.util.AbstractMap;
 
 import cz.pisekpiskovec.piseksutilities.procedures.SoulGlassPassProcedure;
+import cz.pisekpiskovec.piseksutilities.itemgroup.PUiiBuildingBlocksItemGroup;
 import cz.pisekpiskovec.piseksutilities.PiseksUtilitiesIiModElements;
 
 @PiseksUtilitiesIiModElements.ModElement.Tag
@@ -46,7 +46,8 @@ public class SoulGlassBlock extends PiseksUtilitiesIiModElements.ModElement {
 	@Override
 	public void initElements() {
 		elements.blocks.add(() -> new CustomBlock());
-		elements.items.add(() -> new BlockItem(block, new Item.Properties().group(ItemGroup.DECORATIONS)).setRegistryName(block.getRegistryName()));
+		elements.items.add(
+				() -> new BlockItem(block, new Item.Properties().group(PUiiBuildingBlocksItemGroup.tab)).setRegistryName(block.getRegistryName()));
 	}
 
 	@Override

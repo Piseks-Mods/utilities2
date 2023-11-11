@@ -20,7 +20,6 @@ import net.minecraft.network.IPacket;
 import net.minecraft.item.UseAction;
 import net.minecraft.item.ShootableItem;
 import net.minecraft.item.ItemStack;
-import net.minecraft.item.ItemGroup;
 import net.minecraft.item.Item;
 import net.minecraft.entity.projectile.AbstractArrowEntity;
 import net.minecraft.entity.player.ServerPlayerEntity;
@@ -33,6 +32,7 @@ import net.minecraft.entity.Entity;
 
 import java.util.Random;
 
+import cz.pisekpiskovec.piseksutilities.itemgroup.PUiiMiscItemGroup;
 import cz.pisekpiskovec.piseksutilities.entity.renderer.MudBallRenderer;
 import cz.pisekpiskovec.piseksutilities.PiseksUtilitiesIiModElements;
 
@@ -57,7 +57,7 @@ public class MudBallItem extends PiseksUtilitiesIiModElements.ModElement {
 
 	public static class ItemRanged extends Item {
 		public ItemRanged() {
-			super(new Item.Properties().group(ItemGroup.MATERIALS).maxStackSize(64));
+			super(new Item.Properties().group(PUiiMiscItemGroup.tab).maxStackSize(64));
 			setRegistryName("mud_ball");
 		}
 

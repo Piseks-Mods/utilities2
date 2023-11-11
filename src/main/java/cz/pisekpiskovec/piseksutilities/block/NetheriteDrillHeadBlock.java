@@ -31,7 +31,6 @@ import net.minecraft.network.NetworkManager;
 import net.minecraft.nbt.CompoundNBT;
 import net.minecraft.loot.LootContext;
 import net.minecraft.item.ItemStack;
-import net.minecraft.item.ItemGroup;
 import net.minecraft.item.Item;
 import net.minecraft.item.BlockItem;
 import net.minecraft.inventory.container.INamedContainerProvider;
@@ -61,6 +60,7 @@ import java.util.Collections;
 import java.util.AbstractMap;
 
 import cz.pisekpiskovec.piseksutilities.procedures.NetheriteDrillHeadBreakProcedure;
+import cz.pisekpiskovec.piseksutilities.itemgroup.PUiiToolsItemGroup;
 import cz.pisekpiskovec.piseksutilities.PiseksUtilitiesIiModElements;
 
 @PiseksUtilitiesIiModElements.ModElement.Tag
@@ -78,7 +78,7 @@ public class NetheriteDrillHeadBlock extends PiseksUtilitiesIiModElements.ModEle
 	@Override
 	public void initElements() {
 		elements.blocks.add(() -> new CustomBlock());
-		elements.items.add(() -> new BlockItem(block, new Item.Properties().group(ItemGroup.TOOLS)).setRegistryName(block.getRegistryName()));
+		elements.items.add(() -> new BlockItem(block, new Item.Properties().group(PUiiToolsItemGroup.tab)).setRegistryName(block.getRegistryName()));
 	}
 
 	private static class TileEntityRegisterHandler {
@@ -97,9 +97,8 @@ public class NetheriteDrillHeadBlock extends PiseksUtilitiesIiModElements.ModEle
 
 	public static class CustomBlock extends Block {
 		public CustomBlock() {
-			super(Block.Properties.create(Material.ANVIL, MaterialColor.OBSIDIAN).sound(SoundType.NETHERITE)
-					.hardnessAndResistance(305.556f, 7206.667f).setLightLevel(s -> 0).harvestLevel(4).harvestTool(ToolType.PICKAXE).notSolid()
-					.setOpaque((bs, br, bp) -> false));
+			super(Block.Properties.create(Material.ANVIL, MaterialColor.OBSIDIAN).sound(SoundType.NETHERITE).hardnessAndResistance(58.336f, 1210.002f)
+					.setLightLevel(s -> 0).harvestLevel(4).harvestTool(ToolType.PICKAXE).notSolid().setOpaque((bs, br, bp) -> false));
 			setRegistryName("netherite_drill_head");
 		}
 

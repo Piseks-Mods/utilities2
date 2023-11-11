@@ -1,5 +1,9 @@
 package cz.pisekpiskovec.piseksutilities.procedures;
 
+import net.minecraftforge.eventbus.api.SubscribeEvent;
+import net.minecraftforge.event.TickEvent;
+import net.minecraftforge.common.MinecraftForge;
+
 import net.minecraft.world.World;
 import net.minecraft.world.IWorld;
 import net.minecraft.util.math.BlockPos;
@@ -45,37 +49,61 @@ public class DiamondDrillHeadBreakProcedure {
 						|| Items.DIAMOND_PICKAXE.canHarvestBlock((world.getBlockState(new BlockPos(x, y + 1, z))))
 						|| Items.DIAMOND_AXE.canHarvestBlock((world.getBlockState(new BlockPos(x, y + 1, z))))
 						|| Items.DIAMOND_HOE.canHarvestBlock((world.getBlockState(new BlockPos(x, y + 1, z)))))) {
-			world.playEvent(2001, new BlockPos(x, y, z), Block.getStateId((world.getBlockState(new BlockPos(x, y, z)))));
-			if (world instanceof World) {
-				Block.spawnDrops(world.getBlockState(new BlockPos(x, y + 1, z)), (World) world, new BlockPos(x, y, z));
-				world.destroyBlock(new BlockPos(x, y + 1, z), false);
-			}
-			if (!world.isRemote()) {
-				BlockPos _bp = new BlockPos(x, y, z);
-				TileEntity _tileEntity = world.getTileEntity(_bp);
-				BlockState _bs = world.getBlockState(_bp);
-				if (_tileEntity != null)
-					_tileEntity.getTileData().putDouble("drillDurability", (new Object() {
+			new Object() {
+				private int ticks = 0;
+				private float waitTicks;
+				private IWorld world;
+
+				public void start(IWorld world, int waitTicks) {
+					this.waitTicks = waitTicks;
+					MinecraftForge.EVENT_BUS.register(this);
+					this.world = world;
+				}
+
+				@SubscribeEvent
+				public void tick(TickEvent.ServerTickEvent event) {
+					if (event.phase == TickEvent.Phase.END) {
+						this.ticks += 1;
+						if (this.ticks >= this.waitTicks)
+							run();
+					}
+				}
+
+				private void run() {
+					world.playEvent(2001, new BlockPos(x, y, z), Block.getStateId((world.getBlockState(new BlockPos(x, y, z)))));
+					if (world instanceof World) {
+						Block.spawnDrops(world.getBlockState(new BlockPos(x, y + 1, z)), (World) world, new BlockPos(x, y, z));
+						world.destroyBlock(new BlockPos(x, y + 1, z), false);
+					}
+					if (!world.isRemote()) {
+						BlockPos _bp = new BlockPos(x, y, z);
+						TileEntity _tileEntity = world.getTileEntity(_bp);
+						BlockState _bs = world.getBlockState(_bp);
+						if (_tileEntity != null)
+							_tileEntity.getTileData().putDouble("drillDurability", (new Object() {
+								public double getValue(IWorld world, BlockPos pos, String tag) {
+									TileEntity tileEntity = world.getTileEntity(pos);
+									if (tileEntity != null)
+										return tileEntity.getTileData().getDouble(tag);
+									return -1;
+								}
+							}.getValue(world, new BlockPos(x, y, z), "drillDurability") + 1));
+						if (world instanceof World)
+							((World) world).notifyBlockUpdate(_bp, _bs, _bs, 3);
+					}
+					if (new Object() {
 						public double getValue(IWorld world, BlockPos pos, String tag) {
 							TileEntity tileEntity = world.getTileEntity(pos);
 							if (tileEntity != null)
 								return tileEntity.getTileData().getDouble(tag);
 							return -1;
 						}
-					}.getValue(world, new BlockPos(x, y, z), "drillDurability") + 1));
-				if (world instanceof World)
-					((World) world).notifyBlockUpdate(_bp, _bs, _bs, 3);
-			}
-			if (new Object() {
-				public double getValue(IWorld world, BlockPos pos, String tag) {
-					TileEntity tileEntity = world.getTileEntity(pos);
-					if (tileEntity != null)
-						return tileEntity.getTileData().getDouble(tag);
-					return -1;
+					}.getValue(world, new BlockPos(x, y, z), "drillDurability") == 1024) {
+						world.destroyBlock(new BlockPos(x, y + 0, z), false);
+					}
+					MinecraftForge.EVENT_BUS.unregister(this);
 				}
-			}.getValue(world, new BlockPos(x, y, z), "drillDurability") == 1024) {
-				world.destroyBlock(new BlockPos(x, y + 0, z), false);
-			}
+			}.start(world, (int) ((world.getBlockState(new BlockPos(x, y + 1, z)).getBlockHardness(world, new BlockPos(x, y + 1, z)) / 8) * 20));
 		}
 	}
 }

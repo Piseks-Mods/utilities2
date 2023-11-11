@@ -9,7 +9,6 @@ import net.minecraftforge.api.distmarker.Dist;
 import net.minecraft.util.ResourceLocation;
 import net.minecraft.item.crafting.Ingredient;
 import net.minecraft.item.ItemStack;
-import net.minecraft.item.ItemGroup;
 import net.minecraft.item.Item;
 import net.minecraft.item.IArmorMaterial;
 import net.minecraft.item.ArmorItem;
@@ -20,6 +19,7 @@ import net.minecraft.client.renderer.model.ModelRenderer;
 import net.minecraft.client.renderer.entity.model.EntityModel;
 import net.minecraft.client.renderer.entity.model.BipedModel;
 
+import cz.pisekpiskovec.piseksutilities.itemgroup.PUiiCombatItemGroup;
 import cz.pisekpiskovec.piseksutilities.block.ReinforcedWoodBlock;
 import cz.pisekpiskovec.piseksutilities.block.ReinforcedStoneBlock;
 import cz.pisekpiskovec.piseksutilities.block.ReinforcedRedstoneBlock;
@@ -91,7 +91,7 @@ public class ReinforcedItem extends PiseksUtilitiesIiModElements.ModElement {
 				return 0.2f;
 			}
 		};
-		elements.items.add(() -> new ArmorItem(armormaterial, EquipmentSlotType.HEAD, new Item.Properties().group(ItemGroup.TOOLS)) {
+		elements.items.add(() -> new ArmorItem(armormaterial, EquipmentSlotType.HEAD, new Item.Properties().group(PUiiCombatItemGroup.tab)) {
 			@Override
 			@OnlyIn(Dist.CLIENT)
 			public BipedModel getArmorModel(LivingEntity living, ItemStack stack, EquipmentSlotType slot, BipedModel defaultModel) {

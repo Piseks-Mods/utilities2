@@ -7,6 +7,7 @@ import net.minecraft.world.World;
 import net.minecraft.world.IWorld;
 import net.minecraft.util.math.vector.Vector3d;
 import net.minecraft.util.math.BlockPos;
+import net.minecraft.util.Direction;
 import net.minecraft.tileentity.TileEntity;
 import net.minecraft.entity.effect.LightningBoltEntity;
 import net.minecraft.entity.EntityType;
@@ -60,7 +61,7 @@ public class LightningRodGenerateProcedure {
 				TileEntity _ent = world.getTileEntity(new BlockPos(x, y - 1, z));
 				int _amount = (int) (200 * a);
 				if (_ent != null)
-					_ent.getCapability(CapabilityEnergy.ENERGY, null).ifPresent(capability -> capability.receiveEnergy(_amount, false));
+					_ent.getCapability(CapabilityEnergy.ENERGY, Direction.UP).ifPresent(capability -> capability.receiveEnergy(_amount, false));
 			}
 		}
 	}

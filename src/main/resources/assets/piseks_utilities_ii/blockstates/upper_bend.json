@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "piseks_utilities_ii:block/upper_bend"
+    },
+    "facing=east": {
+      "model": "piseks_utilities_ii:block/upper_bend",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "piseks_utilities_ii:block/upper_bend",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "piseks_utilities_ii:block/upper_bend",
+      "y": 270
+    }
+  }
+}

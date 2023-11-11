@@ -18,7 +18,6 @@ import net.minecraft.tags.BlockTags;
 import net.minecraft.state.Property;
 import net.minecraft.loot.LootContext;
 import net.minecraft.item.ItemStack;
-import net.minecraft.item.ItemGroup;
 import net.minecraft.item.Item;
 import net.minecraft.item.BlockItemUseContext;
 import net.minecraft.item.BlockItem;
@@ -37,6 +36,7 @@ import net.minecraft.block.Block;
 import java.util.List;
 import java.util.Collections;
 
+import cz.pisekpiskovec.piseksutilities.itemgroup.PUiiDecorationsItemGroup;
 import cz.pisekpiskovec.piseksutilities.PiseksUtilitiesIiModElements;
 
 @PiseksUtilitiesIiModElements.ModElement.Tag
@@ -51,7 +51,8 @@ public class MudBrickWallBlock extends PiseksUtilitiesIiModElements.ModElement {
 	@Override
 	public void initElements() {
 		elements.blocks.add(() -> new CustomBlock());
-		elements.items.add(() -> new BlockItem(block, new Item.Properties().group(ItemGroup.DECORATIONS)).setRegistryName(block.getRegistryName()));
+		elements.items
+				.add(() -> new BlockItem(block, new Item.Properties().group(PUiiDecorationsItemGroup.tab)).setRegistryName(block.getRegistryName()));
 	}
 
 	@Override

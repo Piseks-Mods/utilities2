@@ -12,7 +12,6 @@ import net.minecraft.util.Direction;
 import net.minecraft.pathfinding.PathNodeType;
 import net.minecraft.loot.LootContext;
 import net.minecraft.item.ItemStack;
-import net.minecraft.item.ItemGroup;
 import net.minecraft.item.Item;
 import net.minecraft.item.BlockItem;
 import net.minecraft.entity.MobEntity;
@@ -30,6 +29,7 @@ import java.util.Collections;
 import java.util.AbstractMap;
 
 import cz.pisekpiskovec.piseksutilities.procedures.RottenFleshBlockTransformProcedure;
+import cz.pisekpiskovec.piseksutilities.itemgroup.PUiiBuildingBlocksItemGroup;
 import cz.pisekpiskovec.piseksutilities.PiseksUtilitiesIiModElements;
 
 @PiseksUtilitiesIiModElements.ModElement.Tag
@@ -44,8 +44,8 @@ public class RottenFleshBlockBlock extends PiseksUtilitiesIiModElements.ModEleme
 	@Override
 	public void initElements() {
 		elements.blocks.add(() -> new CustomBlock());
-		elements.items
-				.add(() -> new BlockItem(block, new Item.Properties().group(ItemGroup.BUILDING_BLOCKS)).setRegistryName(block.getRegistryName()));
+		elements.items.add(
+				() -> new BlockItem(block, new Item.Properties().group(PUiiBuildingBlocksItemGroup.tab)).setRegistryName(block.getRegistryName()));
 	}
 
 	public static class CustomBlock extends Block {

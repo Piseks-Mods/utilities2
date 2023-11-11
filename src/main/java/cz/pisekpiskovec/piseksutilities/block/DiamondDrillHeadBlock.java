@@ -31,7 +31,6 @@ import net.minecraft.network.NetworkManager;
 import net.minecraft.nbt.CompoundNBT;
 import net.minecraft.loot.LootContext;
 import net.minecraft.item.ItemStack;
-import net.minecraft.item.ItemGroup;
 import net.minecraft.item.Item;
 import net.minecraft.item.BlockItem;
 import net.minecraft.inventory.container.INamedContainerProvider;
@@ -61,6 +60,7 @@ import java.util.Collections;
 import java.util.AbstractMap;
 
 import cz.pisekpiskovec.piseksutilities.procedures.DiamondDrillHeadBreakProcedure;
+import cz.pisekpiskovec.piseksutilities.itemgroup.PUiiToolsItemGroup;
 import cz.pisekpiskovec.piseksutilities.PiseksUtilitiesIiModElements;
 
 @PiseksUtilitiesIiModElements.ModElement.Tag
@@ -78,7 +78,7 @@ public class DiamondDrillHeadBlock extends PiseksUtilitiesIiModElements.ModEleme
 	@Override
 	public void initElements() {
 		elements.blocks.add(() -> new CustomBlock());
-		elements.items.add(() -> new BlockItem(block, new Item.Properties().group(ItemGroup.TOOLS)).setRegistryName(block.getRegistryName()));
+		elements.items.add(() -> new BlockItem(block, new Item.Properties().group(PUiiToolsItemGroup.tab)).setRegistryName(block.getRegistryName()));
 	}
 
 	private static class TileEntityRegisterHandler {
@@ -97,7 +97,7 @@ public class DiamondDrillHeadBlock extends PiseksUtilitiesIiModElements.ModEleme
 
 	public static class CustomBlock extends Block {
 		public CustomBlock() {
-			super(Block.Properties.create(Material.ANVIL, MaterialColor.DIAMOND).sound(SoundType.METAL).hardnessAndResistance(255.556f, 6006.667f)
+			super(Block.Properties.create(Material.ANVIL, MaterialColor.DIAMOND).sound(SoundType.METAL).hardnessAndResistance(8.336f, 10.002f)
 					.setLightLevel(s -> 0).harvestLevel(3).harvestTool(ToolType.PICKAXE).notSolid().setOpaque((bs, br, bp) -> false));
 			setRegistryName("diamond_drill_head");
 		}

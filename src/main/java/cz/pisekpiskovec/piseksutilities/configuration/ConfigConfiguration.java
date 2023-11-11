@@ -10,6 +10,7 @@ public class ConfigConfiguration {
 	public static final ForgeConfigSpec.ConfigValue<Boolean> ROTTEN_TRANSFORMS;
 	public static final ForgeConfigSpec.ConfigValue<Double> ROTTEN_TRANSFORM_CHANCE;
 	public static final ForgeConfigSpec.ConfigValue<Boolean> ROTTEN_TRANSFORM_SPAWN;
+	public static final ForgeConfigSpec.ConfigValue<Boolean> CHARGED_IRON_SHOCK;
 	public static final ForgeConfigSpec.ConfigValue<Boolean> ENABLE_DAMAGE;
 	public static final ForgeConfigSpec.ConfigValue<Double> DAMAGE;
 	public static final ForgeConfigSpec.ConfigValue<Boolean> ENABLE_THERMOEMITTOR;
@@ -22,6 +23,8 @@ public class ConfigConfiguration {
 				(double) 0.35);
 		ROTTEN_TRANSFORM_SPAWN = BUILDER.comment("Enable Rotten Flesh block spawn zombies after transforming").define("Rotten Flesh Block Spawn",
 				false);
+		CHARGED_IRON_SHOCK = BUILDER.comment("Enable damaging entity touching Charged Iron Block near water").define("Charged Iron Block Shocks",
+				true);
 		BUILDER.pop();
 		BUILDER.push("Soul Glass");
 		ENABLE_DAMAGE = BUILDER.define("Enable Damage", false);

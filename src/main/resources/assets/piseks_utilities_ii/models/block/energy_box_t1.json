@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "piseks_utilities_ii:blocks/energy_box_t1",
+    "up": "piseks_utilities_ii:blocks/energy_box_t1",
+    "north": "piseks_utilities_ii:blocks/energy_box_t1",
+    "east": "piseks_utilities_ii:blocks/energy_box_t1",
+    "south": "piseks_utilities_ii:blocks/energy_box_t1",
+    "west": "piseks_utilities_ii:blocks/energy_box_t1",
+    "particle": "piseks_utilities_ii:blocks/energy_box_t1"
+  }
+}
