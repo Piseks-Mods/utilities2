@@ -1,12 +1,12 @@
 {
   "parent": "block/cube",
   "textures": {
-    "down": "piseks_utilities_ii:blocks/placeholder",
-    "up": "piseks_utilities_ii:blocks/placeholder",
-    "north": "piseks_utilities_ii:blocks/placeholder",
-    "east": "piseks_utilities_ii:blocks/placeholder",
-    "south": "piseks_utilities_ii:blocks/placeholder",
-    "west": "piseks_utilities_ii:blocks/placeholder",
-    "particle": "piseks_utilities_ii:blocks/placeholder"
+    "down": "piseks_utilities_ii:blocks/charged_iron_block",
+    "up": "piseks_utilities_ii:blocks/charged_iron_block",
+    "north": "piseks_utilities_ii:blocks/charged_iron_block",
+    "east": "piseks_utilities_ii:blocks/charged_iron_block",
+    "south": "piseks_utilities_ii:blocks/charged_iron_block",
+    "west": "piseks_utilities_ii:blocks/charged_iron_block",
+    "particle": "piseks_utilities_ii:blocks/charged_iron_block"
   }
 }

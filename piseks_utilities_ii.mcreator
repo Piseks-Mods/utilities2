@@ -1813,6 +1813,122 @@
         ]
       },
       "path": "~/Charged Iron/Upper"
+    },
+    {
+      "name": "UpperStraightManager",
+      "type": "procedure",
+      "sortid": 136,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "upper_straight_manager",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Charged Iron/Upper"
+    },
+    {
+      "name": "UpperBendManager",
+      "type": "procedure",
+      "sortid": 137,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "upper_bend_manager",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Charged Iron/Upper"
+    },
+    {
+      "name": "UpperStraightSend",
+      "type": "procedure",
+      "sortid": 139,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "upper_straight_send",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Charged Iron/Upper"
+    },
+    {
+      "name": "UpperTakeUp",
+      "type": "procedure",
+      "sortid": 140,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "upper_take_up",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Charged Iron/Upper"
     }
   ],
   "variable_elements": [],
@@ -1827,8 +1943,8 @@
       "itemGroup.tabp_uii_machines": "Pisek\u0027s Utilities II: Machines",
       "itemGroup.tabp_uii_building_blocks": "Pisek\u0027s Utilities II: Building Blocks",
       "block.piseks_utilities_ii.egg_farm": "Egg Farm",
-      "block.piseks_utilities_ii.mud_bricks": "Bricks",
       "block.piseks_utilities_ii.machine_grid": "Machine Grid",
+      "block.piseks_utilities_ii.mud_bricks": "Bricks",
       "block.piseks_utilities_ii.fish_farm": "Fish Net",
       "block.piseks_utilities_ii.reinforced_stone": "Reinforced Stone",
       "block.piseks_utilities_ii.reinforced_redstone": "Reinforced Redstone",

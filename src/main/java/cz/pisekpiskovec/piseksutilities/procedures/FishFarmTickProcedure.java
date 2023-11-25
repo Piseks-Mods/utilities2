@@ -62,12 +62,12 @@ public class FishFarmTickProcedure {
 			}
 		}.get((world.getBlockState(new BlockPos(x, y, z))), "waterlogged")) {
 			roll = (MathHelper.nextInt(new Random(), 1, 20));
+			rollAdd = 1;
 			if (roll >= 1 && roll <= 17) {
 				roll = (MathHelper.nextInt(new Random(), 1, 100));
 				slotID = 0;
 				slotCount = 2;
 				maxStack = 64;
-				rollAdd = 1;
 				if (roll >= 1 && roll <= 60) {
 					rolledItem = new ItemStack(Items.COD);
 				} else if (roll >= 61 && roll <= 85) {
@@ -81,7 +81,6 @@ public class FishFarmTickProcedure {
 				roll = (MathHelper.nextInt(new Random(), 1, 6));
 				slotID = 2;
 				slotCount = 3;
-				rollAdd = 1;
 				if (roll == 1) {
 					rolledItem = (EnchantmentHelper.addRandomEnchantment(new Random(), new ItemStack(Items.BOW),
 							(int) (MathHelper.nextInt(new Random(), 22, 30)), (true)));
@@ -124,11 +123,9 @@ public class FishFarmTickProcedure {
 				if (roll >= 1 && roll <= 17) {
 					rolledItem = new ItemStack(Blocks.LILY_PAD);
 					maxStack = 64;
-					rollAdd = 1;
 				} else if (roll >= 18 && roll <= 27) {
 					rolledItem = new ItemStack(Items.BOWL);
 					maxStack = 64;
-					rollAdd = 1;
 				} else if (roll >= 28 && roll <= 29) {
 					rolledItem = new ItemStack(Items.FISHING_ROD);
 					{
@@ -139,11 +136,9 @@ public class FishFarmTickProcedure {
 						}
 					}
 					maxStack = 1;
-					rollAdd = 1;
 				} else if (roll >= 30 && roll <= 39) {
 					rolledItem = new ItemStack(Items.LEATHER);
 					maxStack = 64;
-					rollAdd = 1;
 				} else if (roll >= 40 && roll <= 49) {
 					rolledItem = new ItemStack(Items.LEATHER_BOOTS);
 					{
@@ -154,28 +149,22 @@ public class FishFarmTickProcedure {
 						}
 					}
 					maxStack = 1;
-					rollAdd = 1;
 				} else if (roll >= 50 && roll <= 59) {
 					rolledItem = new ItemStack(Items.ROTTEN_FLESH);
 					maxStack = 64;
-					rollAdd = 1;
 				} else if (roll >= 60 && roll <= 64) {
 					rolledItem = new ItemStack(Items.STICK);
 					maxStack = 64;
-					rollAdd = 1;
 				} else if (roll >= 65 && roll <= 69) {
 					rolledItem = new ItemStack(Items.STRING);
 					maxStack = 64;
-					rollAdd = 1;
 				} else if (roll >= 70 && roll <= 79) {
 					rolledItem = new ItemStack(Items.POTION);
 					(rolledItem).getOrCreateTag().putString("Potion", "minecraft:water");
 					maxStack = 1;
-					rollAdd = 1;
 				} else if (roll >= 80 && roll <= 89) {
 					rolledItem = new ItemStack(Items.BONE);
 					maxStack = 64;
-					rollAdd = 1;
 				} else if (roll >= 90) {
 					rolledItem = new ItemStack(Items.INK_SAC);
 					maxStack = 64;
@@ -183,7 +172,6 @@ public class FishFarmTickProcedure {
 				} else if (roll >= 91 && roll <= 100) {
 					rolledItem = new ItemStack(Items.INK_SAC);
 					maxStack = 64;
-					rollAdd = 1;
 				}
 			}
 		}
