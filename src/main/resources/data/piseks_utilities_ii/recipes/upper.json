@@ -1,0 +1,32 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " 1 ",
+    "345",
+    "6 8"
+  ],
+  "key": {
+    "1": {
+      "item": "piseks_utilities_ii:charged_iron_ingot"
+    },
+    "3": {
+      "item": "piseks_utilities_ii:charged_iron_ingot"
+    },
+    "4": {
+      "item": "minecraft:chest"
+    },
+    "5": {
+      "item": "piseks_utilities_ii:charged_iron_ingot"
+    },
+    "6": {
+      "item": "piseks_utilities_ii:charged_iron_ingot"
+    },
+    "8": {
+      "item": "piseks_utilities_ii:charged_iron_ingot"
+    }
+  },
+  "result": {
+    "item": "piseks_utilities_ii:upper",
+    "count": 1
+  }
+}

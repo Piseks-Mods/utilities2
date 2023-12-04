@@ -1,0 +1,41 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "012",
+    "345",
+    "678"
+  ],
+  "key": {
+    "0": {
+      "item": "piseks_utilities_ii:copper_chunk"
+    },
+    "1": {
+      "item": "piseks_utilities_ii:copper_chunk"
+    },
+    "2": {
+      "item": "piseks_utilities_ii:copper_chunk"
+    },
+    "3": {
+      "item": "piseks_utilities_ii:copper_chunk"
+    },
+    "4": {
+      "item": "piseks_utilities_ii:copper_chunk"
+    },
+    "5": {
+      "item": "piseks_utilities_ii:copper_chunk"
+    },
+    "6": {
+      "item": "piseks_utilities_ii:copper_chunk"
+    },
+    "7": {
+      "item": "piseks_utilities_ii:copper_chunk"
+    },
+    "8": {
+      "item": "piseks_utilities_ii:copper_chunk"
+    }
+  },
+  "result": {
+    "item": "piseks_utilities_ii:copper_ingot",
+    "count": 1
+  }
+}

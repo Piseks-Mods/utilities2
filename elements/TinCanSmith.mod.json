@@ -1,0 +1,23 @@
+{
+  "_fv": 34,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Smithing",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "recipeRetstackSize": 1,
+    "group": "",
+    "recipeShapeless": false,
+    "smithingInputStack": {
+      "value": "TAG:forge:plates/tin"
+    },
+    "smithingInputAdditionStack": {
+      "value": "TAG:forge:plates/tin"
+    },
+    "smithingReturnStack": {
+      "value": "CUSTOM:TinCan"
+    },
+    "name": "tin_can_smith",
+    "namespace": "mod"
+  }
+}

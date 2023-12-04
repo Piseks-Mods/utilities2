@@ -64,7 +64,9 @@ public class ChargedIronBlockShockProcedure {
 							((entity instanceof LivingEntity)
 									? ((LivingEntity) entity).getItemStackFromSlot(EquipmentSlotType.FEET)
 									: ItemStack.EMPTY)) != 0))) {
-				entity.attackEntityFrom(DamageSource.IN_FIRE, (float) 1);
+				if (entity instanceof LivingEntity) {
+					((LivingEntity) entity).attackEntityFrom(new DamageSource("charging").setDamageBypassesArmor(), (float) 1);
+				}
 			}
 		}
 	}

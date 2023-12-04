@@ -1,0 +1,46 @@
+{
+  "_fv": 34,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Crafting",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "recipeRetstackSize": 1,
+    "group": "",
+    "recipeShapeless": true,
+    "recipeSlots": [
+      {
+        "value": "Items.BEETROOT"
+      },
+      {
+        "value": "Items.BEETROOT"
+      },
+      {
+        "value": "Items.BEETROOT"
+      },
+      {
+        "value": "Items.BEETROOT"
+      },
+      {
+        "value": "Items.BEETROOT"
+      },
+      {
+        "value": "Items.BEETROOT"
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": "CUSTOM:TinCan"
+      },
+      {
+        "value": ""
+      }
+    ],
+    "recipeReturnStack": {
+      "value": "CUSTOM:CannedBeetrootSoup"
+    },
+    "name": "canned_beetroot_soup",
+    "namespace": "mod"
+  }
+}

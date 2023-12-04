@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:smithing",
+  "base": {
+    "tag": "forge:plates/tin"
+  },
+  "addition": {
+    "tag": "forge:plates/tin"
+  },
+  "result": {
+    "item": "piseks_utilities_ii:tin_can"
+  }
+}

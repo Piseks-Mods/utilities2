@@ -1,0 +1,34 @@
+{
+  "_fv": 34,
+  "_type": "tool",
+  "definition": {
+    "renderType": 0,
+    "texture": "placeholder",
+    "customModelName": "Normal",
+    "name": "Copper Rod",
+    "specialInfo": [],
+    "creativeTab": {
+      "value": "CUSTOM:PUiiTools"
+    },
+    "toolType": "Special",
+    "harvestLevel": 1,
+    "efficiency": 5.0,
+    "attackSpeed": 3.0,
+    "enchantability": 10,
+    "damageVsEntity": 5.0,
+    "usageCount": 128,
+    "blocksAffected": [],
+    "hasGlow": false,
+    "repairItems": [
+      {
+        "value": "CUSTOM:CopperIngot"
+      }
+    ],
+    "immuneToFire": false,
+    "stayInGridWhenCrafting": false,
+    "damageOnCrafting": false,
+    "onItemInUseTick": {
+      "name": "CopperRodLock"
+    }
+  }
+}

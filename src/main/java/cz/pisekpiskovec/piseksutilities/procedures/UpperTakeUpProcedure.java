@@ -72,6 +72,22 @@ public class UpperTakeUpProcedure {
 				return getContainerSize(world, pos);
 			}
 		}.getAmount(world, new BlockPos(x, (y - 1), z))); index0++) {
+			for (int index1 = 0; index1 < (int) (5); index1++) {
+				if (new Object() {
+					public int getAmount(IWorld world, BlockPos pos, int sltid) {
+						AtomicInteger _retval = new AtomicInteger(0);
+						TileEntity _ent = world.getTileEntity(pos);
+						if (_ent != null) {
+							_ent.getCapability(CapabilityItemHandler.ITEM_HANDLER_CAPABILITY, null).ifPresent(capability -> {
+								_retval.set(capability.getStackInSlot(sltid).getCount());
+							});
+						}
+						return _retval.get();
+					}
+				}.getAmount(world, new BlockPos(x, y, z), (int) (localID)) == 64) {
+					localID = (localID + 1);
+				}
+			}
 			if (new Object() {
 				public int getAmount(IWorld world, BlockPos pos, int sltid) {
 					AtomicInteger _retval = new AtomicInteger(0);
@@ -84,20 +100,6 @@ public class UpperTakeUpProcedure {
 					return _retval.get();
 				}
 			}.getAmount(world, new BlockPos(x, y, z), (int) (localID)) == 0) {
-				{
-					TileEntity _ent = world.getTileEntity(new BlockPos(x, y - 1, z));
-					if (_ent != null) {
-						final int _sltid = (int) (remoteID);
-						final int _amount = (int) 1;
-						_ent.getCapability(CapabilityItemHandler.ITEM_HANDLER_CAPABILITY, null).ifPresent(capability -> {
-							if (capability instanceof IItemHandlerModifiable) {
-								ItemStack _stk = capability.getStackInSlot(_sltid).copy();
-								_stk.shrink(_amount);
-								((IItemHandlerModifiable) capability).setStackInSlot(_sltid, _stk);
-							}
-						});
-					}
-				}
 				{
 					TileEntity _ent = world.getTileEntity(new BlockPos(x, y, z));
 					if (_ent != null) {
@@ -118,6 +120,20 @@ public class UpperTakeUpProcedure {
 						_ent.getCapability(CapabilityItemHandler.ITEM_HANDLER_CAPABILITY, null).ifPresent(capability -> {
 							if (capability instanceof IItemHandlerModifiable) {
 								((IItemHandlerModifiable) capability).setStackInSlot(_sltid, _setstack);
+							}
+						});
+					}
+				}
+				{
+					TileEntity _ent = world.getTileEntity(new BlockPos(x, y - 1, z));
+					if (_ent != null) {
+						final int _sltid = (int) (remoteID);
+						final int _amount = (int) 1;
+						_ent.getCapability(CapabilityItemHandler.ITEM_HANDLER_CAPABILITY, null).ifPresent(capability -> {
+							if (capability instanceof IItemHandlerModifiable) {
+								ItemStack _stk = capability.getStackInSlot(_sltid).copy();
+								_stk.shrink(_amount);
+								((IItemHandlerModifiable) capability).setStackInSlot(_sltid, _stk);
 							}
 						});
 					}
@@ -158,20 +174,6 @@ public class UpperTakeUpProcedure {
 				}
 			}.getAmount(world, new BlockPos(x, y, z), (int) (localID)) < 64) {
 				{
-					TileEntity _ent = world.getTileEntity(new BlockPos(x, y - 1, z));
-					if (_ent != null) {
-						final int _sltid = (int) (remoteID);
-						final int _amount = (int) 1;
-						_ent.getCapability(CapabilityItemHandler.ITEM_HANDLER_CAPABILITY, null).ifPresent(capability -> {
-							if (capability instanceof IItemHandlerModifiable) {
-								ItemStack _stk = capability.getStackInSlot(_sltid).copy();
-								_stk.shrink(_amount);
-								((IItemHandlerModifiable) capability).setStackInSlot(_sltid, _stk);
-							}
-						});
-					}
-				}
-				{
 					TileEntity _ent = world.getTileEntity(new BlockPos(x, y, z));
 					if (_ent != null) {
 						final int _sltid = (int) (localID);
@@ -202,6 +204,20 @@ public class UpperTakeUpProcedure {
 						_ent.getCapability(CapabilityItemHandler.ITEM_HANDLER_CAPABILITY, null).ifPresent(capability -> {
 							if (capability instanceof IItemHandlerModifiable) {
 								((IItemHandlerModifiable) capability).setStackInSlot(_sltid, _setstack);
+							}
+						});
+					}
+				}
+				{
+					TileEntity _ent = world.getTileEntity(new BlockPos(x, y - 1, z));
+					if (_ent != null) {
+						final int _sltid = (int) (remoteID);
+						final int _amount = (int) 1;
+						_ent.getCapability(CapabilityItemHandler.ITEM_HANDLER_CAPABILITY, null).ifPresent(capability -> {
+							if (capability instanceof IItemHandlerModifiable) {
+								ItemStack _stk = capability.getStackInSlot(_sltid).copy();
+								_stk.shrink(_amount);
+								((IItemHandlerModifiable) capability).setStackInSlot(_sltid, _stk);
 							}
 						});
 					}

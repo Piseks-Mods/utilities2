@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "0 2",
+    " 4 "
+  ],
+  "key": {
+    "0": {
+      "item": "piseks_utilities_ii:tin_ingot"
+    },
+    "2": {
+      "item": "piseks_utilities_ii:tin_ingot"
+    },
+    "4": {
+      "item": "piseks_utilities_ii:tin_ingot"
+    }
+  },
+  "result": {
+    "item": "piseks_utilities_ii:tin_can",
+    "count": 4
+  }
+}

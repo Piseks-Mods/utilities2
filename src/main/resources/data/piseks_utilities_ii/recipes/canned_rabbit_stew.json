@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "minecraft:cooked_rabbit"
+    },
+    {
+      "item": "minecraft:carrot"
+    },
+    {
+      "item": "minecraft:baked_potato"
+    },
+    {
+      "tag": "forge:mushrooms"
+    },
+    {
+      "item": "piseks_utilities_ii:tin_can"
+    }
+  ],
+  "result": {
+    "item": "piseks_utilities_ii:canned_rabbit_stew",
+    "count": 1
+  }
+}
