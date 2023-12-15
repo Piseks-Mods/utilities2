@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:smelting",
+  "experience": 1,
+  "cookingtime": 100,
+  "ingredient": {
+    "item": "piseks_utilities_ii:roasted_seeds"
+  },
+  "result": {
+    "item": "piseks_utilities_ii:burnt_seeds"
+  }
+}

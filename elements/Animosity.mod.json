@@ -1,0 +1,29 @@
+{
+  "_fv": 34,
+  "_type": "tool",
+  "definition": {
+    "renderType": 0,
+    "texture": "mud_brick",
+    "customModelName": "Normal",
+    "name": "Animosity",
+    "specialInfo": [
+      "§2Experimental Feature"
+    ],
+    "creativeTab": {
+      "value": "CUSTOM:PUiiTools"
+    },
+    "toolType": "Sword",
+    "harvestLevel": 0,
+    "efficiency": 6.0,
+    "attackSpeed": 1.6,
+    "enchantability": 0,
+    "damageVsEntity": 7.0,
+    "usageCount": 1182,
+    "blocksAffected": [],
+    "hasGlow": false,
+    "repairItems": [],
+    "immuneToFire": true,
+    "stayInGridWhenCrafting": false,
+    "damageOnCrafting": false
+  }
+}

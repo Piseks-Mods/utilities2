@@ -2253,19 +2253,179 @@
       "locked_code": false,
       "registry_name": "tin_can_smith",
       "path": "~/Tin/Tin Can"
+    },
+    {
+      "name": "RoastedSeeds",
+      "type": "item",
+      "sortid": 173,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "roasted_seeds",
+      "path": "~/Food"
+    },
+    {
+      "name": "RoastedSeedsSmelt",
+      "type": "recipe",
+      "sortid": 174,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "roasted_seeds_smelt",
+      "path": "~/Food"
+    },
+    {
+      "name": "RoastedSeedsSmoke",
+      "type": "recipe",
+      "sortid": 175,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "roasted_seeds_smoke",
+      "path": "~/Food"
+    },
+    {
+      "name": "RoastedSeedsCook",
+      "type": "recipe",
+      "sortid": 176,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "roasted_seeds_cook",
+      "path": "~/Food"
+    },
+    {
+      "name": "BurntSeeds",
+      "type": "item",
+      "sortid": 177,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "burnt_seeds",
+      "path": "~/Food"
+    },
+    {
+      "name": "BurntSeedsExtended",
+      "type": "itemextension",
+      "sortid": 178,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "burnt_seeds_extended",
+      "path": "~/Food"
+    },
+    {
+      "name": "BurntSeedsSmelt",
+      "type": "recipe",
+      "sortid": 179,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "burnt_seeds_smelt",
+      "path": "~/Food"
+    },
+    {
+      "name": "BurntSeedsSmoke",
+      "type": "recipe",
+      "sortid": 180,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "burnt_seeds_smoke",
+      "path": "~/Food"
+    },
+    {
+      "name": "BurntSeedsCook",
+      "type": "recipe",
+      "sortid": 181,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "burnt_seeds_cook",
+      "path": "~/Food"
+    },
+    {
+      "name": "Animosity",
+      "type": "tool",
+      "sortid": 182,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "animosity",
+      "path": "~/Experimental"
+    },
+    {
+      "name": "AnimosityRelease",
+      "type": "procedure",
+      "sortid": 183,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "animosity_release",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "sourceentity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Experimental"
+    },
+    {
+      "name": "AnimosityIncrese",
+      "type": "procedure",
+      "sortid": 184,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "animosity_increse",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "sourceentity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Experimental"
+    },
+    {
+      "name": "AnimosityIndicator",
+      "type": "procedure",
+      "sortid": 185,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "animosity_indicator",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          },
+          {
+            "name": "tooltip",
+            "type": "tooltip"
+          }
+        ]
+      },
+      "path": "~/Experimental"
+    },
+    {
+      "name": "CookedTropicalFish",
+      "type": "item",
+      "sortid": 186,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cooked_tropical_fish",
+      "path": "~/Food"
     }
   ],
   "variable_elements": [],
   "sound_elements": [],
   "language_map": {
     "en_us": {
+      "item.piseks_utilities_ii.cooked_tropical_fish": "Cooked Tropical Fish",
       "block.piseks_utilities_ii.copper_ore": "Copper Ore",
-      "death.attack.charging": "%1$s charged to death.",
       "block.piseks_utilities_ii.mud": "Mud",
-      "item.piseks_utilities_ii.canned_mushroom_stew": "Canned Food",
+      "death.attack.charging": "%1$s charged to death.",
       "block.piseks_utilities_ii.brushed_soul_glass": "Brushed Soul Glass",
+      "item.piseks_utilities_ii.canned_mushroom_stew": "Canned Food",
       "config.piseks_utilities_ii.config": "piseks_utilities_ii_conf",
       "block.piseks_utilities_ii.cactus_farm": "Cactus Farm",
+      "item.piseks_utilities_ii.roasted_seeds": "Roasted Seeds",
       "block.piseks_utilities_ii.netherite_drill_head": "Netherite Drill Head",
       "itemGroup.tabp_uii_machines": "Pisek\u0027s Utilities II: Machines",
       "block.piseks_utilities_ii.tin_block": "Block of Tin",
@@ -2274,11 +2434,13 @@
       "block.piseks_utilities_ii.mud_bricks": "Bricks",
       "block.piseks_utilities_ii.machine_grid": "Machine Grid",
       "block.piseks_utilities_ii.fish_farm": "Fish Net",
+      "item.piseks_utilities_ii.animosity": "Animosity",
       "block.piseks_utilities_ii.reinforced_stone": "Reinforced Stone",
       "block.piseks_utilities_ii.reinforced_redstone": "Reinforced Redstone",
       "block.piseks_utilities_ii.thermoemitor": "Thermoemittor",
       "item.piseks_utilities_ii.tin_ingot": "Tin Ingot",
       "block.piseks_utilities_ii.thermoemittor": "Thermoemittor",
+      "item.piseks_utilities_ii.burnt_seeds": "Burnt Seeds",
       "item.piseks_utilities_ii.copper_rod": "Copper Rod",
       "item.piseks_utilities_ii.copper_ingot": "Copper Ingot",
       "enchantment.piseks_utilities_ii.recycle": "Recycle",
@@ -2413,6 +2575,10 @@
             "children": []
           }
         ]
+      },
+      {
+        "name": "Food",
+        "children": []
       }
     ]
   },
