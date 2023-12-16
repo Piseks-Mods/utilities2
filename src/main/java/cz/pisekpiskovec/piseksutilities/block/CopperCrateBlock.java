@@ -23,11 +23,11 @@ import cz.pisekpiskovec.piseksutilities.itemgroup.PUiiDecorationsItemGroup;
 import cz.pisekpiskovec.piseksutilities.PiseksUtilitiesIiModElements;
 
 @PiseksUtilitiesIiModElements.ModElement.Tag
-public class CopperCreateBlock extends PiseksUtilitiesIiModElements.ModElement {
-	@ObjectHolder("piseks_utilities_ii:copper_create")
+public class CopperCrateBlock extends PiseksUtilitiesIiModElements.ModElement {
+	@ObjectHolder("piseks_utilities_ii:copper_crate")
 	public static final Block block = null;
 
-	public CopperCreateBlock(PiseksUtilitiesIiModElements instance) {
+	public CopperCrateBlock(PiseksUtilitiesIiModElements instance) {
 		super(instance, 147);
 	}
 
@@ -42,7 +42,7 @@ public class CopperCreateBlock extends PiseksUtilitiesIiModElements.ModElement {
 		public CustomBlock() {
 			super(Block.Properties.create(Material.ANVIL).sound(SoundType.METAL).hardnessAndResistance(3f, 6f).setLightLevel(s -> 0).harvestLevel(1)
 					.harvestTool(ToolType.PICKAXE).setRequiresTool());
-			setRegistryName("copper_create");
+			setRegistryName("copper_crate");
 		}
 
 		@Override

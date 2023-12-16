@@ -1,5 +1,5 @@
 {
-  "parent": "piseks_utilities_ii:block/copper_create",
+  "parent": "piseks_utilities_ii:block/copper_crate",
   "display": {
     "thirdperson": {
       "rotation": [

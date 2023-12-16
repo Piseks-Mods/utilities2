@@ -2004,12 +2004,12 @@
       "path": "~/Copper"
     },
     {
-      "name": "CopperCreate",
+      "name": "CopperCrate",
       "type": "block",
       "sortid": 147,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "copper_create",
+      "registry_name": "copper_crate",
       "path": "~/Copper"
     },
     {
@@ -2064,15 +2064,6 @@
       "compiles": true,
       "locked_code": false,
       "registry_name": "copper_block_craft",
-      "path": "~/Copper"
-    },
-    {
-      "name": "CopperCreateCraft",
-      "type": "recipe",
-      "sortid": 153,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "copper_create_craft",
       "path": "~/Copper"
     },
     {
@@ -2411,6 +2402,15 @@
       "locked_code": false,
       "registry_name": "cooked_tropical_fish",
       "path": "~/Food"
+    },
+    {
+      "name": "CopperCrateCraft",
+      "type": "recipe",
+      "sortid": 187,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "copper_crate_craft",
+      "path": "~/Copper"
     }
   ],
   "variable_elements": [],
@@ -2421,11 +2421,11 @@
       "block.piseks_utilities_ii.copper_ore": "Copper Ore",
       "block.piseks_utilities_ii.mud": "Mud",
       "death.attack.charging": "%1$s charged to death.",
-      "block.piseks_utilities_ii.brushed_soul_glass": "Brushed Soul Glass",
       "item.piseks_utilities_ii.canned_mushroom_stew": "Canned Food",
+      "block.piseks_utilities_ii.brushed_soul_glass": "Brushed Soul Glass",
       "config.piseks_utilities_ii.config": "piseks_utilities_ii_conf",
-      "block.piseks_utilities_ii.cactus_farm": "Cactus Farm",
       "item.piseks_utilities_ii.roasted_seeds": "Roasted Seeds",
+      "block.piseks_utilities_ii.cactus_farm": "Cactus Farm",
       "block.piseks_utilities_ii.netherite_drill_head": "Netherite Drill Head",
       "itemGroup.tabp_uii_machines": "Pisek\u0027s Utilities II: Machines",
       "block.piseks_utilities_ii.tin_block": "Block of Tin",
@@ -2467,7 +2467,6 @@
       "block.piseks_utilities_ii.ash": "Ash",
       "item.piseks_utilities_ii.reinforced_boots": "Reinforced Boots",
       "block.piseks_utilities_ii.energy_box_t1": "Energy Box",
-      "block.piseks_utilities_ii.copper_create": "Copper Create",
       "block.piseks_utilities_ii.lightning_rod_t1": "Lightning Rod",
       "itemGroup.tabp_uii_decorations": "Pisek\u0027s Utilities II: Decorations",
       "enchantment.piseks_utilities_ii.grounding": "Grounding",
@@ -2490,6 +2489,7 @@
       "block.piseks_utilities_ii.diamond_drill_head": "Diamond Drill Head",
       "block.piseks_utilities_ii.reinforced_wood": "Reinforced Wood",
       "item.piseks_utilities_ii.tin_can": "Tin Can",
+      "block.piseks_utilities_ii.copper_crate": "Copper Crate",
       "item.piseks_utilities_ii.mud_brick": "Brick",
       "item.piseks_utilities_ii.canned_rabbit_stew": "Canned Food",
       "item.piseks_utilities_ii.mud_ball": "Mud Ball",

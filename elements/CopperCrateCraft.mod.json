@@ -38,9 +38,9 @@
       }
     ],
     "recipeReturnStack": {
-      "value": "CUSTOM:CopperCreate"
+      "value": "CUSTOM:CopperCrate"
     },
-    "name": "copper_create",
+    "name": "copper_crate",
     "namespace": "mod"
   }
 }
