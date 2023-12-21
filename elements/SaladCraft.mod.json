@@ -6,41 +6,41 @@
     "xpReward": 0.0,
     "cookingTime": 200,
     "recipeRetstackSize": 1,
-    "group": "copper_rod",
+    "group": "",
     "recipeShapeless": true,
     "recipeSlots": [
       {
-        "value": "CUSTOM:CopperRod"
+        "value": ""
       },
       {
-        "value": "CUSTOM:CopperChunk"
-      },
-      {
-        "value": "CUSTOM:CopperChunk"
+        "value": "Items.CARROT"
       },
       {
         "value": ""
       },
       {
-        "value": ""
+        "value": "Items.POTATO"
+      },
+      {
+        "value": "Items.BEETROOT"
+      },
+      {
+        "value": "Items.APPLE"
       },
       {
         "value": ""
       },
       {
-        "value": ""
-      },
-      {
-        "value": ""
+        "value": "Items.BOWL"
       },
       {
         "value": ""
       }
     ],
     "recipeReturnStack": {
-      "value": "CUSTOM:CopperRod"
+      "value": "CUSTOM:Salad"
     },
-    "name": "copper_rod_repair_alt",
+    "name": "salad",
     "namespace": "mod"
   }
 }

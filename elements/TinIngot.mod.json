@@ -3,12 +3,12 @@
   "_type": "item",
   "definition": {
     "renderType": 0,
-    "texture": "placeholder",
+    "texture": "tin_ingot",
     "customModelName": "Normal",
     "name": "Tin Ingot",
     "rarity": "COMMON",
     "creativeTab": {
-      "value": "MISC"
+      "value": "CUSTOM:PUiiMisc"
     },
     "stackSize": 64,
     "enchantability": 0,

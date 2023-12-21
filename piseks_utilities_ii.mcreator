@@ -2102,33 +2102,6 @@
       "path": "~/Copper"
     },
     {
-      "name": "CopperRodCombine",
-      "type": "recipe",
-      "sortid": 157,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "copper_rod_combine",
-      "path": "~/Copper"
-    },
-    {
-      "name": "CopperRodRepair",
-      "type": "recipe",
-      "sortid": 158,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "copper_rod_repair",
-      "path": "~/Copper"
-    },
-    {
-      "name": "CopperRodRepairAlt",
-      "type": "recipe",
-      "sortid": 159,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "copper_rod_repair_alt",
-      "path": "~/Copper"
-    },
-    {
       "name": "TinIngot",
       "type": "item",
       "sortid": 160,
@@ -2411,6 +2384,224 @@
       "locked_code": false,
       "registry_name": "copper_crate_craft",
       "path": "~/Copper"
+    },
+    {
+      "name": "CookedTropicalFishSmelt",
+      "type": "recipe",
+      "sortid": 188,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cooked_tropical_fish_smelt",
+      "path": "~/Food"
+    },
+    {
+      "name": "CookedTropicalFishSmoke",
+      "type": "recipe",
+      "sortid": 189,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cooked_tropical_fish_smoke",
+      "path": "~/Food"
+    },
+    {
+      "name": "CookedTropicalFishFire",
+      "type": "recipe",
+      "sortid": 190,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cooked_tropical_fish_fire",
+      "path": "~/Food"
+    },
+    {
+      "name": "ApplePie",
+      "type": "item",
+      "sortid": 191,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "apple_pie",
+      "path": "~/Food"
+    },
+    {
+      "name": "ApplePieCraft",
+      "type": "recipe",
+      "sortid": 192,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "apple_pie_craft",
+      "path": "~/Food"
+    },
+    {
+      "name": "FishStew",
+      "type": "item",
+      "sortid": 193,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "fish_stew",
+      "path": "~/Food"
+    },
+    {
+      "name": "FishStewCraft",
+      "type": "recipe",
+      "sortid": 194,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "fish_stew_craft",
+      "path": "~/Food"
+    },
+    {
+      "name": "CannedFishStew",
+      "type": "item",
+      "sortid": 195,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "canned_fish_stew",
+      "path": "~/Tin/Tin Can"
+    },
+    {
+      "name": "CannedFishStewCraft",
+      "type": "recipe",
+      "sortid": 196,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "canned_fish_stew_craft",
+      "path": "~/Tin/Tin Can"
+    },
+    {
+      "name": "SaltedMudBall",
+      "type": "item",
+      "sortid": 197,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "salted_mud_ball",
+      "path": "~/Food"
+    },
+    {
+      "name": "Salad",
+      "type": "item",
+      "sortid": 198,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "salad",
+      "path": "~/Food"
+    },
+    {
+      "name": "SaladCraft",
+      "type": "recipe",
+      "sortid": 199,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "salad_craft",
+      "path": "~/Food"
+    },
+    {
+      "name": "Pasta",
+      "type": "item",
+      "sortid": 200,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "pasta",
+      "path": "~/Food"
+    },
+    {
+      "name": "PastaTrade",
+      "type": "villagertrade",
+      "sortid": 201,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "pasta_trade",
+      "path": "~/Food"
+    },
+    {
+      "name": "Dumpling",
+      "type": "item",
+      "sortid": 202,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "dumpling",
+      "path": "~/Food"
+    },
+    {
+      "name": "DumplingCraft",
+      "type": "recipe",
+      "sortid": 203,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "dumpling_craft",
+      "path": "~/Food"
+    },
+    {
+      "name": "Pancake",
+      "type": "item",
+      "sortid": 204,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "pancake",
+      "path": "~/Food"
+    },
+    {
+      "name": "PancakePancakeing",
+      "type": "procedure",
+      "sortid": 205,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "pancake_pancakeing",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Food"
+    },
+    {
+      "name": "PancakeCraft",
+      "type": "recipe",
+      "sortid": 206,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "pancake_craft",
+      "path": "~/Food"
+    },
+    {
+      "name": "Cheese",
+      "type": "item",
+      "sortid": 207,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cheese",
+      "path": "~/Food"
+    },
+    {
+      "name": "CheeseEaten",
+      "type": "procedure",
+      "sortid": 208,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cheese_eaten",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Food"
+    },
+    {
+      "name": "CheeseCraft",
+      "type": "recipe",
+      "sortid": 209,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cheese_craft",
+      "path": "~/Food"
     }
   ],
   "variable_elements": [],
@@ -2429,6 +2620,7 @@
       "block.piseks_utilities_ii.netherite_drill_head": "Netherite Drill Head",
       "itemGroup.tabp_uii_machines": "Pisek\u0027s Utilities II: Machines",
       "block.piseks_utilities_ii.tin_block": "Block of Tin",
+      "item.piseks_utilities_ii.apple_pie": "Apple Pie",
       "itemGroup.tabp_uii_building_blocks": "Pisek\u0027s Utilities II: Building Blocks",
       "block.piseks_utilities_ii.egg_farm": "Egg Farm",
       "block.piseks_utilities_ii.mud_bricks": "Bricks",
@@ -2437,6 +2629,7 @@
       "item.piseks_utilities_ii.animosity": "Animosity",
       "block.piseks_utilities_ii.reinforced_stone": "Reinforced Stone",
       "block.piseks_utilities_ii.reinforced_redstone": "Reinforced Redstone",
+      "item.piseks_utilities_ii.fish_stew": "Fish Stew",
       "block.piseks_utilities_ii.thermoemitor": "Thermoemittor",
       "item.piseks_utilities_ii.tin_ingot": "Tin Ingot",
       "block.piseks_utilities_ii.thermoemittor": "Thermoemittor",
@@ -2464,6 +2657,7 @@
       "block.piseks_utilities_ii.mud_brick_wall": "Brick Wall",
       "block.piseks_utilities_ii.iron_drill_head": "Iron Drill Head",
       "itemGroup.tabp_uii_food": "P Uii Food",
+      "item.piseks_utilities_ii.dumpling": "Dumpling",
       "block.piseks_utilities_ii.ash": "Ash",
       "item.piseks_utilities_ii.reinforced_boots": "Reinforced Boots",
       "block.piseks_utilities_ii.energy_box_t1": "Energy Box",
@@ -2475,6 +2669,9 @@
       "block.piseks_utilities_ii.tin_ore": "Tin Ore",
       "item.piseks_utilities_ii.canned_beetroot_soup": "Canned Food",
       "item.piseks_utilities_ii.upper": "Upper",
+      "item.piseks_utilities_ii.salad": "Salad",
+      "item.piseks_utilities_ii.pancake": "Pancake",
+      "item.piseks_utilities_ii.cheese": "Cheese",
       "block.piseks_utilities_ii.soul_glass": "Soul Glass",
       "itemGroup.tabp_uii_misc": "Pisek\u0027s Utilities II: Miscellaneous",
       "item.piseks_utilities_ii.copper_chunk": "Copper Chunk",
@@ -2482,9 +2679,12 @@
       "block.piseks_utilities_ii.nether_wart_farm": "Nether Wart Farm",
       "block.piseks_utilities_ii.rotten_flesh_block": "Block of Rotten Flesh",
       "block.piseks_utilities_ii.upper_straight": "Upper Straight",
+      "item.piseks_utilities_ii.salted_mud_ball": "Salted Mud Ball",
       "item.piseks_utilities_ii.reinforced_leggings": "Reinforced Leggings",
+      "item.piseks_utilities_ii.canned_fish_stew": "Canned Food",
       "block.piseks_utilities_ii.mud_brick_stairs": "Brick Stairs",
       "block.piseks_utilities_ii.sugar_cane_farm": "Sugar Cane Farm",
+      "item.piseks_utilities_ii.pasta": "Pasta",
       "block.piseks_utilities_ii.snow_farm": "Snow Farm",
       "block.piseks_utilities_ii.diamond_drill_head": "Diamond Drill Head",
       "block.piseks_utilities_ii.reinforced_wood": "Reinforced Wood",

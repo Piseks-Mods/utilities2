@@ -1,0 +1,20 @@
+{
+  "_fv": 34,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Campfire cooking",
+    "xpReward": 0.35,
+    "cookingTime": 600,
+    "recipeRetstackSize": 1,
+    "group": "",
+    "recipeShapeless": false,
+    "campfireCookingInputStack": {
+      "value": "Items.FISH#2"
+    },
+    "campfireCookingReturnStack": {
+      "value": "CUSTOM:CookedTropicalFish"
+    },
+    "name": "cooked_tropical_fish_campfire",
+    "namespace": "mod"
+  }
+}

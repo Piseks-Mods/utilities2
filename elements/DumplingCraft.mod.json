@@ -5,17 +5,11 @@
     "recipeType": "Crafting",
     "xpReward": 0.0,
     "cookingTime": 200,
-    "recipeRetstackSize": 1,
-    "group": "copper_rod",
+    "recipeRetstackSize": 6,
+    "group": "",
     "recipeShapeless": true,
     "recipeSlots": [
       {
-        "value": "CUSTOM:CopperRod"
-      },
-      {
-        "value": "CUSTOM:CopperIngot"
-      },
-      {
         "value": ""
       },
       {
@@ -31,16 +25,22 @@
         "value": ""
       },
       {
-        "value": ""
+        "value": "Items.WHEAT"
       },
       {
-        "value": ""
+        "value": "Items.WATER_BUCKET"
+      },
+      {
+        "value": "Items.WHEAT"
+      },
+      {
+        "value": "Items.WHEAT"
       }
     ],
     "recipeReturnStack": {
-      "value": "CUSTOM:CopperRod"
+      "value": "CUSTOM:Dumpling"
     },
-    "name": "copper_rod_repair",
+    "name": "dumpling",
     "namespace": "mod"
   }
 }

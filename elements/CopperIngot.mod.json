@@ -3,7 +3,7 @@
   "_type": "item",
   "definition": {
     "renderType": 0,
-    "texture": "placeholder",
+    "texture": "copper_ingot",
     "customModelName": "Normal",
     "name": "Copper Ingot",
     "rarity": "COMMON",

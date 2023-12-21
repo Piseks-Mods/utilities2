@@ -1,0 +1,44 @@
+{
+  "_fv": 34,
+  "_type": "item",
+  "definition": {
+    "renderType": 0,
+    "texture": "fish_tin_can",
+    "customModelName": "Normal",
+    "name": "Canned Food",
+    "rarity": "COMMON",
+    "creativeTab": {
+      "value": "CUSTOM:PUiiFood"
+    },
+    "stackSize": 16,
+    "enchantability": 0,
+    "useDuration": 32,
+    "toolType": 1.0,
+    "damageCount": 0,
+    "recipeRemainder": {
+      "value": ""
+    },
+    "destroyAnyBlock": false,
+    "immuneToFire": false,
+    "stayInGridWhenCrafting": false,
+    "damageOnCrafting": false,
+    "enableMeleeDamage": false,
+    "damageVsEntity": 0.0,
+    "specialInfo": [
+      "§7Fish Stew"
+    ],
+    "hasGlow": false,
+    "guiBoundTo": "<NONE>",
+    "inventorySize": 9,
+    "inventoryStackSize": 64,
+    "isFood": true,
+    "nutritionalValue": 6,
+    "saturation": 7.2,
+    "eatResultItem": {
+      "value": "CUSTOM:TinCan"
+    },
+    "isMeat": false,
+    "isAlwaysEdible": false,
+    "animation": "drink"
+  }
+}

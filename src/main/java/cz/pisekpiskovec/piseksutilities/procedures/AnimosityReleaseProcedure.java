@@ -6,6 +6,7 @@ import net.minecraftforge.event.entity.player.PlayerInteractEvent;
 
 import net.minecraft.world.IWorld;
 import net.minecraft.util.text.StringTextComponent;
+import net.minecraft.util.Hand;
 import net.minecraft.util.DamageSource;
 import net.minecraft.item.ItemStack;
 import net.minecraft.entity.player.PlayerEntity;
@@ -66,6 +67,9 @@ public class AnimosityReleaseProcedure {
 						.putDouble("echo",
 								(((sourceentity instanceof LivingEntity) ? ((LivingEntity) sourceentity).getHeldItemMainhand() : ItemStack.EMPTY)
 										.getOrCreateTag().getDouble("echo") - 1));
+				if (entity instanceof LivingEntity) {
+					((LivingEntity) entity).swing(Hand.MAIN_HAND, true);
+				}
 			} else {
 				if (sourceentity instanceof PlayerEntity && !sourceentity.world.isRemote()) {
 					((PlayerEntity) sourceentity).sendStatusMessage(new StringTextComponent("\u00A7cNot enough cycles."), (true));

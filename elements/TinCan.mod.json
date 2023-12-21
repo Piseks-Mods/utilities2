@@ -3,7 +3,7 @@
   "_type": "item",
   "definition": {
     "renderType": 0,
-    "texture": "placeholder",
+    "texture": "tin_can",
     "customModelName": "Normal",
     "name": "Tin Can",
     "rarity": "COMMON",

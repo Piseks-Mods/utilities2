@@ -1,12 +1,12 @@
 {
   "parent": "block/cube",
   "textures": {
-    "down": "piseks_utilities_ii:blocks/placeholder",
-    "up": "piseks_utilities_ii:blocks/placeholder",
-    "north": "piseks_utilities_ii:blocks/placeholder",
-    "east": "piseks_utilities_ii:blocks/placeholder",
-    "south": "piseks_utilities_ii:blocks/placeholder",
-    "west": "piseks_utilities_ii:blocks/placeholder",
-    "particle": "piseks_utilities_ii:blocks/placeholder"
+    "down": "piseks_utilities_ii:blocks/tin_ore",
+    "up": "piseks_utilities_ii:blocks/tin_ore",
+    "north": "piseks_utilities_ii:blocks/tin_ore",
+    "east": "piseks_utilities_ii:blocks/tin_ore",
+    "south": "piseks_utilities_ii:blocks/tin_ore",
+    "west": "piseks_utilities_ii:blocks/tin_ore",
+    "particle": "piseks_utilities_ii:blocks/tin_ore"
   }
 }

@@ -5,10 +5,11 @@ import net.minecraftforge.registries.ObjectHolder;
 
 import net.minecraft.item.Rarity;
 import net.minecraft.item.ItemStack;
-import net.minecraft.item.ItemGroup;
 import net.minecraft.item.Item;
+import net.minecraft.item.Food;
 import net.minecraft.block.BlockState;
 
+import cz.pisekpiskovec.piseksutilities.itemgroup.PUiiFoodItemGroup;
 import cz.pisekpiskovec.piseksutilities.PiseksUtilitiesIiModElements;
 
 @PiseksUtilitiesIiModElements.ModElement.Tag
@@ -27,7 +28,10 @@ public class CookedTropicalFishItem extends PiseksUtilitiesIiModElements.ModElem
 
 	public static class ItemCustom extends Item {
 		public ItemCustom() {
-			super(new Item.Properties().group(ItemGroup.MISC).maxStackSize(64).rarity(Rarity.COMMON));
+			super(new Item.Properties().group(PUiiFoodItemGroup.tab).maxStackSize(64).rarity(Rarity.COMMON)
+					.food((new Food.Builder()).hunger(4).saturation(3.75f)
+
+							.meat().build()));
 			setRegistryName("cooked_tropical_fish");
 		}
 

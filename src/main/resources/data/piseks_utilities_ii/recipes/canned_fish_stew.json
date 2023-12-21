@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "minecraft:carrot"
+    },
+    {
+      "item": "minecraft:salmon"
+    },
+    {
+      "item": "minecraft:potato"
+    },
+    {
+      "item": "piseks_utilities_ii:tin_can"
+    }
+  ],
+  "result": {
+    "item": "piseks_utilities_ii:canned_fish_stew",
+    "count": 1
+  }
+}

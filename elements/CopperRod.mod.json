@@ -3,7 +3,7 @@
   "_type": "tool",
   "definition": {
     "renderType": 0,
-    "texture": "placeholder",
+    "texture": "copper_stick",
     "customModelName": "Normal",
     "name": "Copper Rod",
     "specialInfo": [],
@@ -15,7 +15,7 @@
     "efficiency": 5.0,
     "attackSpeed": 3.0,
     "enchantability": 10,
-    "damageVsEntity": 5.0,
+    "damageVsEntity": 3.0,
     "usageCount": 128,
     "blocksAffected": [],
     "hasGlow": false,

@@ -6,16 +6,10 @@
     "xpReward": 0.0,
     "cookingTime": 200,
     "recipeRetstackSize": 1,
-    "group": "copper_rod",
+    "group": "",
     "recipeShapeless": true,
     "recipeSlots": [
       {
-        "value": "CUSTOM:CopperRod"
-      },
-      {
-        "value": "CUSTOM:CopperRod"
-      },
-      {
         "value": ""
       },
       {
@@ -25,22 +19,28 @@
         "value": ""
       },
       {
-        "value": ""
+        "value": "Items.CARROT"
+      },
+      {
+        "value": "Items.FISH#1"
+      },
+      {
+        "value": "Items.POTATO"
       },
       {
         "value": ""
       },
       {
-        "value": ""
+        "value": "CUSTOM:TinCan"
       },
       {
         "value": ""
       }
     ],
     "recipeReturnStack": {
-      "value": "CUSTOM:CopperRod"
+      "value": "CUSTOM:CannedFishStew"
     },
-    "name": "copper_rod_combine",
+    "name": "canned_fish_stew",
     "namespace": "mod"
   }
 }

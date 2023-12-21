@@ -3,16 +3,16 @@
   "_type": "item",
   "definition": {
     "renderType": 0,
-    "texture": "placeholder",
+    "texture": "cooked_tropical_fish",
     "customModelName": "Normal",
     "name": "Cooked Tropical Fish",
     "rarity": "COMMON",
     "creativeTab": {
-      "value": "MISC"
+      "value": "CUSTOM:PUiiFood"
     },
     "stackSize": 64,
     "enchantability": 0,
-    "useDuration": 0,
+    "useDuration": 32,
     "toolType": 1.0,
     "damageCount": 0,
     "recipeRemainder": {
@@ -29,14 +29,14 @@
     "guiBoundTo": "<NONE>",
     "inventorySize": 9,
     "inventoryStackSize": 64,
-    "isFood": false,
+    "isFood": true,
     "nutritionalValue": 4,
-    "saturation": 0.3,
+    "saturation": 3.75,
     "eatResultItem": {
       "value": ""
     },
-    "isMeat": false,
+    "isMeat": true,
     "isAlwaysEdible": false,
-    "animation": "none"
+    "animation": "eat"
   }
 }

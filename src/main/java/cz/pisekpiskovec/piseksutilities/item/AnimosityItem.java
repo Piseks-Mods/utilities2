@@ -39,7 +39,7 @@ public class AnimosityItem extends PiseksUtilitiesIiModElements.ModElement {
 			}
 
 			public float getAttackDamage() {
-				return 5f;
+				return 2f;
 			}
 
 			public int getHarvestLevel() {
