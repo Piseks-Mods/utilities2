@@ -8,14 +8,14 @@
     "name": "Copper Rod",
     "specialInfo": [],
     "creativeTab": {
-      "value": "CUSTOM:PUiiTools"
+      "value": "CUSTOM:PUiiCombat"
     },
     "toolType": "Sword",
     "harvestLevel": 1,
     "efficiency": 5.0,
     "attackSpeed": 3.0,
     "enchantability": 10,
-    "damageVsEntity": 3.0,
+    "damageVsEntity": 2.0,
     "usageCount": 128,
     "blocksAffected": [],
     "hasGlow": false,

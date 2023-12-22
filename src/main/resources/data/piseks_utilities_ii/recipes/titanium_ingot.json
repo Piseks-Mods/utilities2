@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:blasting",
+  "experience": 0.6,
+  "cookingtime": 200,
+  "ingredient": {
+    "item": "piseks_utilities_ii:titanium_ore"
+  },
+  "result": {
+    "item": "piseks_utilities_ii:titanium_ingot"
+  }
+}

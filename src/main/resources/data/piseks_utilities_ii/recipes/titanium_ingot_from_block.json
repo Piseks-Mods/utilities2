@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "piseks_utilities_ii:titanium_block"
+    }
+  ],
+  "result": {
+    "item": "piseks_utilities_ii:titanium_ingot",
+    "count": 9
+  }
+}

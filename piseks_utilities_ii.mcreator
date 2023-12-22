@@ -2602,6 +2602,60 @@
       "locked_code": false,
       "registry_name": "cheese_craft",
       "path": "~/Food"
+    },
+    {
+      "name": "TitaniumIngot",
+      "type": "item",
+      "sortid": 210,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "titanium_ingot",
+      "path": "~/Titanium"
+    },
+    {
+      "name": "TitaniumOre",
+      "type": "block",
+      "sortid": 211,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "titanium_ore",
+      "path": "~/Titanium"
+    },
+    {
+      "name": "TitaniumBlock",
+      "type": "block",
+      "sortid": 212,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "titanium_block",
+      "path": "~/Titanium"
+    },
+    {
+      "name": "TitaniumIngotSmelt",
+      "type": "recipe",
+      "sortid": 213,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "titanium_ingot_smelt",
+      "path": "~/Titanium"
+    },
+    {
+      "name": "TitaniumBlockCraft",
+      "type": "recipe",
+      "sortid": 214,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "titanium_block_craft",
+      "path": "~/Titanium"
+    },
+    {
+      "name": "TitaniumIngotCraft",
+      "type": "recipe",
+      "sortid": 215,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "titanium_ingot_craft",
+      "path": "~/Titanium"
     }
   ],
   "variable_elements": [],
@@ -2612,8 +2666,8 @@
       "block.piseks_utilities_ii.copper_ore": "Copper Ore",
       "block.piseks_utilities_ii.mud": "Mud",
       "death.attack.charging": "%1$s charged to death.",
-      "item.piseks_utilities_ii.canned_mushroom_stew": "Canned Food",
       "block.piseks_utilities_ii.brushed_soul_glass": "Brushed Soul Glass",
+      "item.piseks_utilities_ii.canned_mushroom_stew": "Canned Food",
       "config.piseks_utilities_ii.config": "piseks_utilities_ii_conf",
       "item.piseks_utilities_ii.roasted_seeds": "Roasted Seeds",
       "block.piseks_utilities_ii.cactus_farm": "Cactus Farm",
@@ -2630,6 +2684,7 @@
       "block.piseks_utilities_ii.reinforced_stone": "Reinforced Stone",
       "block.piseks_utilities_ii.reinforced_redstone": "Reinforced Redstone",
       "item.piseks_utilities_ii.fish_stew": "Fish Stew",
+      "item.piseks_utilities_ii.titanium_ingot": "Titanium Ingot",
       "block.piseks_utilities_ii.thermoemitor": "Thermoemittor",
       "item.piseks_utilities_ii.tin_ingot": "Tin Ingot",
       "block.piseks_utilities_ii.thermoemittor": "Thermoemittor",
@@ -2646,6 +2701,7 @@
       "itemGroup.tabp_uii_tools": "Pisek\u0027s Utilities II: Tools",
       "block.piseks_utilities_ii.charcoal_block": "Block of Charcoal",
       "block.piseks_utilities_ii.wool_farm": "Wool Farm",
+      "block.piseks_utilities_ii.titanium_ore": "Titanium Ore",
       "block.piseks_utilities_ii.upper_bend": "Upper Bend",
       "block.piseks_utilities_ii.copper_block": "Block of Copper",
       "block.piseks_utilities_ii.charged_iron_block": "Block of Charged Iron",
@@ -2661,6 +2717,7 @@
       "block.piseks_utilities_ii.ash": "Ash",
       "item.piseks_utilities_ii.reinforced_boots": "Reinforced Boots",
       "block.piseks_utilities_ii.energy_box_t1": "Energy Box",
+      "block.piseks_utilities_ii.titanium_block": "Block of Titanium",
       "block.piseks_utilities_ii.lightning_rod_t1": "Lightning Rod",
       "itemGroup.tabp_uii_decorations": "Pisek\u0027s Utilities II: Decorations",
       "enchantment.piseks_utilities_ii.grounding": "Grounding",
@@ -2778,6 +2835,10 @@
       },
       {
         "name": "Food",
+        "children": []
+      },
+      {
+        "name": "Titanium",
         "children": []
       }
     ]

@@ -17,7 +17,7 @@ import java.util.HashMap;
 import java.util.AbstractMap;
 
 import cz.pisekpiskovec.piseksutilities.procedures.CopperRodLockProcedure;
-import cz.pisekpiskovec.piseksutilities.itemgroup.PUiiToolsItemGroup;
+import cz.pisekpiskovec.piseksutilities.itemgroup.PUiiCombatItemGroup;
 import cz.pisekpiskovec.piseksutilities.PiseksUtilitiesIiModElements;
 
 @PiseksUtilitiesIiModElements.ModElement.Tag
@@ -41,7 +41,7 @@ public class CopperRodItem extends PiseksUtilitiesIiModElements.ModElement {
 			}
 
 			public float getAttackDamage() {
-				return 1f;
+				return 0f;
 			}
 
 			public int getHarvestLevel() {
@@ -55,7 +55,7 @@ public class CopperRodItem extends PiseksUtilitiesIiModElements.ModElement {
 			public Ingredient getRepairMaterial() {
 				return Ingredient.fromStacks(new ItemStack(CopperIngotItem.block));
 			}
-		}, 3, -1f, new Item.Properties().group(PUiiToolsItemGroup.tab)) {
+		}, 3, -1f, new Item.Properties().group(PUiiCombatItemGroup.tab)) {
 			@Override
 			public void inventoryTick(ItemStack itemstack, World world, Entity entity, int slot, boolean selected) {
 				super.inventoryTick(itemstack, world, entity, slot, selected);
