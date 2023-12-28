@@ -7,7 +7,7 @@ import net.minecraftforge.api.distmarker.Dist;
 import net.minecraft.item.ItemStack;
 import net.minecraft.item.ItemGroup;
 
-import cz.pisekpiskovec.piseksutilities.item.TinCanItem;
+import cz.pisekpiskovec.piseksutilities.item.SaltedMudBallItem;
 import cz.pisekpiskovec.piseksutilities.PiseksUtilitiesIiModElements;
 
 @PiseksUtilitiesIiModElements.ModElement.Tag
@@ -22,7 +22,7 @@ public class PUiiFoodItemGroup extends PiseksUtilitiesIiModElements.ModElement {
 			@OnlyIn(Dist.CLIENT)
 			@Override
 			public ItemStack createIcon() {
-				return new ItemStack(TinCanItem.block);
+				return new ItemStack(SaltedMudBallItem.block);
 			}
 
 			@OnlyIn(Dist.CLIENT)

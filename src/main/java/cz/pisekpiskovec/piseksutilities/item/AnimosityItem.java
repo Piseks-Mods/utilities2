@@ -9,13 +9,13 @@ import net.minecraft.util.text.ITextComponent;
 import net.minecraft.item.crafting.Ingredient;
 import net.minecraft.item.SwordItem;
 import net.minecraft.item.ItemStack;
+import net.minecraft.item.ItemGroup;
 import net.minecraft.item.Item;
 import net.minecraft.item.IItemTier;
 import net.minecraft.client.util.ITooltipFlag;
 
 import java.util.List;
 
-import cz.pisekpiskovec.piseksutilities.itemgroup.PUiiToolsItemGroup;
 import cz.pisekpiskovec.piseksutilities.PiseksUtilitiesIiModElements;
 
 @PiseksUtilitiesIiModElements.ModElement.Tag
@@ -53,7 +53,7 @@ public class AnimosityItem extends PiseksUtilitiesIiModElements.ModElement {
 			public Ingredient getRepairMaterial() {
 				return Ingredient.EMPTY;
 			}
-		}, 3, -2.4f, new Item.Properties().group(PUiiToolsItemGroup.tab).isImmuneToFire()) {
+		}, 3, -2.4f, new Item.Properties().group(ItemGroup.COMBAT).isImmuneToFire()) {
 			@Override
 			public void addInformation(ItemStack itemstack, World world, List<ITextComponent> list, ITooltipFlag flag) {
 				super.addInformation(itemstack, world, list, flag);

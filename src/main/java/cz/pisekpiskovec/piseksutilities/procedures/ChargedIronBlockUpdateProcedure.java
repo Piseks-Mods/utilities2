@@ -37,12 +37,9 @@ public class ChargedIronBlockUpdateProcedure {
 		double x = dependencies.get("x") instanceof Integer ? (int) dependencies.get("x") : (double) dependencies.get("x");
 		double y = dependencies.get("y") instanceof Integer ? (int) dependencies.get("y") : (double) dependencies.get("y");
 		double z = dependencies.get("z") instanceof Integer ? (int) dependencies.get("z") : (double) dependencies.get("z");
-		if (world instanceof World)
-			((World) world).notifyNeighborsOfStateChange(new BlockPos(x, y, z), ((World) world).getBlockState(new BlockPos(x, y, z)).getBlock());
 		if ((world.getBlockState(new BlockPos(x + 1, y, z))).getMaterial() == net.minecraft.block.material.Material.WATER
 				|| (world.getBlockState(new BlockPos(x - 1, y, z))).getMaterial() == net.minecraft.block.material.Material.WATER
 				|| (world.getBlockState(new BlockPos(x, y + 1, z))).getMaterial() == net.minecraft.block.material.Material.WATER
-				|| (world.getBlockState(new BlockPos(x, y - 1, z))).getMaterial() == net.minecraft.block.material.Material.WATER
 				|| (world.getBlockState(new BlockPos(x, y, z + 1))).getMaterial() == net.minecraft.block.material.Material.WATER
 				|| (world.getBlockState(new BlockPos(x, y, z - 1))).getMaterial() == net.minecraft.block.material.Material.WATER || new Object() {
 					public boolean getValue(IWorld world, BlockPos pos, String tag) {

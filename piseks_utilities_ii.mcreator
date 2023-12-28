@@ -2578,23 +2578,6 @@
       "path": "~/Food"
     },
     {
-      "name": "CheeseEaten",
-      "type": "procedure",
-      "sortid": 208,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "cheese_eaten",
-      "metadata": {
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          }
-        ]
-      },
-      "path": "~/Food"
-    },
-    {
       "name": "CheeseCraft",
       "type": "recipe",
       "sortid": 209,
@@ -2712,7 +2695,7 @@
       "block.piseks_utilities_ii.chorus_farm": "Chorus Farm",
       "block.piseks_utilities_ii.mud_brick_wall": "Brick Wall",
       "block.piseks_utilities_ii.iron_drill_head": "Iron Drill Head",
-      "itemGroup.tabp_uii_food": "P Uii Food",
+      "itemGroup.tabp_uii_food": "Pisek\u0027s Utilities II: Food",
       "item.piseks_utilities_ii.dumpling": "Dumpling",
       "block.piseks_utilities_ii.ash": "Ash",
       "item.piseks_utilities_ii.reinforced_boots": "Reinforced Boots",

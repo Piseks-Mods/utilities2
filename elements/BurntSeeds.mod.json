@@ -3,7 +3,7 @@
   "_type": "item",
   "definition": {
     "renderType": 0,
-    "texture": "placeholder",
+    "texture": "burnt_seeds",
     "customModelName": "Normal",
     "name": "Burnt Seeds",
     "rarity": "COMMON",

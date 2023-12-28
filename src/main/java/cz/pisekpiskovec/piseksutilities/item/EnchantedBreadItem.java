@@ -10,6 +10,7 @@ import net.minecraft.util.text.StringTextComponent;
 import net.minecraft.util.text.ITextComponent;
 import net.minecraft.item.Rarity;
 import net.minecraft.item.ItemStack;
+import net.minecraft.item.ItemGroup;
 import net.minecraft.item.Item;
 import net.minecraft.item.Food;
 import net.minecraft.entity.player.PlayerEntity;
@@ -19,7 +20,6 @@ import net.minecraft.block.BlockState;
 
 import java.util.List;
 
-import cz.pisekpiskovec.piseksutilities.itemgroup.PUiiFoodItemGroup;
 import cz.pisekpiskovec.piseksutilities.PiseksUtilitiesIiModElements;
 
 @PiseksUtilitiesIiModElements.ModElement.Tag
@@ -38,7 +38,7 @@ public class EnchantedBreadItem extends PiseksUtilitiesIiModElements.ModElement 
 
 	public static class ItemCustom extends Item {
 		public ItemCustom() {
-			super(new Item.Properties().group(PUiiFoodItemGroup.tab).maxStackSize(1).isImmuneToFire().rarity(Rarity.RARE)
+			super(new Item.Properties().group(ItemGroup.FOOD).maxStackSize(1).isImmuneToFire().rarity(Rarity.RARE)
 					.food((new Food.Builder()).hunger(5).saturation(6f).setAlwaysEdible().build()));
 			setRegistryName("enchanted_bread");
 		}

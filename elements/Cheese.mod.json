@@ -29,9 +29,6 @@
     "guiBoundTo": "<NONE>",
     "inventorySize": 9,
     "inventoryStackSize": 64,
-    "onFinishUsingItem": {
-      "name": "CheeseEaten"
-    },
     "isFood": true,
     "nutritionalValue": 1,
     "saturation": 0.6,
