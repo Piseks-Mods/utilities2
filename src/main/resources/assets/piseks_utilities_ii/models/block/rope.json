@@ -1,0 +1,7 @@
+{
+  "parent": "piseks_utilities_ii:custom/rope",
+  "textures": {
+    "all": "piseks_utilities_ii:blocks/rope",
+    "particle": "piseks_utilities_ii:blocks/rope"
+  }
+}

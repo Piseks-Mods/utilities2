@@ -1,0 +1,7 @@
+{
+  "parent": "block/template_glass_pane_side_alt",
+  "textures": {
+    "edge": "piseks_utilities_ii:blocks/paper_wall_top",
+    "pane": "piseks_utilities_ii:blocks/paper_wall"
+  }
+}

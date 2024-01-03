@@ -1,6 +1,7 @@
 {
   "item.piseks_utilities_ii.cooked_tropical_fish": "Cooked Tropical Fish",
   "block.piseks_utilities_ii.copper_ore": "Copper Ore",
+  "block.piseks_utilities_ii.rope": "Rope",
   "block.piseks_utilities_ii.mud": "Mud",
   "death.attack.charging": "%1$s charged to death.",
   "block.piseks_utilities_ii.brushed_soul_glass": "Brushed Soul Glass",
@@ -18,6 +19,7 @@
   "block.piseks_utilities_ii.machine_grid": "Machine Grid",
   "block.piseks_utilities_ii.fish_farm": "Fish Net",
   "item.piseks_utilities_ii.animosity": "Animosity",
+  "block.piseks_utilities_ii.paper_wall_pane": "Paper Wall Pane",
   "block.piseks_utilities_ii.reinforced_stone": "Reinforced Stone",
   "block.piseks_utilities_ii.reinforced_redstone": "Reinforced Redstone",
   "item.piseks_utilities_ii.fish_stew": "Fish Stew",
@@ -42,6 +44,7 @@
   "block.piseks_utilities_ii.upper_bend": "Upper Bend",
   "block.piseks_utilities_ii.copper_block": "Block of Copper",
   "block.piseks_utilities_ii.charged_iron_block": "Block of Charged Iron",
+  "block.piseks_utilities_ii.paper_wall": "Paper Wall",
   "block.piseks_utilities_ii.cobblestone_farm": "Cobblestone Farm",
   "block.piseks_utilities_ii.urn": "Urn",
   "item.piseks_utilities_ii.charged_iron_ingot": "Charged Iron Ingot",

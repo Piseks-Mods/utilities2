@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "piseks_utilities_ii:blocks/paper_wall",
+    "up": "piseks_utilities_ii:blocks/paper_wall",
+    "north": "piseks_utilities_ii:blocks/paper_wall",
+    "east": "piseks_utilities_ii:blocks/paper_wall",
+    "south": "piseks_utilities_ii:blocks/paper_wall",
+    "west": "piseks_utilities_ii:blocks/paper_wall",
+    "particle": "piseks_utilities_ii:blocks/paper_wall"
+  }
+}
