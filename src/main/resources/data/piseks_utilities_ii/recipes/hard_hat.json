@@ -1,0 +1,38 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "012",
+    "345",
+    "6 8"
+  ],
+  "key": {
+    "0": {
+      "item": "piseks_utilities_ii:reinforced_stone"
+    },
+    "1": {
+      "item": "piseks_utilities_ii:reinforced_stone"
+    },
+    "2": {
+      "item": "piseks_utilities_ii:reinforced_stone"
+    },
+    "3": {
+      "item": "piseks_utilities_ii:reinforced_wood"
+    },
+    "4": {
+      "item": "piseks_utilities_ii:reinforced_wood"
+    },
+    "5": {
+      "item": "piseks_utilities_ii:reinforced_wood"
+    },
+    "6": {
+      "item": "piseks_utilities_ii:reinforced_wood"
+    },
+    "8": {
+      "item": "piseks_utilities_ii:reinforced_wood"
+    }
+  },
+  "result": {
+    "item": "piseks_utilities_ii:reinforced_helmet",
+    "count": 1
+  }
+}
