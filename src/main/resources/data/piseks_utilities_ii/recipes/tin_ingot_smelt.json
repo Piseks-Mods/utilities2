@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:smelting",
+  "experience": 0.7,
+  "cookingtime": 200,
+  "ingredient": {
+    "item": "piseks_utilities_ii:tin_ore"
+  },
+  "result": {
+    "item": "piseks_utilities_ii:tin_ingot"
+  }
+}
