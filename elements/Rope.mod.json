@@ -35,18 +35,18 @@
     ],
     "name": "Rope",
     "specialInfo": [],
-    "hardness": 1.0,
-    "resistance": 1.0,
-    "hasGravity": false,
-    "isWaterloggable": true,
+    "hardness": 0.5,
+    "resistance": 0.5,
+    "hasGravity": true,
+    "isWaterloggable": false,
     "creativeTab": {
       "value": "CUSTOM:PUiiDecorations"
     },
     "destroyTool": "Not specified",
     "customDrop": {
-      "value": ""
+      "value": "Items.STRING"
     },
-    "dropAmount": 1,
+    "dropAmount": 3,
     "useLootTableForDrops": false,
     "requiresCorrectTool": false,
     "enchantPowerBonus": 0.0,
