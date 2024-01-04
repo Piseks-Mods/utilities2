@@ -3,20 +3,12 @@ package cz.pisekpiskovec.piseksutilities.item;
 
 import net.minecraftforge.registries.ObjectHolder;
 
-import net.minecraft.world.World;
 import net.minecraft.item.Rarity;
 import net.minecraft.item.ItemStack;
 import net.minecraft.item.Item;
 import net.minecraft.item.Food;
-import net.minecraft.entity.Entity;
 import net.minecraft.block.BlockState;
 
-import java.util.stream.Stream;
-import java.util.Map;
-import java.util.HashMap;
-import java.util.AbstractMap;
-
-import cz.pisekpiskovec.piseksutilities.procedures.PancakePancakeingProcedure;
 import cz.pisekpiskovec.piseksutilities.itemgroup.PUiiFoodItemGroup;
 import cz.pisekpiskovec.piseksutilities.PiseksUtilitiesIiModElements;
 
@@ -51,18 +43,6 @@ public class PancakeItem extends PiseksUtilitiesIiModElements.ModElement {
 		@Override
 		public float getDestroySpeed(ItemStack par1ItemStack, BlockState par2Block) {
 			return 1F;
-		}
-
-		@Override
-		public void inventoryTick(ItemStack itemstack, World world, Entity entity, int slot, boolean selected) {
-			super.inventoryTick(itemstack, world, entity, slot, selected);
-			double x = entity.getPosX();
-			double y = entity.getPosY();
-			double z = entity.getPosZ();
-
-			PancakePancakeingProcedure
-					.executeProcedure(Stream.of(new AbstractMap.SimpleEntry<>("world", world), new AbstractMap.SimpleEntry<>("itemstack", itemstack))
-							.collect(HashMap::new, (_m, _e) -> _m.put(_e.getKey(), _e.getValue()), Map::putAll));
 		}
 	}
 }

@@ -29,9 +29,6 @@
     "guiBoundTo": "<NONE>",
     "inventorySize": 9,
     "inventoryStackSize": 64,
-    "onItemInInventoryTick": {
-      "name": "PancakePancakeing"
-    },
     "isFood": true,
     "nutritionalValue": 8,
     "saturation": 4.0,

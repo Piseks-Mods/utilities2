@@ -2539,27 +2539,6 @@
       "path": "~/Food"
     },
     {
-      "name": "PancakePancakeing",
-      "type": "procedure",
-      "sortid": 205,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "pancake_pancakeing",
-      "metadata": {
-        "dependencies": [
-          {
-            "name": "itemstack",
-            "type": "itemstack"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ]
-      },
-      "path": "~/Food"
-    },
-    {
       "name": "PancakeCraft",
       "type": "recipe",
       "sortid": 206,
