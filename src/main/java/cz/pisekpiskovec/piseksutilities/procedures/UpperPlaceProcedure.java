@@ -4,15 +4,11 @@ import net.minecraft.world.IWorld;
 import net.minecraft.util.math.RayTraceContext;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.Direction;
-import net.minecraft.state.EnumProperty;
-import net.minecraft.state.DirectionProperty;
 import net.minecraft.entity.Entity;
-import net.minecraft.block.BlockState;
 
 import java.util.Map;
 
 import cz.pisekpiskovec.piseksutilities.block.UpperStraightBlock;
-import cz.pisekpiskovec.piseksutilities.block.UpperBendBlock;
 import cz.pisekpiskovec.piseksutilities.PiseksUtilitiesIiMod;
 
 public class UpperPlaceProcedure {
@@ -56,68 +52,6 @@ public class UpperPlaceProcedure {
 				entity.getEyePosition(1f).add(entity.getLook(1f).x * 5, entity.getLook(1f).y * 5, entity.getLook(1f).z * 5),
 				RayTraceContext.BlockMode.OUTLINE, RayTraceContext.FluidMode.NONE, entity)).getFace()) == Direction.UP) {
 			world.setBlockState(new BlockPos(x, y + 1, z), UpperStraightBlock.block.getDefaultState(), 3);
-		} else if ((entity.world.rayTraceBlocks(new RayTraceContext(entity.getEyePosition(1f),
-				entity.getEyePosition(1f).add(entity.getLook(1f).x * 5, entity.getLook(1f).y * 5, entity.getLook(1f).z * 5),
-				RayTraceContext.BlockMode.OUTLINE, RayTraceContext.FluidMode.NONE, entity)).getFace()) == Direction.NORTH) {
-			world.setBlockState(new BlockPos(x, y, z - 1), UpperBendBlock.block.getDefaultState(), 3);
-			try {
-				BlockState _bs = world.getBlockState(new BlockPos(x, y, z - 1));
-				DirectionProperty _property = (DirectionProperty) _bs.getBlock().getStateContainer().getProperty("facing");
-				if (_property != null) {
-					world.setBlockState(new BlockPos(x, y, z - 1), _bs.with(_property, Direction.SOUTH), 3);
-				} else {
-					world.setBlockState(new BlockPos(x, y, z - 1), _bs.with(
-							(EnumProperty<Direction.Axis>) _bs.getBlock().getStateContainer().getProperty("axis"), Direction.SOUTH.getAxis()), 3);
-				}
-			} catch (Exception e) {
-			}
-		} else if ((entity.world.rayTraceBlocks(new RayTraceContext(entity.getEyePosition(1f),
-				entity.getEyePosition(1f).add(entity.getLook(1f).x * 5, entity.getLook(1f).y * 5, entity.getLook(1f).z * 5),
-				RayTraceContext.BlockMode.OUTLINE, RayTraceContext.FluidMode.NONE, entity)).getFace()) == Direction.SOUTH) {
-			world.setBlockState(new BlockPos(x, y, z + 1), UpperBendBlock.block.getDefaultState(), 3);
-			try {
-				BlockState _bs = world.getBlockState(new BlockPos(x, y, z + 1));
-				DirectionProperty _property = (DirectionProperty) _bs.getBlock().getStateContainer().getProperty("facing");
-				if (_property != null) {
-					world.setBlockState(new BlockPos(x, y, z + 1), _bs.with(_property, Direction.NORTH), 3);
-				} else {
-					world.setBlockState(new BlockPos(x, y, z + 1), _bs.with(
-							(EnumProperty<Direction.Axis>) _bs.getBlock().getStateContainer().getProperty("axis"), Direction.NORTH.getAxis()), 3);
-				}
-			} catch (Exception e) {
-			}
-		} else if ((entity.world.rayTraceBlocks(new RayTraceContext(entity.getEyePosition(1f),
-				entity.getEyePosition(1f).add(entity.getLook(1f).x * 5, entity.getLook(1f).y * 5, entity.getLook(1f).z * 5),
-				RayTraceContext.BlockMode.OUTLINE, RayTraceContext.FluidMode.NONE, entity)).getFace()) == Direction.WEST) {
-			world.setBlockState(new BlockPos(x - 1, y, z), UpperBendBlock.block.getDefaultState(), 3);
-			try {
-				BlockState _bs = world.getBlockState(new BlockPos(x - 1, y, z));
-				DirectionProperty _property = (DirectionProperty) _bs.getBlock().getStateContainer().getProperty("facing");
-				if (_property != null) {
-					world.setBlockState(new BlockPos(x - 1, y, z), _bs.with(_property, Direction.EAST), 3);
-				} else {
-					world.setBlockState(new BlockPos(x - 1, y, z),
-							_bs.with((EnumProperty<Direction.Axis>) _bs.getBlock().getStateContainer().getProperty("axis"), Direction.EAST.getAxis()),
-							3);
-				}
-			} catch (Exception e) {
-			}
-		} else if ((entity.world.rayTraceBlocks(new RayTraceContext(entity.getEyePosition(1f),
-				entity.getEyePosition(1f).add(entity.getLook(1f).x * 5, entity.getLook(1f).y * 5, entity.getLook(1f).z * 5),
-				RayTraceContext.BlockMode.OUTLINE, RayTraceContext.FluidMode.NONE, entity)).getFace()) == Direction.EAST) {
-			world.setBlockState(new BlockPos(x + 1, y, z), UpperBendBlock.block.getDefaultState(), 3);
-			try {
-				BlockState _bs = world.getBlockState(new BlockPos(x + 1, y, z));
-				DirectionProperty _property = (DirectionProperty) _bs.getBlock().getStateContainer().getProperty("facing");
-				if (_property != null) {
-					world.setBlockState(new BlockPos(x + 1, y, z), _bs.with(_property, Direction.WEST), 3);
-				} else {
-					world.setBlockState(new BlockPos(x + 1, y, z),
-							_bs.with((EnumProperty<Direction.Axis>) _bs.getBlock().getStateContainer().getProperty("axis"), Direction.WEST.getAxis()),
-							3);
-				}
-			} catch (Exception e) {
-			}
 		}
 	}
 }
