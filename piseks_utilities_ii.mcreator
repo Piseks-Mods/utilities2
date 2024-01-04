@@ -2719,6 +2719,33 @@
       "locked_code": false,
       "registry_name": "rope_craft",
       "path": "~/Rope"
+    },
+    {
+      "name": "TitaniumChunk",
+      "type": "item",
+      "sortid": 225,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "titanium_chunk",
+      "path": "~/Titanium"
+    },
+    {
+      "name": "TitaniumOreLoot",
+      "type": "loottable",
+      "sortid": 226,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "titanium_ore_loot",
+      "path": "~/Titanium"
+    },
+    {
+      "name": "TitatiumIngotCraftAlt",
+      "type": "recipe",
+      "sortid": 227,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "titatium_ingot_craft_alt",
+      "path": "~/Titanium"
     }
   ],
   "variable_elements": [],
