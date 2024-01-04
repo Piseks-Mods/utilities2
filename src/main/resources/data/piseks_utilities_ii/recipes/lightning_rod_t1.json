@@ -2,13 +2,21 @@
   "group": "lightning_rod",
   "type": "minecraft:crafting_shaped",
   "pattern": [
-    "01"
+    " 1",
+    " 3",
+    "45"
   ],
   "key": {
-    "0": {
+    "1": {
+      "item": "piseks_utilities_ii:copper_ingot"
+    },
+    "3": {
+      "item": "piseks_utilities_ii:copper_ingot"
+    },
+    "4": {
       "item": "piseks_utilities_ii:machine_grid"
     },
-    "1": {
+    "5": {
       "item": "piseks_utilities_ii:mud_brick"
     }
   },
