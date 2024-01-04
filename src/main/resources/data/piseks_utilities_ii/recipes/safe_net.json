@@ -1,0 +1,25 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "01",
+    "23"
+  ],
+  "key": {
+    "0": {
+      "item": "piseks_utilities_ii:rope"
+    },
+    "1": {
+      "item": "piseks_utilities_ii:rope"
+    },
+    "2": {
+      "item": "piseks_utilities_ii:rope"
+    },
+    "3": {
+      "item": "piseks_utilities_ii:rope"
+    }
+  },
+  "result": {
+    "item": "piseks_utilities_ii:safe_net",
+    "count": 1
+  }
+}

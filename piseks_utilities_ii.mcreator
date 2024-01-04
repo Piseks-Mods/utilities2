@@ -2810,6 +2810,23 @@
       "registry_name": "burnt_seeds_blast",
       "path": "~/Food"
     },
+    {
+      "name": "SafeNet",
+      "type": "block",
+      "sortid": 235,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "safe_net",
+      "path": "~/Rope"
+    },
+    {
+      "name": "SafeNetCraft",
+      "type": "recipe",
+      "sortid": 236,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "safe_net_craft",
+      "path": "~/Rope"
     }
   ],
   "variable_elements": [],
@@ -2868,6 +2885,7 @@
       "block.piseks_utilities_ii.mushroom_farm": "Mushroom Farm",
       "block.piseks_utilities_ii.chorus_farm": "Chorus Farm",
       "block.piseks_utilities_ii.mud_brick_wall": "Brick Wall",
+      "block.piseks_utilities_ii.safe_net": "Safe Net",
       "block.piseks_utilities_ii.iron_drill_head": "Iron Drill Head",
       "itemGroup.tabp_uii_food": "Pisek\u0027s Utilities II: Food",
       "item.piseks_utilities_ii.dumpling": "Dumpling",
@@ -2894,6 +2912,7 @@
       "block.piseks_utilities_ii.rotten_flesh_block": "Block of Rotten Flesh",
       "block.piseks_utilities_ii.upper_straight": "Upper Straight",
       "item.piseks_utilities_ii.salted_mud_ball": "Salted Mud Ball",
+      "item.piseks_utilities_ii.titanium_chunk": "Titanium Chunk",
       "item.piseks_utilities_ii.reinforced_leggings": "Reinforced Leggings",
       "item.piseks_utilities_ii.canned_fish_stew": "Canned Food",
       "block.piseks_utilities_ii.mud_brick_stairs": "Brick Stairs",
