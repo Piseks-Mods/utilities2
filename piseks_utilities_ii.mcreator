@@ -2746,6 +2746,17 @@
       "locked_code": false,
       "registry_name": "titatium_ingot_craft_alt",
       "path": "~/Titanium"
+    },
+    {
+      "name": "CopperIngotCraftAlt",
+      "type": "recipe",
+      "sortid": 228,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "copper_ingot_craft_alt",
+      "path": "~/Copper"
+    },
+    {
       "name": "TinIngotSmelt",
       "type": "recipe",
       "sortid": 229,

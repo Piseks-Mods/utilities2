@@ -51,6 +51,7 @@ public class CopperChunkItem extends PiseksUtilitiesIiModElements.ModElement {
 		public void addInformation(ItemStack itemstack, World world, List<ITextComponent> list, ITooltipFlag flag) {
 			super.addInformation(itemstack, world, list, flag);
 			list.add(new StringTextComponent("\u00A76Soon to be replaced!"));
+			list.add(new StringTextComponent("\u00A76Combine 9 Copper Chunks to get 1 Titanium Chunk"));
 		}
 	}
 }

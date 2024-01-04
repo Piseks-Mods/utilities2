@@ -25,7 +25,8 @@
     "enableMeleeDamage": false,
     "damageVsEntity": 0.0,
     "specialInfo": [
-      "§6Soon to be replaced!"
+      "§6Soon to be replaced!",
+      "§6Combine 9 Copper Chunks to get 1 Titanium Chunk"
     ],
     "hasGlow": false,
     "guiBoundTo": "<NONE>",

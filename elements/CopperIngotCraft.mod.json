@@ -38,7 +38,7 @@
       }
     ],
     "recipeReturnStack": {
-      "value": "CUSTOM:CopperIngot"
+      "value": "CUSTOM:TitaniumChunk"
     },
     "name": "copper_ingot_alt",
     "namespace": "mod"
