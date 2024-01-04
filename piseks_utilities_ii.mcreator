@@ -2746,6 +2746,59 @@
       "locked_code": false,
       "registry_name": "titatium_ingot_craft_alt",
       "path": "~/Titanium"
+      "name": "TinIngotSmelt",
+      "type": "recipe",
+      "sortid": 229,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "tin_ingot_smelt",
+      "path": "~/Tin"
+    },
+    {
+      "name": "TinIngotBlast",
+      "type": "recipe",
+      "sortid": 230,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "tin_ingot_blast",
+      "path": "~/Tin"
+    },
+    {
+      "name": "TinIngotCraft",
+      "type": "recipe",
+      "sortid": 231,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "tin_ingot_craft",
+      "path": "~/Tin"
+    },
+    {
+      "name": "TinBlockCraft",
+      "type": "recipe",
+      "sortid": 232,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "tin_block_craft",
+      "path": "~/Tin"
+    },
+    {
+      "name": "HardHatCraft",
+      "type": "recipe",
+      "sortid": 233,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "hard_hat_craft",
+      "path": "~/Reinforced Blocks"
+    },
+    {
+      "name": "BurntSeedsBlast",
+      "type": "recipe",
+      "sortid": 234,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "burnt_seeds_blast",
+      "path": "~/Food"
+    },
     }
   ],
   "variable_elements": [],
