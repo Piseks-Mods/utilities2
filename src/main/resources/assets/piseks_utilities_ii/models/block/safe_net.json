@@ -1,12 +1,9 @@
 {
-  "parent": "block/cube",
+  "parent": "piseks_utilities_ii:custom/safe_net",
   "textures": {
-    "down": "piseks_utilities_ii:blocks/placeholder",
-    "up": "piseks_utilities_ii:blocks/placeholder",
-    "north": "piseks_utilities_ii:blocks/placeholder",
-    "east": "piseks_utilities_ii:blocks/placeholder",
-    "south": "piseks_utilities_ii:blocks/placeholder",
-    "west": "piseks_utilities_ii:blocks/placeholder",
-    "particle": "piseks_utilities_ii:blocks/placeholder"
+    "all": "piseks_utilities_ii:blocks/safe_net_top",
+    "particle": "piseks_utilities_ii:blocks/safe_net_top",
+    "0": "piseks_utilities_ii:blocks/safe_net_top",
+    "1": "piseks_utilities_ii:blocks/safe_net_side"
   }
 }

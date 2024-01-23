@@ -1,0 +1,11 @@
+{
+  "mappings": {
+    "default": {
+      "map": {
+        "0": "safe_net_top",
+        "1": "safe_net_side"
+      },
+      "name": "default"
+    }
+  }
+}

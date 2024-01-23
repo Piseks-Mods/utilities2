@@ -2827,6 +2827,131 @@
       "locked_code": false,
       "registry_name": "safe_net_craft",
       "path": "~/Rope"
+    },
+    {
+      "name": "SafeNetGrow",
+      "type": "procedure",
+      "sortid": 237,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "safe_net_grow",
+      "metadata": {
+        "return_type": "actionresulttype",
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Rope"
+    },
+    {
+      "name": "SafeNetFlag",
+      "type": "procedure",
+      "sortid": 239,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "safe_net_flag",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Rope"
+    },
+    {
+      "name": "SafeNetBreak",
+      "type": "procedure",
+      "sortid": 240,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "safe_net_break",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Rope"
+    },
+    {
+      "name": "SafeNetBreakFlag",
+      "type": "procedure",
+      "sortid": 241,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "safe_net_break_flag",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Rope"
     }
   ],
   "variable_elements": [],
