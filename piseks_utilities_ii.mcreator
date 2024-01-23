@@ -2952,6 +2952,24 @@
         ]
       },
       "path": "~/Rope"
+    },
+    {
+      "name": "RopeExtension",
+      "type": "itemextension",
+      "sortid": 242,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "rope_extension",
+      "path": "~/Rope"
+    },
+    {
+      "name": "SafeNetExtension",
+      "type": "itemextension",
+      "sortid": 243,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "safe_net_extension",
+      "path": "~/Rope"
     }
   ],
   "variable_elements": [],
