@@ -40,7 +40,7 @@
     "hasGravity": false,
     "isWaterloggable": false,
     "creativeTab": {
-      "value": "CUSTOM:PUiiMachines"
+      "value": "CUSTOM:PUiiTools"
     },
     "destroyTool": "Not specified",
     "customDrop": {
