@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "piseks_utilities_ii:block/pillow"
+    },
+    "facing=east": {
+      "model": "piseks_utilities_ii:block/pillow",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "piseks_utilities_ii:block/pillow",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "piseks_utilities_ii:block/pillow",
+      "y": 270
+    }
+  }
+}

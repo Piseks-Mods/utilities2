@@ -2970,6 +2970,53 @@
       "locked_code": false,
       "registry_name": "safe_net_extension",
       "path": "~/Rope"
+    },
+    {
+      "name": "Pillow",
+      "type": "block",
+      "sortid": 244,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "pillow",
+      "path": "~/Pillow"
+    },
+    {
+      "name": "PillowCraft",
+      "type": "recipe",
+      "sortid": 245,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "pillow_craft",
+      "path": "~/Pillow"
+    },
+    {
+      "name": "PillowSoftness",
+      "type": "procedure",
+      "sortid": 246,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "pillow_softness",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Pillow"
     }
   ],
   "variable_elements": [],
@@ -3068,6 +3115,7 @@
       "block.piseks_utilities_ii.copper_crate": "Copper Crate",
       "item.piseks_utilities_ii.mud_brick": "Brick",
       "item.piseks_utilities_ii.canned_rabbit_stew": "Canned Food",
+      "block.piseks_utilities_ii.pillow": "Pillow",
       "item.piseks_utilities_ii.mud_ball": "Mud Ball",
       "item.piseks_utilities_ii.enchanted_bread": "Bread"
     }
@@ -3166,6 +3214,10 @@
       },
       {
         "name": "Rope",
+        "children": []
+      },
+      {
+        "name": "Pillow",
         "children": []
       }
     ]
