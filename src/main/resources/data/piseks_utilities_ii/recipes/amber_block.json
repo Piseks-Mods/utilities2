@@ -1,0 +1,25 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "01",
+    "23"
+  ],
+  "key": {
+    "0": {
+      "item": "piseks_utilities_ii:amber"
+    },
+    "1": {
+      "item": "piseks_utilities_ii:amber"
+    },
+    "2": {
+      "item": "piseks_utilities_ii:amber"
+    },
+    "3": {
+      "item": "piseks_utilities_ii:amber"
+    }
+  },
+  "result": {
+    "item": "piseks_utilities_ii:amber_block",
+    "count": 1
+  }
+}

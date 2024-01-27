@@ -1,8 +1,8 @@
 {
   "parent": "piseks_utilities_ii:custom/pillow",
   "textures": {
-    "all": "piseks_utilities_ii:blocks/ash",
-    "particle": "piseks_utilities_ii:blocks/ash",
-    "missing": "piseks_utilities_ii:blocks/ash"
+    "all": "piseks_utilities_ii:blocks/compressed_feathers",
+    "particle": "piseks_utilities_ii:blocks/compressed_feathers",
+    "missing": "piseks_utilities_ii:blocks/compressed_feathers"
   }
 }

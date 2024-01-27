@@ -1,0 +1,46 @@
+{
+  "_fv": 34,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Crafting",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "recipeRetstackSize": 1,
+    "group": "",
+    "recipeShapeless": false,
+    "recipeSlots": [
+      {
+        "value": "Items.MAGMA_CREAM"
+      },
+      {
+        "value": "Items.MAGMA_CREAM"
+      },
+      {
+        "value": "Items.MAGMA_CREAM"
+      },
+      {
+        "value": "Items.MAGMA_CREAM"
+      },
+      {
+        "value": "Items.MAGMA_CREAM"
+      },
+      {
+        "value": "Items.MAGMA_CREAM"
+      },
+      {
+        "value": "Items.MAGMA_CREAM"
+      },
+      {
+        "value": "Items.MAGMA_CREAM"
+      },
+      {
+        "value": "Items.MAGMA_CREAM"
+      }
+    ],
+    "recipeReturnStack": {
+      "value": "CUSTOM:MagmaCreamBlock"
+    },
+    "name": "magma_cream_block",
+    "namespace": "mod"
+  }
+}

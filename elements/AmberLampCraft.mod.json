@@ -1,0 +1,46 @@
+{
+  "_fv": 34,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Crafting",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "recipeRetstackSize": 1,
+    "group": "",
+    "recipeShapeless": false,
+    "recipeSlots": [
+      {
+        "value": ""
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": "CUSTOM:Amber"
+      },
+      {
+        "value": "Items.LAVA_BUCKET"
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": "CUSTOM:Amber"
+      },
+      {
+        "value": "CUSTOM:Amber"
+      },
+      {
+        "value": ""
+      }
+    ],
+    "recipeReturnStack": {
+      "value": "CUSTOM:AmberLamp"
+    },
+    "name": "amber_lamp",
+    "namespace": "mod"
+  }
+}

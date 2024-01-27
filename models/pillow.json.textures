@@ -2,7 +2,7 @@
   "mappings": {
     "default": {
       "map": {
-        "missing": "ash"
+        "missing": "compressed_feathers"
       },
       "name": "default"
     }

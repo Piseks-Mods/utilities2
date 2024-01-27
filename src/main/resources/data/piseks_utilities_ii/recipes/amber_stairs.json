@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "0 ",
+    "23"
+  ],
+  "key": {
+    "0": {
+      "item": "piseks_utilities_ii:amber"
+    },
+    "2": {
+      "item": "piseks_utilities_ii:amber"
+    },
+    "3": {
+      "item": "piseks_utilities_ii:amber"
+    }
+  },
+  "result": {
+    "item": "piseks_utilities_ii:amber_stairs",
+    "count": 1
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "0"
+  ],
+  "key": {
+    "0": {
+      "item": "piseks_utilities_ii:magma_cream_block"
+    }
+  },
+  "result": {
+    "item": "minecraft:magma_cream",
+    "count": 9
+  }
+}

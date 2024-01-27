@@ -2,15 +2,15 @@
   "_fv": 34,
   "_type": "block",
   "definition": {
-    "texture": "compressed_feathers",
-    "textureTop": "",
-    "textureLeft": "",
-    "textureFront": "",
-    "textureRight": "",
-    "textureBack": "",
-    "renderType": 2,
-    "customModelName": "pillow:default",
-    "rotationMode": 1,
+    "texture": "amber_block",
+    "textureTop": "placeholder",
+    "textureLeft": "placeholder",
+    "textureFront": "placeholder",
+    "textureRight": "placeholder",
+    "textureBack": "placeholder",
+    "renderType": 11,
+    "customModelName": "Single texture",
+    "rotationMode": 0,
     "enablePitch": false,
     "emissiveRendering": false,
     "displayFluidOverlay": false,
@@ -20,41 +20,41 @@
     "isItemTinted": false,
     "hasTransparency": true,
     "connectedSides": false,
-    "transparencyType": "SOLID",
+    "transparencyType": "TRANSLUCENT",
     "disableOffset": false,
     "boundingBoxes": [
       {
         "mx": 0.0,
         "my": 0.0,
-        "mz": 2.491,
+        "mz": 0.0,
         "Mx": 16.0,
-        "My": 6.0,
-        "Mz": 13.509,
+        "My": 16.0,
+        "Mz": 16.0,
         "subtract": false
       }
     ],
-    "name": "Pillow",
+    "name": "Block of Amber",
     "specialInfo": [],
-    "hardness": 0.3,
-    "resistance": 0.3,
-    "hasGravity": true,
+    "hardness": 0.8,
+    "resistance": 0.8,
+    "hasGravity": false,
     "isWaterloggable": false,
     "creativeTab": {
-      "value": "CUSTOM:PUiiDecorations"
+      "value": "CUSTOM:PUiiBuildingBlocks"
     },
-    "destroyTool": "Not specified",
+    "destroyTool": "pickaxe",
     "customDrop": {
-      "value": ""
+      "value": "CUSTOM:Amber"
     },
-    "dropAmount": 1,
+    "dropAmount": 4,
     "useLootTableForDrops": false,
-    "requiresCorrectTool": false,
+    "requiresCorrectTool": true,
     "enchantPowerBonus": 0.0,
     "plantsGrowOn": false,
     "canRedstoneConnect": false,
-    "lightOpacity": 0,
+    "lightOpacity": 10,
     "material": {
-      "value": "CLOTH"
+      "value": "ROCK"
     },
     "tickRate": 0,
     "tickRandomly": false,
@@ -63,38 +63,38 @@
     "emittedRedstonePower": {
       "fixedValue": 15.0
     },
-    "colorOnMap": "CLOTH",
+    "colorOnMap": "DEFAULT",
     "creativePickItem": {
       "value": ""
     },
     "offsetType": "NONE",
-    "aiPathNodeType": "WALKABLE",
-    "flammability": 40,
+    "aiPathNodeType": "DEFAULT",
+    "flammability": 0,
     "fireSpreadSpeed": 0,
     "isLadder": false,
     "slipperiness": 0.6,
-    "speedFactor": 0.7999999999999999,
+    "speedFactor": 1.0,
     "jumpFactor": 1.0,
-    "reactionToPushing": "NORMAL",
+    "reactionToPushing": "BLOCK",
     "isNotColidable": false,
-    "isCustomSoundType": true,
+    "isCustomSoundType": false,
     "soundOnStep": {
-      "value": "CLOTH"
+      "value": "STONE"
     },
     "breakSound": {
-      "value": "entity.chicken.death"
+      "value": ""
     },
     "fallSound": {
-      "value": "entity.chicken.step"
+      "value": ""
     },
     "hitSound": {
-      "value": "entity.chicken.hurt"
+      "value": ""
     },
     "placeSound": {
-      "value": "entity.chicken.ambient"
+      "value": ""
     },
     "stepSound": {
-      "value": "entity.chicken.step"
+      "value": ""
     },
     "luminance": 0,
     "unbreakable": false,
@@ -123,12 +123,6 @@
     "isFluidTank": false,
     "fluidCapacity": 8000,
     "fluidRestrictions": [],
-    "onEntityCollides": {
-      "name": "PillowSoftness"
-    },
-    "onEntityWalksOn": {
-      "name": "PillowSoftness"
-    },
     "spawnWorldTypes": [],
     "restrictionBiomes": [],
     "blocksToReplace": [
