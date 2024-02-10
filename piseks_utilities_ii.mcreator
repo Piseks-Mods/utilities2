@@ -3127,39 +3127,6 @@
       "path": "~/Amber"
     },
     {
-      "name": "AmberLampDestroyed",
-      "type": "procedure",
-      "sortid": 259,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "amber_lamp_destroyed",
-      "metadata": {
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          },
-          {
-            "name": "x",
-            "type": "number"
-          },
-          {
-            "name": "y",
-            "type": "number"
-          },
-          {
-            "name": "z",
-            "type": "number"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ]
-      },
-      "path": "~/Amber"
-    },
-    {
       "name": "MagmaCreamBlock",
       "type": "block",
       "sortid": 260,
