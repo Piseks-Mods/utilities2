@@ -3234,12 +3234,55 @@
       "locked_code": false,
       "registry_name": "thermoemittor_craft",
       "path": "~/Thermoemittor"
+    },
+    {
+      "name": "RedstoneMeter",
+      "type": "block",
+      "sortid": 271,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "redstone_meter",
+      "path": "~/Experimental"
+    },
+    {
+      "name": "RedstoneMeterPrint",
+      "type": "procedure",
+      "sortid": 272,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "redstone_meter_print",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Experimental"
     }
   ],
   "variable_elements": [],
   "sound_elements": [],
   "language_map": {
     "en_us": {
+      "block.piseks_utilities_ii.redstone_meter": "Redstone Meter",
       "death.attack.charging": "%1$s charged to death.",
       "block.piseks_utilities_ii.amber_slab": "Amber Slab",
       "block.piseks_utilities_ii.cactus_farm": "Cactus Farm",

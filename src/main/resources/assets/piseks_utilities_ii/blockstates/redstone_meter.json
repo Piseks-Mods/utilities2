@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "piseks_utilities_ii:block/redstone_meter"
+    },
+    "facing=east": {
+      "model": "piseks_utilities_ii:block/redstone_meter",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "piseks_utilities_ii:block/redstone_meter",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "piseks_utilities_ii:block/redstone_meter",
+      "y": 270
+    }
+  }
+}
