@@ -1136,20 +1136,7 @@
       "compiles": true,
       "locked_code": false,
       "registry_name": "thermoemittor",
-      "path": "~/Experimental"
-    },
-    {
-      "name": "ThermoemittorEnabled",
-      "type": "procedure",
-      "sortid": 89,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "thermoemittor_enabled",
-      "metadata": {
-        "return_type": "logic",
-        "dependencies": []
-      },
-      "path": "~/Experimental"
+      "path": "~/Thermoemittor"
     },
     {
       "name": "ThermoemittorEmitt",
@@ -1183,7 +1170,7 @@
           }
         ]
       },
-      "path": "~/Experimental"
+      "path": "~/Thermoemittor"
     },
     {
       "name": "ThermoemittorUpdate",
@@ -1212,7 +1199,7 @@
           }
         ]
       },
-      "path": "~/Experimental"
+      "path": "~/Thermoemittor"
     },
     {
       "name": "MushroomFarm",
@@ -3238,6 +3225,15 @@
       "locked_code": false,
       "registry_name": "pocket_anvil_craft",
       "path": "~/Pocket Anvil"
+    },
+    {
+      "name": "ThermoemittorCraft",
+      "type": "recipe",
+      "sortid": 270,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "thermoemittor_craft",
+      "path": "~/Thermoemittor"
     }
   ],
   "variable_elements": [],
@@ -3455,6 +3451,10 @@
       },
       {
         "name": "Pocket Anvil",
+        "children": []
+      },
+      {
+        "name": "Thermoemittor",
         "children": []
       }
     ]

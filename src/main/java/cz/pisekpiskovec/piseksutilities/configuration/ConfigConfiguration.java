@@ -13,7 +13,6 @@ public class ConfigConfiguration {
 	public static final ForgeConfigSpec.ConfigValue<Boolean> CHARGED_IRON_SHOCK;
 	public static final ForgeConfigSpec.ConfigValue<Boolean> ENABLE_DAMAGE;
 	public static final ForgeConfigSpec.ConfigValue<Double> DAMAGE;
-	public static final ForgeConfigSpec.ConfigValue<Boolean> ENABLE_THERMOEMITTOR;
 	static {
 		BUILDER.push("Storage Blocks");
 		ASH_EXPLODES = BUILDER.comment("Enable Ash block exploding when mining?").define("Ash Explodes", true);
@@ -29,9 +28,6 @@ public class ConfigConfiguration {
 		BUILDER.push("Soul Glass");
 		ENABLE_DAMAGE = BUILDER.define("Enable Damage", false);
 		DAMAGE = BUILDER.define("Damage", (double) 1);
-		BUILDER.pop();
-		BUILDER.push("experiments");
-		ENABLE_THERMOEMITTOR = BUILDER.comment("Setting this to True will make Thermoemittor placable").define("Enable Thermoemittor", false);
 		BUILDER.pop();
 
 		SPEC = BUILDER.build();

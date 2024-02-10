@@ -3,15 +3,9 @@ package cz.pisekpiskovec.piseksutilities.block;
 
 import net.minecraftforge.registries.ObjectHolder;
 import net.minecraftforge.common.ToolType;
-import net.minecraftforge.api.distmarker.OnlyIn;
-import net.minecraftforge.api.distmarker.Dist;
 
 import net.minecraft.world.World;
-import net.minecraft.world.IWorldReader;
-import net.minecraft.world.IWorld;
 import net.minecraft.world.IBlockReader;
-import net.minecraft.util.text.StringTextComponent;
-import net.minecraft.util.text.ITextComponent;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.Rotation;
 import net.minecraft.util.Mirror;
@@ -24,11 +18,9 @@ import net.minecraft.item.ItemGroup;
 import net.minecraft.item.Item;
 import net.minecraft.item.BlockItemUseContext;
 import net.minecraft.item.BlockItem;
-import net.minecraft.client.util.ITooltipFlag;
 import net.minecraft.block.material.Material;
 import net.minecraft.block.SoundType;
-import net.minecraft.block.HorizontalBlock;
-import net.minecraft.block.Blocks;
+import net.minecraft.block.DirectionalBlock;
 import net.minecraft.block.BlockState;
 import net.minecraft.block.Block;
 
@@ -40,7 +32,6 @@ import java.util.Collections;
 import java.util.AbstractMap;
 
 import cz.pisekpiskovec.piseksutilities.procedures.ThermoemittorUpdateProcedure;
-import cz.pisekpiskovec.piseksutilities.procedures.ThermoemittorEnabledProcedure;
 import cz.pisekpiskovec.piseksutilities.procedures.ThermoemittorEmittProcedure;
 import cz.pisekpiskovec.piseksutilities.PiseksUtilitiesIiModElements;
 
@@ -60,20 +51,13 @@ public class ThermoemittorBlock extends PiseksUtilitiesIiModElements.ModElement 
 	}
 
 	public static class CustomBlock extends Block {
-		public static final DirectionProperty FACING = HorizontalBlock.HORIZONTAL_FACING;
+		public static final DirectionProperty FACING = DirectionalBlock.FACING;
 
 		public CustomBlock() {
 			super(Block.Properties.create(Material.ANVIL).sound(SoundType.STONE).hardnessAndResistance(3f, 3f).setLightLevel(s -> 0).harvestLevel(0)
 					.harvestTool(ToolType.PICKAXE).setRequiresTool());
 			this.setDefaultState(this.stateContainer.getBaseState().with(FACING, Direction.NORTH));
 			setRegistryName("thermoemittor");
-		}
-
-		@Override
-		@OnlyIn(Dist.CLIENT)
-		public void addInformation(ItemStack itemstack, IBlockReader world, List<ITextComponent> list, ITooltipFlag flag) {
-			super.addInformation(itemstack, world, list, flag);
-			list.add(new StringTextComponent("\u00A72Experimental Feature"));
 		}
 
 		@Override
@@ -88,7 +72,7 @@ public class ThermoemittorBlock extends PiseksUtilitiesIiModElements.ModElement 
 
 		@Override
 		public BlockState getStateForPlacement(BlockItemUseContext context) {
-			return this.getDefaultState().with(FACING, context.getPlacementHorizontalFacing().getOpposite());
+			return this.getDefaultState().with(FACING, context.getNearestLookingDirection().getOpposite());
 		}
 
 		public BlockState rotate(BlockState state, Rotation rot) {
@@ -97,26 +81,6 @@ public class ThermoemittorBlock extends PiseksUtilitiesIiModElements.ModElement 
 
 		public BlockState mirror(BlockState state, Mirror mirrorIn) {
 			return state.rotate(mirrorIn.toRotation(state.get(FACING)));
-		}
-
-		@Override
-		public boolean isValidPosition(BlockState blockstate, IWorldReader worldIn, BlockPos pos) {
-			if (worldIn instanceof IWorld) {
-				IWorld world = (IWorld) worldIn;
-				int x = pos.getX();
-				int y = pos.getY();
-				int z = pos.getZ();
-				return ThermoemittorEnabledProcedure.executeProcedure(Collections.emptyMap());
-			}
-			return super.isValidPosition(blockstate, worldIn, pos);
-		}
-
-		@Override
-		public BlockState updatePostPlacement(BlockState state, Direction facing, BlockState facingState, IWorld world, BlockPos currentPos,
-				BlockPos facingPos) {
-			return !state.isValidPosition(world, currentPos)
-					? Blocks.AIR.getDefaultState()
-					: super.updatePostPlacement(state, facing, facingState, world, currentPos, facingPos);
 		}
 
 		@Override

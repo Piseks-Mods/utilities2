@@ -2,15 +2,15 @@
   "_fv": 34,
   "_type": "block",
   "definition": {
-    "texture": "placeholder",
-    "textureTop": "placeholder",
-    "textureLeft": "placeholder",
-    "textureFront": "chorus_flower",
-    "textureRight": "placeholder",
-    "textureBack": "placeholder",
+    "texture": "observer_top",
+    "textureTop": "thermoemittor_top",
+    "textureLeft": "thermoemittor_side",
+    "textureFront": "thermoemittor_front",
+    "textureRight": "thermoemittor_side",
+    "textureBack": "thermoemittor_side",
     "renderType": 10,
     "customModelName": "Normal",
-    "rotationMode": 1,
+    "rotationMode": 2,
     "enablePitch": false,
     "emissiveRendering": false,
     "displayFluidOverlay": false,
@@ -34,9 +34,7 @@
       }
     ],
     "name": "Thermoemittor",
-    "specialInfo": [
-      "§2Experimental Feature"
-    ],
+    "specialInfo": [],
     "hardness": 3.0,
     "resistance": 3.0,
     "hasGravity": false,
@@ -109,9 +107,6 @@
     "particleSpawningShape": "Spread",
     "particleSpawningRadious": 0.5,
     "particleAmount": 4,
-    "placingCondition": {
-      "name": "ThermoemittorEnabled"
-    },
     "hasInventory": false,
     "guiBoundTo": "<NONE>",
     "openGUIOnRightClick": false,
