@@ -1,0 +1,66 @@
+{
+  "_fv": 34,
+  "_type": "gui",
+  "definition": {
+    "type": 1,
+    "width": 176,
+    "height": 146,
+    "inventoryOffsetX": 0,
+    "inventoryOffsetY": -10,
+    "renderBgLayer": true,
+    "doesPauseGame": false,
+    "components": [
+      {
+        "type": "label",
+        "data": {
+          "text": "Pocket Anvil",
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "name": "Pocket Anvil",
+          "x": 141,
+          "y": 59
+        }
+      },
+      {
+        "type": "inputslot",
+        "data": {
+          "inputLimit": {
+            "value": "Items.NAME_TAG"
+          },
+          "id": 0,
+          "disableStackInteraction": false,
+          "dropItemsWhenNotBound": true,
+          "name": "Slot #0",
+          "x": 141,
+          "y": 80
+        }
+      },
+      {
+        "type": "textfield",
+        "data": {
+          "placeholder": "",
+          "width": 120,
+          "height": 20,
+          "name": "itemRenameField",
+          "x": 168,
+          "y": 80
+        }
+      }
+    ],
+    "onOpen": {
+      "name": "PocketAnvilNameUpdate"
+    },
+    "onTick": {
+      "name": "PocketAnvilNameUpdate"
+    },
+    "gridSettings": {
+      "sx": 18,
+      "sy": 18,
+      "ox": 11,
+      "oy": 15,
+      "snapOnGrid": false
+    }
+  }
+}

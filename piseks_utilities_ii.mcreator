@@ -3202,6 +3202,75 @@
       "locked_code": false,
       "registry_name": "magma_cream_from_block",
       "path": "~/Basic Storage Blocks"
+    },
+    {
+      "name": "PocketAnvil",
+      "type": "item",
+      "sortid": 264,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "pocket_anvil",
+      "path": "~/Pocket Anvil"
+    },
+    {
+      "name": "PocketAnvilGUI",
+      "type": "gui",
+      "sortid": 265,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "pocket_anvil_gui",
+      "path": "~/Pocket Anvil"
+    },
+    {
+      "name": "PocketAnvilItemEntered",
+      "type": "procedure",
+      "sortid": 266,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "pocket_anvil_item_entered",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "guistate",
+            "type": "map"
+          }
+        ]
+      },
+      "path": "~/Pocket Anvil"
+    },
+    {
+      "name": "PocketAnvilNameUpdate",
+      "type": "procedure",
+      "sortid": 267,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "pocket_anvil_name_update",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "guistate",
+            "type": "map"
+          }
+        ]
+      },
+      "path": "~/Pocket Anvil"
+    },
+    {
+      "name": "PocketAnvilCraft",
+      "type": "recipe",
+      "sortid": 269,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "pocket_anvil_craft",
+      "path": "~/Pocket Anvil"
     }
   ],
   "variable_elements": [],
@@ -3283,6 +3352,7 @@
       "block.piseks_utilities_ii.wool_farm": "Wool Farm",
       "block.piseks_utilities_ii.copper_block": "Block of Copper",
       "block.piseks_utilities_ii.charged_iron_block": "Block of Charged Iron",
+      "item.piseks_utilities_ii.pocket_anvil": "Pocket Anvil",
       "block.piseks_utilities_ii.urn": "Urn",
       "block.piseks_utilities_ii.chorus_farm": "Chorus Farm",
       "block.piseks_utilities_ii.safe_net": "Safe Net",
@@ -3414,6 +3484,10 @@
       },
       {
         "name": "Amber",
+        "children": []
+      },
+      {
+        "name": "Pocket Anvil",
         "children": []
       }
     ]
