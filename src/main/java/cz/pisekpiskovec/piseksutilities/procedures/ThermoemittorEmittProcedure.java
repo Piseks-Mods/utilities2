@@ -1,19 +1,13 @@
 package cz.pisekpiskovec.piseksutilities.procedures;
 
-import net.minecraftforge.fml.server.ServerLifecycleHooks;
-
 import net.minecraft.world.IWorld;
-import net.minecraft.util.text.StringTextComponent;
-import net.minecraft.util.text.ChatType;
 import net.minecraft.util.math.BlockPos;
-import net.minecraft.util.Util;
 import net.minecraft.util.Direction;
 import net.minecraft.state.Property;
 import net.minecraft.state.IntegerProperty;
 import net.minecraft.state.EnumProperty;
 import net.minecraft.state.DirectionProperty;
 import net.minecraft.state.BooleanProperty;
-import net.minecraft.server.MinecraftServer;
 import net.minecraft.block.Blocks;
 import net.minecraft.block.BlockState;
 
@@ -107,25 +101,12 @@ public class ThermoemittorEmittProcedure {
 			getBlock = (world.getBlockState(new BlockPos(x + 1, y, z)));
 		}
 		if ((getBlock).getBlock() == Blocks.LAVA) {
-			return 15;
-		} else if ((getBlock).getBlock() == Blocks.LAVA) {
-			if (!world.isRemote()) {
-				MinecraftServer mcserv = ServerLifecycleHooks.getCurrentServer();
-				if (mcserv != null)
-					mcserv.getPlayerList().func_232641_a_(
-							new StringTextComponent((new java.text.DecimalFormat("##.########").format(14 - (14 * (15 - (new Object() {
-								public int get(BlockState _bs, String _property) {
-									Property<?> _prop = _bs.getBlock().getStateContainer().getProperty(_property);
-									return _prop instanceof IntegerProperty ? _bs.get((IntegerProperty) _prop) : -1;
-								}
-							}.get((getBlock), "level")))) / 15))), ChatType.SYSTEM, Util.DUMMY_UUID);
-			}
-			return 14 - (14 * (15 - (new Object() {
+			return 15 - (new Object() {
 				public int get(BlockState _bs, String _property) {
 					Property<?> _prop = _bs.getBlock().getStateContainer().getProperty(_property);
 					return _prop instanceof IntegerProperty ? _bs.get((IntegerProperty) _prop) : -1;
 				}
-			}.get((getBlock), "level")))) / 15;
+			}.get((getBlock), "level"));
 		} else if ((getBlock).getBlock() == AmberLampBlock.block) {
 			return 14;
 		} else if ((getBlock).getBlock() == Blocks.BLAST_FURNACE && (new Object() {
