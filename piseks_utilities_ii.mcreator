@@ -3164,7 +3164,7 @@
       "compiles": true,
       "locked_code": false,
       "registry_name": "pocket_anvil",
-      "path": "~/Pocket Anvil"
+      "path": "~/Oddities"
     },
     {
       "name": "PocketAnvilGUI",
@@ -3173,7 +3173,7 @@
       "compiles": true,
       "locked_code": false,
       "registry_name": "pocket_anvil_gui",
-      "path": "~/Pocket Anvil"
+      "path": "~/Oddities"
     },
     {
       "name": "PocketAnvilItemEntered",
@@ -3194,7 +3194,7 @@
           }
         ]
       },
-      "path": "~/Pocket Anvil"
+      "path": "~/Oddities"
     },
     {
       "name": "PocketAnvilNameUpdate",
@@ -3215,7 +3215,7 @@
           }
         ]
       },
-      "path": "~/Pocket Anvil"
+      "path": "~/Oddities"
     },
     {
       "name": "PocketAnvilCraft",
@@ -3224,7 +3224,7 @@
       "compiles": true,
       "locked_code": false,
       "registry_name": "pocket_anvil_craft",
-      "path": "~/Pocket Anvil"
+      "path": "~/Oddities"
     },
     {
       "name": "ThermoemittorCraft",
@@ -3502,7 +3502,7 @@
         "children": []
       },
       {
-        "name": "Pocket Anvil",
+        "name": "Oddities",
         "children": []
       }
     ]

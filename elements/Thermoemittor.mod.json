@@ -40,7 +40,7 @@
     "hasGravity": false,
     "isWaterloggable": false,
     "creativeTab": {
-      "value": "REDSTONE"
+      "value": "CUSTOM:PUiiMachines"
     },
     "destroyTool": "pickaxe",
     "customDrop": {
