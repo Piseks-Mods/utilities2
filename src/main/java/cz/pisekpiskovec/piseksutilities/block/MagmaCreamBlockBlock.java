@@ -61,7 +61,7 @@ public class MagmaCreamBlockBlock extends PiseksUtilitiesIiModElements.ModElemen
 	public static class CustomBlock extends Block {
 		public CustomBlock() {
 			super(Block.Properties.create(Material.LAVA).sound(SoundType.SLIME).hardnessAndResistance(0f, 0f).setLightLevel(s -> 3)
-					.slipperiness(0.7999999999999999f).notSolid().setOpaque((bs, br, bp) -> false));
+					.slipperiness(0.6851980542f).speedFactor(0.6f).notSolid().setOpaque((bs, br, bp) -> false));
 			setRegistryName("magma_cream_block");
 		}
 

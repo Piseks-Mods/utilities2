@@ -3,7 +3,7 @@
   "_type": "item",
   "definition": {
     "renderType": 0,
-    "texture": "pancakes",
+    "texture": "pocket_anvil",
     "customModelName": "Normal",
     "name": "Pocket Anvil",
     "rarity": "COMMON",
