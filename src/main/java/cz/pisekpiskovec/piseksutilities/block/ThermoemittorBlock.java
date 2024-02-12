@@ -14,7 +14,6 @@ import net.minecraft.state.StateContainer;
 import net.minecraft.state.DirectionProperty;
 import net.minecraft.loot.LootContext;
 import net.minecraft.item.ItemStack;
-import net.minecraft.item.ItemGroup;
 import net.minecraft.item.Item;
 import net.minecraft.item.BlockItemUseContext;
 import net.minecraft.item.BlockItem;
@@ -33,6 +32,7 @@ import java.util.AbstractMap;
 
 import cz.pisekpiskovec.piseksutilities.procedures.ThermoemittorUpdateProcedure;
 import cz.pisekpiskovec.piseksutilities.procedures.ThermoemittorEmittProcedure;
+import cz.pisekpiskovec.piseksutilities.itemgroup.PUiiMachinesItemGroup;
 import cz.pisekpiskovec.piseksutilities.PiseksUtilitiesIiModElements;
 
 @PiseksUtilitiesIiModElements.ModElement.Tag
@@ -47,7 +47,8 @@ public class ThermoemittorBlock extends PiseksUtilitiesIiModElements.ModElement 
 	@Override
 	public void initElements() {
 		elements.blocks.add(() -> new CustomBlock());
-		elements.items.add(() -> new BlockItem(block, new Item.Properties().group(ItemGroup.REDSTONE)).setRegistryName(block.getRegistryName()));
+		elements.items
+				.add(() -> new BlockItem(block, new Item.Properties().group(PUiiMachinesItemGroup.tab)).setRegistryName(block.getRegistryName()));
 	}
 
 	public static class CustomBlock extends Block {

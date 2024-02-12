@@ -33,7 +33,7 @@ import java.util.Collections;
 import java.util.AbstractMap;
 
 import cz.pisekpiskovec.piseksutilities.procedures.MagmaCreamBurnProcedure;
-import cz.pisekpiskovec.piseksutilities.itemgroup.PUiiBuildingBlocksItemGroup;
+import cz.pisekpiskovec.piseksutilities.itemgroup.PUiiDecorationsItemGroup;
 import cz.pisekpiskovec.piseksutilities.PiseksUtilitiesIiModElements;
 
 @PiseksUtilitiesIiModElements.ModElement.Tag
@@ -48,8 +48,8 @@ public class MagmaCreamBlockBlock extends PiseksUtilitiesIiModElements.ModElemen
 	@Override
 	public void initElements() {
 		elements.blocks.add(() -> new CustomBlock());
-		elements.items.add(
-				() -> new BlockItem(block, new Item.Properties().group(PUiiBuildingBlocksItemGroup.tab)).setRegistryName(block.getRegistryName()));
+		elements.items
+				.add(() -> new BlockItem(block, new Item.Properties().group(PUiiDecorationsItemGroup.tab)).setRegistryName(block.getRegistryName()));
 	}
 
 	@Override
