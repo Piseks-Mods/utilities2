@@ -2,25 +2,25 @@
   "_fv": 34,
   "_type": "block",
   "definition": {
-    "texture": "brushed_soul_glass",
-    "textureTop": "darkened_glass",
-    "textureLeft": "darkened_glass",
-    "textureFront": "darkened_glass",
-    "textureRight": "darkened_glass",
-    "textureBack": "darkened_glass",
-    "renderType": 11,
-    "customModelName": "Single texture",
+    "texture": "placeholder",
+    "textureTop": "",
+    "textureLeft": "",
+    "textureFront": "",
+    "textureRight": "",
+    "textureBack": "",
+    "renderType": 10,
+    "customModelName": "Normal",
     "rotationMode": 0,
     "enablePitch": false,
     "emissiveRendering": false,
-    "displayFluidOverlay": true,
+    "displayFluidOverlay": false,
     "itemTexture": "",
     "particleTexture": "",
     "tintType": "No tint",
     "isItemTinted": false,
-    "hasTransparency": true,
-    "connectedSides": true,
-    "transparencyType": "TRANSLUCENT",
+    "hasTransparency": false,
+    "connectedSides": false,
+    "transparencyType": "SOLID",
     "disableOffset": false,
     "boundingBoxes": [
       {
@@ -33,14 +33,14 @@
         "subtract": false
       }
     ],
-    "name": "Brushed Soul Glass",
+    "name": "Launcher",
     "specialInfo": [],
-    "hardness": 0.6,
-    "resistance": 0.6,
+    "hardness": 1.5,
+    "resistance": 0.5,
     "hasGravity": false,
     "isWaterloggable": false,
     "creativeTab": {
-      "value": "CUSTOM:PUiiBuildingBlocks"
+      "value": "CUSTOM:PUiiMachines"
     },
     "destroyTool": "pickaxe",
     "customDrop": {
@@ -48,13 +48,13 @@
     },
     "dropAmount": 1,
     "useLootTableForDrops": false,
-    "requiresCorrectTool": false,
+    "requiresCorrectTool": true,
     "enchantPowerBonus": 0.0,
     "plantsGrowOn": false,
-    "canRedstoneConnect": false,
-    "lightOpacity": 7,
+    "canRedstoneConnect": true,
+    "lightOpacity": 15,
     "material": {
-      "value": "GLASS"
+      "value": "ROCK"
     },
     "tickRate": 0,
     "tickRandomly": false,
@@ -73,13 +73,13 @@
     "fireSpreadSpeed": 0,
     "isLadder": false,
     "slipperiness": 0.6,
-    "speedFactor": 0.9,
+    "speedFactor": 1.0,
     "jumpFactor": 1.0,
-    "reactionToPushing": "PUSH_ONLY",
+    "reactionToPushing": "BLOCK",
     "isNotColidable": false,
     "isCustomSoundType": false,
     "soundOnStep": {
-      "value": "GLASS"
+      "value": "LADDER"
     },
     "breakSound": {
       "value": ""
@@ -98,7 +98,7 @@
     },
     "luminance": 0,
     "unbreakable": false,
-    "breakHarvestLevel": 1,
+    "breakHarvestLevel": 0,
     "spawnParticles": false,
     "particleToSpawn": {
       "value": "EXPLOSION_NORMAL"
@@ -106,12 +106,12 @@
     "particleSpawningShape": "Spread",
     "particleSpawningRadious": 0.5,
     "particleAmount": 4,
-    "hasInventory": false,
+    "hasInventory": true,
     "guiBoundTo": "<NONE>",
     "openGUIOnRightClick": false,
-    "inventorySize": 9,
+    "inventorySize": 1,
     "inventoryStackSize": 64,
-    "inventoryDropWhenDestroyed": true,
+    "inventoryDropWhenDestroyed": false,
     "inventoryComparatorPower": true,
     "inventoryOutSlotIDs": [],
     "inventoryInSlotIDs": [],
@@ -123,6 +123,15 @@
     "isFluidTank": false,
     "fluidCapacity": 8000,
     "fluidRestrictions": [],
+    "onRightClicked": {
+      "name": "LauncherStrenghtConfig"
+    },
+    "onBlockAdded": {
+      "name": "LauncherPlaced"
+    },
+    "onEntityWalksOn": {
+      "name": "LauncherLaunch"
+    },
     "spawnWorldTypes": [],
     "restrictionBiomes": [],
     "blocksToReplace": [

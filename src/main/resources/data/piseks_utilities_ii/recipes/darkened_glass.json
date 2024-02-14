@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:blasting",
+  "experience": 0.1,
+  "cookingtime": 50,
+  "ingredient": {
+    "item": "minecraft:black_stained_glass"
+  },
+  "result": {
+    "item": "piseks_utilities_ii:darkened_glass"
+  }
+}

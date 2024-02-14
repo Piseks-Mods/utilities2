@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "piseks_utilities_ii:blocks/darkened_glass",
+    "up": "piseks_utilities_ii:blocks/darkened_glass",
+    "north": "piseks_utilities_ii:blocks/darkened_glass",
+    "east": "piseks_utilities_ii:blocks/darkened_glass",
+    "south": "piseks_utilities_ii:blocks/darkened_glass",
+    "west": "piseks_utilities_ii:blocks/darkened_glass",
+    "particle": "piseks_utilities_ii:blocks/darkened_glass"
+  }
+}

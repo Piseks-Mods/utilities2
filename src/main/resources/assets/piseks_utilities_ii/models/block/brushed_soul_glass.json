@@ -1,7 +1,7 @@
 {
   "parent": "block/cube_all",
   "textures": {
-    "all": "piseks_utilities_ii:blocks/darkened_glass",
-    "particle": "piseks_utilities_ii:blocks/darkened_glass"
+    "all": "piseks_utilities_ii:blocks/brushed_soul_glass",
+    "particle": "piseks_utilities_ii:blocks/brushed_soul_glass"
   }
 }

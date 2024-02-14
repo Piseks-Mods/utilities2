@@ -1,0 +1,20 @@
+{
+  "_fv": 34,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Blasting",
+    "xpReward": 0.1,
+    "cookingTime": 50,
+    "recipeRetstackSize": 1,
+    "group": "",
+    "recipeShapeless": false,
+    "blastingInputStack": {
+      "value": "Blocks.STAINED_GLASS#15"
+    },
+    "blastingReturnStack": {
+      "value": "CUSTOM:DarkenedGlass"
+    },
+    "name": "darkened_glass",
+    "namespace": "mod"
+  }
+}

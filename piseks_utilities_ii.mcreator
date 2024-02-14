@@ -3505,6 +3505,137 @@
         ]
       },
       "path": "~/Machines/Redstone/Echo"
+    },
+    {
+      "name": "DarkenedGlass",
+      "type": "block",
+      "sortid": 287,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "darkened_glass",
+      "path": "~/Oddities"
+    },
+    {
+      "name": "DarkenedGlassSmelt",
+      "type": "recipe",
+      "sortid": 288,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "darkened_glass_smelt",
+      "path": "~/Oddities"
+    },
+    {
+      "name": "Launcher",
+      "type": "block",
+      "sortid": 289,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "launcher",
+      "path": "~/Machines/Redstone/Launcher"
+    },
+    {
+      "name": "LauncherCraft",
+      "type": "recipe",
+      "sortid": 290,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "launcher_craft",
+      "path": "~/Machines/Redstone/Launcher"
+    },
+    {
+      "name": "LauncherPlaced",
+      "type": "procedure",
+      "sortid": 292,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "launcher_placed",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Machines/Redstone/Launcher"
+    },
+    {
+      "name": "LauncherStrenghtConfig",
+      "type": "procedure",
+      "sortid": 293,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "launcher_strength_config",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Machines/Redstone/Launcher"
+    },
+    {
+      "name": "LauncherLaunch",
+      "type": "procedure",
+      "sortid": 294,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "launcher_launch",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Machines/Redstone/Launcher"
     }
   ],
   "variable_elements": [],
@@ -3515,8 +3646,8 @@
       "death.attack.charging": "%1$s charged to death.",
       "item.piseks_utilities_ii.tuning_fork": "Tuning Fork",
       "item.piseks_utilities_ii.brush": "Brush",
-      "block.piseks_utilities_ii.cactus_farm": "Cactus Farm",
       "block.piseks_utilities_ii.amber_slab": "Amber Slab",
+      "block.piseks_utilities_ii.cactus_farm": "Cactus Farm",
       "block.piseks_utilities_ii.netherite_drill_head": "Netherite Drill Head",
       "item.piseks_utilities_ii.apple_pie": "Apple Pie",
       "itemGroup.tabp_uii_building_blocks": "Pisek\u0027s Utilities II: Building Blocks",
@@ -3529,13 +3660,14 @@
       "item.piseks_utilities_ii.tin_ingot": "Tin Ingot",
       "block.piseks_utilities_ii.thermoemittor": "Thermoemittor",
       "item.piseks_utilities_ii.copper_rod": "Copper Rod",
-      "block.piseks_utilities_ii.obsidian_farm": "Obsidian Farm",
       "block.piseks_utilities_ii.basalt_farm": "Basalt Farm",
+      "block.piseks_utilities_ii.obsidian_farm": "Obsidian Farm",
       "block.piseks_utilities_ii.reinforced_glass": "Reinforced Glass",
       "block.piseks_utilities_ii.charcoal_block": "Block of Charcoal",
       "block.piseks_utilities_ii.titanium_ore": "Titanium Ore",
       "block.piseks_utilities_ii.upper_bend": "Upper Bend",
       "block.piseks_utilities_ii.paper_wall": "Paper Wall",
+      "block.piseks_utilities_ii.darkened_glass": "Darkened Glass",
       "block.piseks_utilities_ii.cobblestone_farm": "Cobblestone Farm",
       "item.piseks_utilities_ii.charged_iron_ingot": "Charged Iron Ingot",
       "block.piseks_utilities_ii.mushroom_farm": "Mushroom Farm",
@@ -3571,6 +3703,7 @@
       "block.piseks_utilities_ii.brushed_soul_glass": "Brushed Soul Glass",
       "item.piseks_utilities_ii.canned_mushroom_stew": "Canned Food",
       "config.piseks_utilities_ii.config": "piseks_utilities_ii_conf",
+      "block.piseks_utilities_ii.launcher": "Launcher",
       "item.piseks_utilities_ii.roasted_seeds": "Roasted Seeds",
       "itemGroup.tabp_uii_machines": "Pisek\u0027s Utilities II: Machines",
       "block.piseks_utilities_ii.tin_block": "Block of Tin",
@@ -3679,6 +3812,10 @@
               {
                 "name": "Echo",
                 "children": []
+              },
+              {
+                "name": "Launcher",
+                "children": []
               }
             ]
           }
@@ -3747,20 +3884,19 @@
   "workspaceSettings": {
     "modid": "piseks_utilities_ii",
     "modName": "Pisek\u0027s Utilities 2",
-    "version": "2.0.0.0.5",
+    "version": "2.0.0.0.6",
     "description": "Just some useful items and blocks.",
     "author": "Písek Pískovec",
-    "websiteURL": "https://mcreator.net",
+    "websiteURL": "https://github.com/Piseks-Mods/Utilities2",
     "license": "MIT License",
     "disableForgeVersionCheck": true,
     "serverSideOnly": false,
-    "modPicture": "a5",
+    "modPicture": "a6",
     "requiredMods": [],
     "dependencies": [],
     "dependants": [],
     "mcreatorDependencies": [],
     "currentGenerator": "forge-1.16.5",
-    "credits": "Created using mod maker MCreator - https://mcreator.net/about",
     "modElementsPackage": "cz.pisekpiskovec.piseksutilities",
     "lockBaseModFiles": false
   },
