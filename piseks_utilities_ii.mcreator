@@ -3341,6 +3341,170 @@
       "locked_code": false,
       "registry_name": "brush_craft",
       "path": "~/Oddities"
+    },
+    {
+      "name": "TuningFork",
+      "type": "item",
+      "sortid": 277,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "tuning_fork",
+      "path": "~/Machines/Redstone/Echo"
+    },
+    {
+      "name": "EchoEmittor",
+      "type": "block",
+      "sortid": 278,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "echo_emittor",
+      "path": "~/Machines/Redstone/Echo"
+    },
+    {
+      "name": "EchoReciver",
+      "type": "block",
+      "sortid": 279,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "echo_reciver",
+      "path": "~/Machines/Redstone/Echo"
+    },
+    {
+      "name": "TuningForkTuning",
+      "type": "procedure",
+      "sortid": 280,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "tuning_fork_tuning",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Machines/Redstone/Echo"
+    },
+    {
+      "name": "TuningForkCraft",
+      "type": "recipe",
+      "sortid": 281,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "tuning_fork_craft",
+      "path": "~/Machines/Redstone/Echo"
+    },
+    {
+      "name": "EchoReciverGetRedstone",
+      "type": "procedure",
+      "sortid": 282,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "echo_reciver_get_redstone",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Machines/Redstone/Echo"
+    },
+    {
+      "name": "EchoReciverEmmit",
+      "type": "procedure",
+      "sortid": 283,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "echo_reciver_emmit",
+      "metadata": {
+        "return_type": "number",
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Machines/Redstone/Echo"
+    },
+    {
+      "name": "EchoReciverCraft",
+      "type": "recipe",
+      "sortid": 284,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "echo_reciver_craft",
+      "path": "~/Machines/Redstone/Echo"
+    },
+    {
+      "name": "EchoEmittorCraft",
+      "type": "recipe",
+      "sortid": 285,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "echo_emittor_craft",
+      "path": "~/Machines/Redstone/Echo"
+    },
+    {
+      "name": "TuningForkGlow",
+      "type": "procedure",
+      "sortid": 286,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "tuning_fork_glow",
+      "metadata": {
+        "return_type": "logic",
+        "dependencies": [
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          }
+        ]
+      },
+      "path": "~/Machines/Redstone/Echo"
     }
   ],
   "variable_elements": [],
@@ -3349,6 +3513,7 @@
     "en_us": {
       "block.piseks_utilities_ii.redstone_meter": "Redstone Meter",
       "death.attack.charging": "%1$s charged to death.",
+      "item.piseks_utilities_ii.tuning_fork": "Tuning Fork",
       "item.piseks_utilities_ii.brush": "Brush",
       "block.piseks_utilities_ii.amber_slab": "Amber Slab",
       "block.piseks_utilities_ii.cactus_farm": "Cactus Farm",
@@ -3359,6 +3524,7 @@
       "block.piseks_utilities_ii.paper_wall_pane": "Paper Wall Pane",
       "block.piseks_utilities_ii.reinforced_redstone": "Reinforced Redstone",
       "item.piseks_utilities_ii.titanium_ingot": "Titanium Ingot",
+      "block.piseks_utilities_ii.echo_emittor": "Echo Emittor",
       "block.piseks_utilities_ii.thermoemitor": "Thermoemittor",
       "item.piseks_utilities_ii.tin_ingot": "Tin Ingot",
       "block.piseks_utilities_ii.thermoemittor": "Thermoemittor",
@@ -3389,6 +3555,7 @@
       "block.piseks_utilities_ii.snow_farm": "Snow Farm",
       "item.piseks_utilities_ii.amber": "Amber",
       "block.piseks_utilities_ii.diamond_drill_head": "Diamond Drill Head",
+      "block.piseks_utilities_ii.echo_reciver": "Echo Reciver",
       "item.piseks_utilities_ii.tin_can": "Tin Can",
       "block.piseks_utilities_ii.copper_crate": "Copper Crate",
       "item.piseks_utilities_ii.canned_rabbit_stew": "Canned Food",
@@ -3507,6 +3674,10 @@
             "children": [
               {
                 "name": "Thermoemittor",
+                "children": []
+              },
+              {
+                "name": "Echo",
                 "children": []
               }
             ]

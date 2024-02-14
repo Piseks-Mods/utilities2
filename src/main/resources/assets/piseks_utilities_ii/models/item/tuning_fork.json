@@ -1,0 +1,7 @@
+{
+  "parent": "piseks_utilities_ii:custom/tuning_fork",
+  "textures": {
+    "0": "piseks_utilities_ii:blocks/tuning_fork",
+    "particle": "piseks_utilities_ii:items/tuning_fork"
+  }
+}

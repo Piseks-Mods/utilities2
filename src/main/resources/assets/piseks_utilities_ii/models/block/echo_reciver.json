@@ -1,0 +1,12 @@
+{
+  "parent": "piseks_utilities_ii:custom/echo_reciver",
+  "textures": {
+    "all": "piseks_utilities_ii:blocks/echo_reciver",
+    "particle": "piseks_utilities_ii:blocks/echo_reciver",
+    "0": "piseks_utilities_ii:blocks/machine_grid",
+    "1": "piseks_utilities_ii:blocks/reinforced_stone",
+    "2": "piseks_utilities_ii:blocks/copper_block",
+    "3": "piseks_utilities_ii:blocks/redstone_dust_line0",
+    "4": "piseks_utilities_ii:blocks/tin_block"
+  }
+}

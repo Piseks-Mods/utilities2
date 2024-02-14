@@ -1,6 +1,7 @@
 {
   "block.piseks_utilities_ii.redstone_meter": "Redstone Meter",
   "death.attack.charging": "%1$s charged to death.",
+  "item.piseks_utilities_ii.tuning_fork": "Tuning Fork",
   "item.piseks_utilities_ii.brush": "Brush",
   "block.piseks_utilities_ii.amber_slab": "Amber Slab",
   "block.piseks_utilities_ii.cactus_farm": "Cactus Farm",
@@ -11,6 +12,7 @@
   "block.piseks_utilities_ii.paper_wall_pane": "Paper Wall Pane",
   "block.piseks_utilities_ii.reinforced_redstone": "Reinforced Redstone",
   "item.piseks_utilities_ii.titanium_ingot": "Titanium Ingot",
+  "block.piseks_utilities_ii.echo_emittor": "Echo Emittor",
   "block.piseks_utilities_ii.thermoemitor": "Thermoemittor",
   "item.piseks_utilities_ii.tin_ingot": "Tin Ingot",
   "block.piseks_utilities_ii.thermoemittor": "Thermoemittor",
@@ -41,6 +43,7 @@
   "block.piseks_utilities_ii.snow_farm": "Snow Farm",
   "item.piseks_utilities_ii.amber": "Amber",
   "block.piseks_utilities_ii.diamond_drill_head": "Diamond Drill Head",
+  "block.piseks_utilities_ii.echo_reciver": "Echo Reciver",
   "item.piseks_utilities_ii.tin_can": "Tin Can",
   "block.piseks_utilities_ii.copper_crate": "Copper Crate",
   "item.piseks_utilities_ii.canned_rabbit_stew": "Canned Food",

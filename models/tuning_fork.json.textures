@@ -1,0 +1,10 @@
+{
+  "mappings": {
+    "default": {
+      "map": {
+        "0": "tuning_fork"
+      },
+      "name": "default"
+    }
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "mappings": {
+    "default": {
+      "map": {
+        "0": "machine_grid",
+        "1": "reinforced_stone",
+        "2": "copper_block",
+        "3": "redstone_dust_line0"
+      },
+      "name": "default"
+    }
+  }
+}

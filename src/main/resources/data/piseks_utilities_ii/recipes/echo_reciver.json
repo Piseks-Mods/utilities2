@@ -1,0 +1,29 @@
+{
+  "group": "echo_redstone",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "01 ",
+    "345"
+  ],
+  "key": {
+    "0": {
+      "item": "piseks_utilities_ii:charged_iron_ingot"
+    },
+    "1": {
+      "item": "piseks_utilities_ii:copper_rod"
+    },
+    "3": {
+      "item": "piseks_utilities_ii:machine_grid"
+    },
+    "4": {
+      "item": "minecraft:stone_slab"
+    },
+    "5": {
+      "item": "minecraft:redstone"
+    }
+  },
+  "result": {
+    "item": "piseks_utilities_ii:echo_reciver",
+    "count": 1
+  }
+}
