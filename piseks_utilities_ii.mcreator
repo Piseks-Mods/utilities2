@@ -3636,6 +3636,126 @@
         ]
       },
       "path": "~/Machines/Redstone/Launcher"
+    },
+    {
+      "name": "RedstoneControlledMobKiller",
+      "type": "block",
+      "sortid": 295,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "redstone_controlled_mob_killer",
+      "path": "~/Experimental"
+    },
+    {
+      "name": "RedstoneControlledMobKillerKill",
+      "type": "procedure",
+      "sortid": 296,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "redstone_controlled_mob_killer_kill",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Experimental"
+    },
+    {
+      "name": "PlayerPhaser",
+      "type": "tool",
+      "sortid": 297,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "player_phaser",
+      "path": "~/Experimental"
+    },
+    {
+      "name": "PlayerPhaserPhase",
+      "type": "procedure",
+      "sortid": 298,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "player_phaser_phase",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Experimental"
+    },
+    {
+      "name": "Dice",
+      "type": "item",
+      "sortid": 299,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "dice",
+      "path": "~/Oddities/Plays"
+    },
+    {
+      "name": "Coin",
+      "type": "item",
+      "sortid": 300,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "coin",
+      "path": "~/Oddities/Plays"
+    },
+    {
+      "name": "Play",
+      "type": "item",
+      "sortid": 301,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "play",
+      "path": "~/Oddities/Plays"
+    },
+    {
+      "name": "ThePlay",
+      "type": "procedure",
+      "sortid": 302,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "the_play",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "sourceentity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Oddities/Plays"
     }
   ],
   "variable_elements": [],
@@ -3643,6 +3763,7 @@
   "language_map": {
     "en_us": {
       "block.piseks_utilities_ii.redstone_meter": "Redstone Meter",
+      "item.piseks_utilities_ii.coin": "Coin",
       "death.attack.charging": "%1$s charged to death.",
       "item.piseks_utilities_ii.tuning_fork": "Tuning Fork",
       "item.piseks_utilities_ii.brush": "Brush",
@@ -3662,6 +3783,7 @@
       "item.piseks_utilities_ii.copper_rod": "Copper Rod",
       "block.piseks_utilities_ii.basalt_farm": "Basalt Farm",
       "block.piseks_utilities_ii.obsidian_farm": "Obsidian Farm",
+      "item.piseks_utilities_ii.dice": "Dice",
       "block.piseks_utilities_ii.reinforced_glass": "Reinforced Glass",
       "block.piseks_utilities_ii.charcoal_block": "Block of Charcoal",
       "block.piseks_utilities_ii.titanium_ore": "Titanium Ore",
@@ -3712,6 +3834,7 @@
       "block.piseks_utilities_ii.machine_grid": "Machine Grid",
       "item.piseks_utilities_ii.animosity": "Animosity",
       "block.piseks_utilities_ii.reinforced_stone": "Reinforced Stone",
+      "item.piseks_utilities_ii.play": "Play",
       "item.piseks_utilities_ii.fish_stew": "Fish Stew",
       "item.piseks_utilities_ii.burnt_seeds": "Burnt Seeds",
       "block.piseks_utilities_ii.amber_stairs": "Amber Stairs",
@@ -3720,6 +3843,7 @@
       "enchantment.piseks_utilities_ii.scrapper": "Scrapper",
       "block.piseks_utilities_ii.reinforced_glowstone": "Reinforced Glowstone",
       "item.piseks_utilities_ii.reinforced_chestplate": "Reinforced Body",
+      "block.piseks_utilities_ii.redstone_controlled_mob_killer": "Redstone Controlled Mob Killer",
       "itemGroup.tabp_uii_tools": "Pisek\u0027s Utilities II: Tools",
       "block.piseks_utilities_ii.wool_farm": "Wool Farm",
       "block.piseks_utilities_ii.copper_block": "Block of Copper",
@@ -3749,6 +3873,7 @@
       "item.piseks_utilities_ii.titanium_chunk": "Titanium Chunk",
       "item.piseks_utilities_ii.reinforced_leggings": "Reinforced Leggings",
       "block.piseks_utilities_ii.sugar_cane_farm": "Sugar Cane Farm",
+      "item.piseks_utilities_ii.player_phaser": "Player Phaser",
       "item.piseks_utilities_ii.pasta": "Pasta",
       "block.piseks_utilities_ii.reinforced_wood": "Reinforced Wood",
       "item.piseks_utilities_ii.mud_brick": "Brick"
@@ -3877,7 +4002,12 @@
       },
       {
         "name": "Oddities",
-        "children": []
+        "children": [
+          {
+            "name": "Plays",
+            "children": []
+          }
+        ]
       }
     ]
   },

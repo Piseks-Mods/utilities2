@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "piseks_utilities_ii:blocks/placeholder",
+    "up": "piseks_utilities_ii:blocks/placeholder",
+    "north": "piseks_utilities_ii:blocks/placeholder",
+    "east": "piseks_utilities_ii:blocks/placeholder",
+    "south": "piseks_utilities_ii:blocks/placeholder",
+    "west": "piseks_utilities_ii:blocks/placeholder",
+    "particle": "piseks_utilities_ii:blocks/placeholder"
+  }
+}

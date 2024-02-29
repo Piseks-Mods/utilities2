@@ -80,11 +80,10 @@ public class ScrapperTriggerProcedure {
 					.canHarvestBlock((world.getBlockState(new BlockPos(x, y, z))))) {
 				world.destroyBlock(new BlockPos(x, y, z), false);
 				if (world instanceof World && !world.isRemote()) {
-					((World) world)
-							.addEntity(new ExperienceOrbEntity(((World) world), (x + 0.5), (y + 0.5), (z + 0.5),
-									(int) (EnchantmentHelper.getEnchantmentLevel(Enchantments.FORTUNE,
-											((entity instanceof LivingEntity) ? ((LivingEntity) entity).getHeldItemMainhand() : ItemStack.EMPTY))
-											+ 1)));
+					((World) world).addEntity(new ExperienceOrbEntity(((World) world), (x + 0.5), (y + 0.5), (z + 0.5), (int) (world
+							.getBlockState(new BlockPos(x, y, z)).getHarvestLevel()
+							* (EnchantmentHelper.getEnchantmentLevel(Enchantments.FORTUNE,
+									((entity instanceof LivingEntity) ? ((LivingEntity) entity).getHeldItemMainhand() : ItemStack.EMPTY)) + 1))));
 				}
 			}
 		}
