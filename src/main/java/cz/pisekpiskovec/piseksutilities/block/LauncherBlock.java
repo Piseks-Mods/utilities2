@@ -36,6 +36,7 @@ import net.minecraft.inventory.container.INamedContainerProvider;
 import net.minecraft.inventory.container.Container;
 import net.minecraft.inventory.container.ChestContainer;
 import net.minecraft.inventory.ItemStackHelper;
+import net.minecraft.inventory.InventoryHelper;
 import net.minecraft.inventory.ISidedInventory;
 import net.minecraft.entity.player.PlayerInventory;
 import net.minecraft.entity.player.PlayerEntity;
@@ -185,6 +186,19 @@ public class LauncherBlock extends PiseksUtilitiesIiModElements.ModElement {
 			super.eventReceived(state, world, pos, eventID, eventParam);
 			TileEntity tileentity = world.getTileEntity(pos);
 			return tileentity == null ? false : tileentity.receiveClientEvent(eventID, eventParam);
+		}
+
+		@Override
+		public void onReplaced(BlockState state, World world, BlockPos pos, BlockState newState, boolean isMoving) {
+			if (state.getBlock() != newState.getBlock()) {
+				TileEntity tileentity = world.getTileEntity(pos);
+				if (tileentity instanceof CustomTileEntity) {
+					InventoryHelper.dropInventoryItems(world, pos, (CustomTileEntity) tileentity);
+					world.updateComparatorOutputLevel(pos, this);
+				}
+
+				super.onReplaced(state, world, pos, newState, isMoving);
+			}
 		}
 
 		@Override
