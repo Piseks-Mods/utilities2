@@ -3986,7 +3986,7 @@
   "workspaceSettings": {
     "modid": "piseks_utilities_ii",
     "modName": "Pisek\u0027s Utilities 2",
-    "version": "2.0.0.0.6",
+    "version": "2.0.0.0.7",
     "description": "Just some useful items and blocks.",
     "author": "Písek Pískovec",
     "websiteURL": "https://github.com/Piseks-Mods/Utilities2",
@@ -3999,6 +3999,7 @@
     "dependants": [],
     "mcreatorDependencies": [],
     "currentGenerator": "forge-1.16.5",
+    "credits": "Created using mod maker MCreator - https://mcreator.net/about",
     "modElementsPackage": "cz.pisekpiskovec.piseksutilities",
     "lockBaseModFiles": false
   },
