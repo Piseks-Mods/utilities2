@@ -8,7 +8,6 @@ import net.minecraft.world.World;
 import net.minecraft.world.IWorld;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.tileentity.TileEntity;
-import net.minecraft.item.Items;
 import net.minecraft.block.BlockState;
 import net.minecraft.block.Block;
 
@@ -44,11 +43,7 @@ public class DiamondDrillHeadBreakProcedure {
 		double y = dependencies.get("y") instanceof Integer ? (int) dependencies.get("y") : (double) dependencies.get("y");
 		double z = dependencies.get("z") instanceof Integer ? (int) dependencies.get("z") : (double) dependencies.get("z");
 		if (((world instanceof World) ? ((World) world).isBlockPowered(new BlockPos(x, y, z)) : false) && !world.isAirBlock(new BlockPos(x, y + 1, z))
-				&& (Items.DIAMOND_SWORD.canHarvestBlock((world.getBlockState(new BlockPos(x, y + 1, z))))
-						|| Items.DIAMOND_SHOVEL.canHarvestBlock((world.getBlockState(new BlockPos(x, y + 1, z))))
-						|| Items.DIAMOND_PICKAXE.canHarvestBlock((world.getBlockState(new BlockPos(x, y + 1, z))))
-						|| Items.DIAMOND_AXE.canHarvestBlock((world.getBlockState(new BlockPos(x, y + 1, z))))
-						|| Items.DIAMOND_HOE.canHarvestBlock((world.getBlockState(new BlockPos(x, y + 1, z)))))) {
+				&& world.getBlockState(new BlockPos(x, y, z)).getHarvestLevel() <= 3) {
 			new Object() {
 				private int ticks = 0;
 				private float waitTicks;
