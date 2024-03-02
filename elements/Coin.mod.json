@@ -6,7 +6,7 @@
     "texture": "pancakes",
     "customModelName": "Normal",
     "name": "Coin",
-    "rarity": "COMMON",
+    "rarity": "RARE",
     "creativeTab": {
       "value": "MISC"
     },
@@ -24,7 +24,9 @@
     "damageOnCrafting": false,
     "enableMeleeDamage": false,
     "damageVsEntity": 0.0,
-    "specialInfo": [],
+    "specialInfo": [
+      "§2Experimental Feature"
+    ],
     "hasGlow": false,
     "guiBoundTo": "<NONE>",
     "inventorySize": 9,
