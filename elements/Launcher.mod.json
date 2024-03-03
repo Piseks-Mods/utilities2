@@ -2,12 +2,12 @@
   "_fv": 34,
   "_type": "block",
   "definition": {
-    "texture": "placeholder",
-    "textureTop": "",
-    "textureLeft": "",
-    "textureFront": "",
-    "textureRight": "",
-    "textureBack": "",
+    "texture": "reinforced_wood",
+    "textureTop": "launcher_top",
+    "textureLeft": "launcher_side",
+    "textureFront": "launcher_side",
+    "textureRight": "launcher_side",
+    "textureBack": "launcher_side",
     "renderType": 10,
     "customModelName": "Normal",
     "rotationMode": 0,
@@ -54,7 +54,7 @@
     "canRedstoneConnect": true,
     "lightOpacity": 15,
     "material": {
-      "value": "ROCK"
+      "value": "ANVIL"
     },
     "tickRate": 0,
     "tickRandomly": false,
@@ -77,24 +77,24 @@
     "jumpFactor": 1.0,
     "reactionToPushing": "BLOCK",
     "isNotColidable": false,
-    "isCustomSoundType": false,
+    "isCustomSoundType": true,
     "soundOnStep": {
       "value": "LADDER"
     },
     "breakSound": {
-      "value": ""
+      "value": "block.wood.break"
     },
     "fallSound": {
-      "value": ""
+      "value": "block.metal.fall"
     },
     "hitSound": {
-      "value": ""
+      "value": "block.wood.hit"
     },
     "placeSound": {
-      "value": ""
+      "value": "block.wood.place"
     },
     "stepSound": {
-      "value": ""
+      "value": "block.metal.step"
     },
     "luminance": 0,
     "unbreakable": false,

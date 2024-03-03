@@ -9,10 +9,10 @@
       "item": "minecraft:redstone"
     },
     "1": {
-      "item": "minecraft:iron_bars"
+      "item": "piseks_utilities_ii:titanium_ingot"
     },
     "2": {
-      "tag": "minecraft:planks"
+      "item": "piseks_utilities_ii:reinforced_wood"
     },
     "3": {
       "item": "minecraft:gunpowder"

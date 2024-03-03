@@ -22,13 +22,13 @@
         "value": "Items.REDSTONE"
       },
       {
-        "value": "Blocks.IRON_BARS"
+        "value": "CUSTOM:TitaniumIngot"
       },
       {
         "value": ""
       },
       {
-        "value": "Blocks.PLANKS"
+        "value": "CUSTOM:ReinforcedWood"
       },
       {
         "value": "Items.GUNPOWDER"
