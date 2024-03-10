@@ -1,0 +1,28 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "012",
+    "3 5"
+  ],
+  "key": {
+    "0": {
+      "item": "minecraft:bone_block"
+    },
+    "1": {
+      "item": "minecraft:bone_block"
+    },
+    "2": {
+      "item": "minecraft:bone_block"
+    },
+    "3": {
+      "item": "minecraft:bone"
+    },
+    "5": {
+      "item": "minecraft:bone"
+    }
+  },
+  "result": {
+    "item": "piseks_utilities_ii:skeleton_helmet",
+    "count": 1
+  }
+}
