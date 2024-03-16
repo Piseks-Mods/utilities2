@@ -13,6 +13,7 @@ import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.Entity;
 
+import java.util.Random;
 import java.util.Map;
 import java.util.HashMap;
 
@@ -58,6 +59,7 @@ public class AnimosityReleaseProcedure {
 		}
 		Entity entity = (Entity) dependencies.get("entity");
 		Entity sourceentity = (Entity) dependencies.get("sourceentity");
+		double healPlayer = 0;
 		if (((sourceentity instanceof LivingEntity) ? ((LivingEntity) sourceentity).getHeldItemMainhand() : ItemStack.EMPTY)
 				.getItem() == AnimosityItem.block) {
 			if (((sourceentity instanceof LivingEntity) ? ((LivingEntity) sourceentity).getHeldItemMainhand() : ItemStack.EMPTY).getOrCreateTag()
@@ -67,8 +69,17 @@ public class AnimosityReleaseProcedure {
 						.putDouble("echo",
 								(((sourceentity instanceof LivingEntity) ? ((LivingEntity) sourceentity).getHeldItemMainhand() : ItemStack.EMPTY)
 										.getOrCreateTag().getDouble("echo") - 1));
-				if (entity instanceof LivingEntity) {
-					((LivingEntity) entity).swing(Hand.MAIN_HAND, true);
+				if (sourceentity instanceof LivingEntity) {
+					((LivingEntity) sourceentity).swing(Hand.MAIN_HAND, true);
+				}
+				healPlayer = ((((sourceentity instanceof LivingEntity) ? ((LivingEntity) sourceentity).getHeldItemMainhand() : ItemStack.EMPTY))
+						.getDamage() - 12);
+				{
+					ItemStack _ist = ((sourceentity instanceof LivingEntity) ? ((LivingEntity) sourceentity).getHeldItemMainhand() : ItemStack.EMPTY);
+					if (_ist.attemptDamageItem((int) (-12), new Random(), null)) {
+						_ist.shrink(1);
+						_ist.setDamage(0);
+					}
 				}
 			} else {
 				if (sourceentity instanceof PlayerEntity && !sourceentity.world.isRemote()) {

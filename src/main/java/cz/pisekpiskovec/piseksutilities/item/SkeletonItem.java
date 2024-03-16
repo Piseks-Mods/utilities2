@@ -81,13 +81,13 @@ public class SkeletonItem extends PiseksUtilitiesIiModElements.ModElement {
 		elements.items.add(() -> new ArmorItem(armormaterial, EquipmentSlotType.HEAD, new Item.Properties().group(PUiiCombatItemGroup.tab)) {
 			@Override
 			public String getArmorTexture(ItemStack stack, Entity entity, EquipmentSlotType slot, String type) {
-				return "piseks_utilities_ii:textures/models/armor/empty__layer_" + (slot == EquipmentSlotType.LEGS ? "2" : "1") + ".png";
+				return "piseks_utilities_ii:textures/models/armor/skeleton_armor__layer_" + (slot == EquipmentSlotType.LEGS ? "2" : "1") + ".png";
 			}
 		}.setRegistryName("skeleton_helmet"));
 		elements.items.add(() -> new ArmorItem(armormaterial, EquipmentSlotType.CHEST, new Item.Properties().group(PUiiCombatItemGroup.tab)) {
 			@Override
 			public String getArmorTexture(ItemStack stack, Entity entity, EquipmentSlotType slot, String type) {
-				return "piseks_utilities_ii:textures/models/armor/empty__layer_" + (slot == EquipmentSlotType.LEGS ? "2" : "1") + ".png";
+				return "piseks_utilities_ii:textures/models/armor/skeleton_armor__layer_" + (slot == EquipmentSlotType.LEGS ? "2" : "1") + ".png";
 			}
 		}.setRegistryName("skeleton_chestplate"));
 	}
