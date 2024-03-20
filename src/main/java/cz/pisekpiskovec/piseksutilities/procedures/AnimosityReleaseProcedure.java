@@ -59,7 +59,8 @@ public class AnimosityReleaseProcedure {
 		}
 		Entity entity = (Entity) dependencies.get("entity");
 		Entity sourceentity = (Entity) dependencies.get("sourceentity");
-		double healPlayer = 0;
+		double currentDamage = 0;
+		double newDamage = 0;
 		if (((sourceentity instanceof LivingEntity) ? ((LivingEntity) sourceentity).getHeldItemMainhand() : ItemStack.EMPTY)
 				.getItem() == AnimosityItem.block) {
 			if (((sourceentity instanceof LivingEntity) ? ((LivingEntity) sourceentity).getHeldItemMainhand() : ItemStack.EMPTY).getOrCreateTag()
@@ -72,13 +73,35 @@ public class AnimosityReleaseProcedure {
 				if (sourceentity instanceof LivingEntity) {
 					((LivingEntity) sourceentity).swing(Hand.MAIN_HAND, true);
 				}
-				healPlayer = ((((sourceentity instanceof LivingEntity) ? ((LivingEntity) sourceentity).getHeldItemMainhand() : ItemStack.EMPTY))
-						.getDamage() - 12);
-				{
-					ItemStack _ist = ((sourceentity instanceof LivingEntity) ? ((LivingEntity) sourceentity).getHeldItemMainhand() : ItemStack.EMPTY);
-					if (_ist.attemptDamageItem((int) (-12), new Random(), null)) {
-						_ist.shrink(1);
-						_ist.setDamage(0);
+				if (0 > (((sourceentity instanceof LivingEntity) ? ((LivingEntity) sourceentity).getHeldItemMainhand() : ItemStack.EMPTY)).getDamage()
+						- 12) {
+					currentDamage = ((((sourceentity instanceof LivingEntity)
+							? ((LivingEntity) sourceentity).getHeldItemMainhand()
+							: ItemStack.EMPTY)).getDamage());
+					newDamage = ((((sourceentity instanceof LivingEntity) ? ((LivingEntity) sourceentity).getHeldItemMainhand() : ItemStack.EMPTY))
+							.getDamage() - 12);
+					{
+						ItemStack _ist = ((sourceentity instanceof LivingEntity)
+								? ((LivingEntity) sourceentity).getHeldItemMainhand()
+								: ItemStack.EMPTY);
+						if (_ist.attemptDamageItem((int) (-12), new Random(), null)) {
+							_ist.shrink(1);
+							_ist.setDamage(0);
+						}
+					}
+					if (sourceentity instanceof LivingEntity)
+						((LivingEntity) sourceentity)
+								.setHealth((float) (((sourceentity instanceof LivingEntity) ? ((LivingEntity) sourceentity).getHealth() : -1)
+										+ Math.abs(newDamage)));
+				} else {
+					{
+						ItemStack _ist = ((sourceentity instanceof LivingEntity)
+								? ((LivingEntity) sourceentity).getHeldItemMainhand()
+								: ItemStack.EMPTY);
+						if (_ist.attemptDamageItem((int) (-12), new Random(), null)) {
+							_ist.shrink(1);
+							_ist.setDamage(0);
+						}
 					}
 				}
 			} else {
