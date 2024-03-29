@@ -27,7 +27,7 @@
     "specialInfo": [],
     "hasGlow": false,
     "guiBoundTo": "PocketAnvilGUI",
-    "inventorySize": 1,
+    "inventorySize": 2,
     "inventoryStackSize": 64,
     "isFood": false,
     "nutritionalValue": 4,

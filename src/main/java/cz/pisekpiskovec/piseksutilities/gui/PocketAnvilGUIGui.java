@@ -20,7 +20,6 @@ import net.minecraft.world.World;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.tileentity.TileEntity;
 import net.minecraft.network.PacketBuffer;
-import net.minecraft.item.Items;
 import net.minecraft.item.ItemStack;
 import net.minecraft.inventory.container.Slot;
 import net.minecraft.inventory.container.ContainerType;
@@ -37,7 +36,9 @@ import java.util.Map;
 import java.util.HashMap;
 import java.util.AbstractMap;
 
-import cz.pisekpiskovec.piseksutilities.procedures.PocketAnvilNameUpdateProcedure;
+import cz.pisekpiskovec.piseksutilities.procedures.PocketAnvilTickProcedure;
+import cz.pisekpiskovec.piseksutilities.procedures.PocketAnvilTakeOutProcedure;
+import cz.pisekpiskovec.piseksutilities.procedures.PocketAnvilFinishProcedure;
 import cz.pisekpiskovec.piseksutilities.PiseksUtilitiesIiModElements;
 import cz.pisekpiskovec.piseksutilities.PiseksUtilitiesIiMod;
 
@@ -78,7 +79,7 @@ public class PocketAnvilGUIGui extends PiseksUtilitiesIiModElements.ModElement {
 			double y = entity.getPosY();
 			double z = entity.getPosZ();
 
-			PocketAnvilNameUpdateProcedure
+			PocketAnvilTickProcedure
 					.executeProcedure(Stream.of(new AbstractMap.SimpleEntry<>("entity", entity), new AbstractMap.SimpleEntry<>("guistate", guistate))
 							.collect(HashMap::new, (_m, _e) -> _m.put(_e.getKey(), _e.getValue()), Map::putAll));
 		}
@@ -102,7 +103,7 @@ public class PocketAnvilGUIGui extends PiseksUtilitiesIiModElements.ModElement {
 			super(containerType, id);
 			this.entity = inv.player;
 			this.world = inv.player.world;
-			this.internal = new ItemStackHandler(1);
+			this.internal = new ItemStackHandler(2);
 			BlockPos pos = null;
 			if (extraData != null) {
 				pos = extraData.readBlockPos();
@@ -140,10 +141,31 @@ public class PocketAnvilGUIGui extends PiseksUtilitiesIiModElements.ModElement {
 					}
 				}
 			}
-			this.customSlots.put(0, this.addSlot(new SlotItemHandler(internal, 0, 16, 34) {
+			this.customSlots.put(0, this.addSlot(new SlotItemHandler(internal, 0, 7, 34) {
+				@Override
+				public ItemStack onTake(PlayerEntity entity, ItemStack stack) {
+					ItemStack retval = super.onTake(entity, stack);
+					GuiContainerMod.this.slotChanged(0, 1, 0);
+					return retval;
+				}
+			}));
+			this.customSlots.put(1, this.addSlot(new SlotItemHandler(internal, 1, 151, 34) {
+				@Override
+				public ItemStack onTake(PlayerEntity entity, ItemStack stack) {
+					ItemStack retval = super.onTake(entity, stack);
+					GuiContainerMod.this.slotChanged(1, 1, 0);
+					return retval;
+				}
+
+				@Override
+				public void onSlotChange(ItemStack a, ItemStack b) {
+					super.onSlotChange(a, b);
+					GuiContainerMod.this.slotChanged(1, 2, b.getCount() - a.getCount());
+				}
+
 				@Override
 				public boolean isItemValid(ItemStack stack) {
-					return (Items.NAME_TAG == stack.getItem());
+					return false;
 				}
 			}));
 			int si;
@@ -153,10 +175,6 @@ public class PocketAnvilGUIGui extends PiseksUtilitiesIiModElements.ModElement {
 					this.addSlot(new Slot(inv, sj + (si + 1) * 9, 0 + 8 + sj * 18, -20 + 84 + si * 18));
 			for (si = 0; si < 9; ++si)
 				this.addSlot(new Slot(inv, si, 0 + 8 + si * 18, -20 + 142));
-
-			PocketAnvilNameUpdateProcedure
-					.executeProcedure(Stream.of(new AbstractMap.SimpleEntry<>("entity", entity), new AbstractMap.SimpleEntry<>("guistate", guistate))
-							.collect(HashMap::new, (_m, _e) -> _m.put(_e.getKey(), _e.getValue()), Map::putAll));
 		}
 
 		public Map<Integer, Slot> get() {
@@ -175,18 +193,18 @@ public class PocketAnvilGUIGui extends PiseksUtilitiesIiModElements.ModElement {
 			if (slot != null && slot.getHasStack()) {
 				ItemStack itemstack1 = slot.getStack();
 				itemstack = itemstack1.copy();
-				if (index < 1) {
-					if (!this.mergeItemStack(itemstack1, 1, this.inventorySlots.size(), true)) {
+				if (index < 2) {
+					if (!this.mergeItemStack(itemstack1, 2, this.inventorySlots.size(), true)) {
 						return ItemStack.EMPTY;
 					}
 					slot.onSlotChange(itemstack1, itemstack);
-				} else if (!this.mergeItemStack(itemstack1, 0, 1, false)) {
-					if (index < 1 + 27) {
-						if (!this.mergeItemStack(itemstack1, 1 + 27, this.inventorySlots.size(), true)) {
+				} else if (!this.mergeItemStack(itemstack1, 0, 2, false)) {
+					if (index < 2 + 27) {
+						if (!this.mergeItemStack(itemstack1, 2 + 27, this.inventorySlots.size(), true)) {
 							return ItemStack.EMPTY;
 						}
 					} else {
-						if (!this.mergeItemStack(itemstack1, 1, 1 + 27, false)) {
+						if (!this.mergeItemStack(itemstack1, 2, 2 + 27, false)) {
 							return ItemStack.EMPTY;
 						}
 					}
@@ -289,10 +307,14 @@ public class PocketAnvilGUIGui extends PiseksUtilitiesIiModElements.ModElement {
 			if (!bound && (playerIn instanceof ServerPlayerEntity)) {
 				if (!playerIn.isAlive() || playerIn instanceof ServerPlayerEntity && ((ServerPlayerEntity) playerIn).hasDisconnected()) {
 					for (int j = 0; j < internal.getSlots(); ++j) {
+						if (j == 1)
+							continue;
 						playerIn.dropItem(internal.extractItem(j, internal.getStackInSlot(j).getCount(), false), false);
 					}
 				} else {
 					for (int i = 0; i < internal.getSlots(); ++i) {
+						if (i == 1)
+							continue;
 						playerIn.inventory.placeItemBackInInventory(playerIn.world,
 								internal.extractItem(i, internal.getStackInSlot(i).getCount(), false));
 					}
@@ -404,5 +426,24 @@ public class PocketAnvilGUIGui extends PiseksUtilitiesIiModElements.ModElement {
 		// security measure to prevent arbitrary chunk generation
 		if (!world.isBlockLoaded(new BlockPos(x, y, z)))
 			return;
+		if (slotID == 0 && changeType == 1) {
+
+			PocketAnvilTakeOutProcedure.executeProcedure(Stream.of(new AbstractMap.SimpleEntry<>("guistate", guistate)).collect(HashMap::new,
+					(_m, _e) -> _m.put(_e.getKey(), _e.getValue()), Map::putAll));
+		}
+		if (slotID == 1 && changeType == 1) {
+
+			PocketAnvilFinishProcedure.executeProcedure(Stream
+					.of(new AbstractMap.SimpleEntry<>("world", world), new AbstractMap.SimpleEntry<>("x", x), new AbstractMap.SimpleEntry<>("y", y),
+							new AbstractMap.SimpleEntry<>("z", z), new AbstractMap.SimpleEntry<>("entity", entity),
+							new AbstractMap.SimpleEntry<>("guistate", guistate))
+					.collect(HashMap::new, (_m, _e) -> _m.put(_e.getKey(), _e.getValue()), Map::putAll));
+		}
+		if (slotID == 1 && changeType == 2) {
+			int amount = meta;
+
+			PocketAnvilTakeOutProcedure.executeProcedure(Stream.of(new AbstractMap.SimpleEntry<>("guistate", guistate)).collect(HashMap::new,
+					(_m, _e) -> _m.put(_e.getKey(), _e.getValue()), Map::putAll));
+		}
 	}
 }

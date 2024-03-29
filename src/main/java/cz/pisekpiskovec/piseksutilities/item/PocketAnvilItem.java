@@ -157,7 +157,7 @@ public class PocketAnvilItem extends PiseksUtilitiesIiModElements.ModElement {
 		}
 
 		private ItemStackHandler createItemHandler() {
-			return new ItemStackHandler(1) {
+			return new ItemStackHandler(2) {
 				@Override
 				public int getSlotLimit(int slot) {
 					return 64;

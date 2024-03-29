@@ -3149,48 +3149,6 @@
       "path": "~/Oddities"
     },
     {
-      "name": "PocketAnvilItemEntered",
-      "type": "procedure",
-      "sortid": 266,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "pocket_anvil_item_entered",
-      "metadata": {
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          },
-          {
-            "name": "guistate",
-            "type": "map"
-          }
-        ]
-      },
-      "path": "~/Oddities"
-    },
-    {
-      "name": "PocketAnvilNameUpdate",
-      "type": "procedure",
-      "sortid": 267,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "pocket_anvil_name_update",
-      "metadata": {
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          },
-          {
-            "name": "guistate",
-            "type": "map"
-          }
-        ]
-      },
-      "path": "~/Oddities"
-    },
-    {
       "name": "PocketAnvilCraft",
       "type": "recipe",
       "sortid": 269,
@@ -3906,6 +3864,81 @@
         ]
       },
       "path": "~/Beans"
+    },
+    {
+      "name": "PocketAnvilTick",
+      "type": "procedure",
+      "sortid": 315,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "pocket_anvil_tick",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "guistate",
+            "type": "map"
+          }
+        ]
+      },
+      "path": "~/Oddities"
+    },
+    {
+      "name": "PocketAnvilTakeOut",
+      "type": "procedure",
+      "sortid": 316,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "pocket_anvil_take_out",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "guistate",
+            "type": "map"
+          }
+        ]
+      },
+      "path": "~/Oddities"
+    },
+    {
+      "name": "PocketAnvilFinish",
+      "type": "procedure",
+      "sortid": 317,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "pocket_anvil_finish",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "guistate",
+            "type": "map"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Oddities"
     }
   ],
   "variable_elements": [],
@@ -3915,11 +3948,11 @@
       "block.piseks_utilities_ii.redstone_meter": "Redstone Meter",
       "item.piseks_utilities_ii.coin": "Coin",
       "item.piseks_utilities_ii.skeleton_chestplate": "Skeleton Ribs",
-      "item.piseks_utilities_ii.tuning_fork": "Tuning Fork",
       "death.attack.charging": "%1$s charged to death.",
+      "item.piseks_utilities_ii.tuning_fork": "Tuning Fork",
       "item.piseks_utilities_ii.brush": "Brush",
-      "block.piseks_utilities_ii.amber_slab": "Amber Slab",
       "block.piseks_utilities_ii.cactus_farm": "Cactus Farm",
+      "block.piseks_utilities_ii.amber_slab": "Amber Slab",
       "block.piseks_utilities_ii.netherite_drill_head": "Netherite Drill Head",
       "item.piseks_utilities_ii.apple_pie": "Apple Pie",
       "itemGroup.tabp_uii_building_blocks": "Pisek\u0027s Utilities II: Building Blocks",
@@ -3941,8 +3974,8 @@
       "block.piseks_utilities_ii.charcoal_block": "Block of Charcoal",
       "block.piseks_utilities_ii.titanium_ore": "Titanium Ore",
       "block.piseks_utilities_ii.upper_bend": "Upper Bend",
-      "block.piseks_utilities_ii.paper_wall": "Paper Wall",
       "block.piseks_utilities_ii.darkened_glass": "Darkened Glass",
+      "block.piseks_utilities_ii.paper_wall": "Paper Wall",
       "block.piseks_utilities_ii.cobblestone_farm": "Cobblestone Farm",
       "item.piseks_utilities_ii.charged_iron_ingot": "Charged Iron Ingot",
       "block.piseks_utilities_ii.mushroom_farm": "Mushroom Farm",

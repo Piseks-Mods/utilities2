@@ -92,7 +92,7 @@ public class PocketAnvilGUIGuiWindow extends ContainerScreen<PocketAnvilGUIGui.G
 	public void init(Minecraft minecraft, int width, int height) {
 		super.init(minecraft, width, height);
 		minecraft.keyboardListener.enableRepeatEvents(true);
-		itemRenameField = new TextFieldWidget(this.font, this.guiLeft + 42, this.guiTop + 33, 120, 20, new StringTextComponent(""));
+		itemRenameField = new TextFieldWidget(this.font, this.guiLeft + 26, this.guiTop + 33, 120, 20, new StringTextComponent(""));
 		guistate.put("text:itemRenameField", itemRenameField);
 		itemRenameField.setMaxStringLength(32767);
 		this.children.add(this.itemRenameField);
