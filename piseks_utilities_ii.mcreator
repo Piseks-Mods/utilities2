@@ -3815,7 +3815,7 @@
       "compiles": true,
       "locked_code": false,
       "registry_name": "gloveof_world_wrapping",
-      "path": "~/Oddities"
+      "path": "~/Experimental"
     },
     {
       "name": "GloveOfWorldWrappingWrap",
@@ -3832,7 +3832,7 @@
           }
         ]
       },
-      "path": "~/Oddities"
+      "path": "~/Experimental"
     },
     {
       "name": "Beany",

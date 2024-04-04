@@ -11,6 +11,7 @@ import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.SoundCategory;
 import net.minecraft.util.ResourceLocation;
 import net.minecraft.item.ItemStack;
+import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.Entity;
 import net.minecraft.client.gui.widget.TextFieldWidget;
@@ -86,5 +87,7 @@ public class PocketAnvilFinishProcedure {
 					(net.minecraft.util.SoundEvent) ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("block.anvil.use")),
 					SoundCategory.PLAYERS, (float) 1, (float) (MathHelper.nextInt(new Random(), (int) 0.9, 1)), false);
 		}
+		if (entity instanceof PlayerEntity)
+			((PlayerEntity) entity).addExperienceLevel(-((int) 1));
 	}
 }

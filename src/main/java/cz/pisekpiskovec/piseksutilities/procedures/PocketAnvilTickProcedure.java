@@ -8,6 +8,7 @@ import net.minecraft.item.ItemStack;
 import net.minecraft.inventory.container.Slot;
 import net.minecraft.inventory.container.Container;
 import net.minecraft.entity.player.ServerPlayerEntity;
+import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.Entity;
 import net.minecraft.client.gui.widget.TextFieldWidget;
@@ -79,49 +80,51 @@ public class PocketAnvilTickProcedure {
 				}
 			}
 		}
-		itemCopy = (new Object() {
-			public ItemStack getItemStack(int sltid, ItemStack _isc) {
-				AtomicReference<ItemStack> _retval = new AtomicReference<>(ItemStack.EMPTY);
-				_isc.getCapability(CapabilityItemHandler.ITEM_HANDLER_CAPABILITY, null).ifPresent(capability -> {
-					_retval.set(capability.getStackInSlot(sltid).copy());
-				});
-				return _retval.get();
-			}
-		}.getItemStack((int) (0), ((entity instanceof LivingEntity) ? ((LivingEntity) entity).getHeldItemMainhand() : ItemStack.EMPTY)));
-		((itemCopy)).setDisplayName(new StringTextComponent((new Object() {
-			public String getText() {
-				TextFieldWidget _tf = (TextFieldWidget) guistate.get("text:itemRenameField");
-				if (_tf != null) {
-					return _tf.getText();
+		if (((entity instanceof PlayerEntity) ? ((PlayerEntity) entity).experienceLevel : 0) >= 1) {
+			itemCopy = (new Object() {
+				public ItemStack getItemStack(int sltid, ItemStack _isc) {
+					AtomicReference<ItemStack> _retval = new AtomicReference<>(ItemStack.EMPTY);
+					_isc.getCapability(CapabilityItemHandler.ITEM_HANDLER_CAPABILITY, null).ifPresent(capability -> {
+						_retval.set(capability.getStackInSlot(sltid).copy());
+					});
+					return _retval.get();
 				}
-				return "";
-			}
-		}.getText())));
-		{
-			ItemStack _isc = ((entity instanceof LivingEntity) ? ((LivingEntity) entity).getHeldItemMainhand() : ItemStack.EMPTY);
-			final ItemStack _setstack = (itemCopy);
-			final int _sltid = (int) (1);
-			_setstack.setCount((int) (new Object() {
-				public int getAmount(int sltid) {
-					if (entity instanceof ServerPlayerEntity) {
-						Container _current = ((ServerPlayerEntity) entity).openContainer;
-						if (_current instanceof Supplier) {
-							Object invobj = ((Supplier) _current).get();
-							if (invobj instanceof Map) {
-								ItemStack stack = ((Slot) ((Map) invobj).get(sltid)).getStack();;
-								if (stack != null)
-									return stack.getCount();
+			}.getItemStack((int) (0), ((entity instanceof LivingEntity) ? ((LivingEntity) entity).getHeldItemMainhand() : ItemStack.EMPTY)));
+			((itemCopy)).setDisplayName(new StringTextComponent((new Object() {
+				public String getText() {
+					TextFieldWidget _tf = (TextFieldWidget) guistate.get("text:itemRenameField");
+					if (_tf != null) {
+						return _tf.getText();
+					}
+					return "";
+				}
+			}.getText())));
+			{
+				ItemStack _isc = ((entity instanceof LivingEntity) ? ((LivingEntity) entity).getHeldItemMainhand() : ItemStack.EMPTY);
+				final ItemStack _setstack = (itemCopy);
+				final int _sltid = (int) (1);
+				_setstack.setCount((int) (new Object() {
+					public int getAmount(int sltid) {
+						if (entity instanceof ServerPlayerEntity) {
+							Container _current = ((ServerPlayerEntity) entity).openContainer;
+							if (_current instanceof Supplier) {
+								Object invobj = ((Supplier) _current).get();
+								if (invobj instanceof Map) {
+									ItemStack stack = ((Slot) ((Map) invobj).get(sltid)).getStack();;
+									if (stack != null)
+										return stack.getCount();
+								}
 							}
 						}
+						return 0;
 					}
-					return 0;
-				}
-			}.getAmount((int) (0))));
-			_isc.getCapability(CapabilityItemHandler.ITEM_HANDLER_CAPABILITY, null).ifPresent(capability -> {
-				if (capability instanceof IItemHandlerModifiable) {
-					((IItemHandlerModifiable) capability).setStackInSlot(_sltid, _setstack);
-				}
-			});
+				}.getAmount((int) (0))));
+				_isc.getCapability(CapabilityItemHandler.ITEM_HANDLER_CAPABILITY, null).ifPresent(capability -> {
+					if (capability instanceof IItemHandlerModifiable) {
+						((IItemHandlerModifiable) capability).setStackInSlot(_sltid, _setstack);
+					}
+				});
+			}
 		}
 	}
 }
