@@ -1,0 +1,41 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "012",
+    "345",
+    "678"
+  ],
+  "key": {
+    "0": {
+      "item": "piseks_utilities_ii:soul_glass"
+    },
+    "1": {
+      "item": "minecraft:nether_star"
+    },
+    "2": {
+      "item": "piseks_utilities_ii:soul_glass"
+    },
+    "3": {
+      "item": "piseks_utilities_ii:soul_glass"
+    },
+    "4": {
+      "item": "minecraft:beef"
+    },
+    "5": {
+      "item": "piseks_utilities_ii:soul_glass"
+    },
+    "6": {
+      "item": "piseks_utilities_ii:soul_glass"
+    },
+    "7": {
+      "item": "piseks_utilities_ii:brushed_soul_glass"
+    },
+    "8": {
+      "item": "piseks_utilities_ii:soul_glass"
+    }
+  },
+  "result": {
+    "item": "piseks_utilities_ii:cow_of_eternity",
+    "count": 1
+  }
+}

@@ -4004,6 +4004,47 @@
       "locked_code": false,
       "registry_name": "cow_of_eternity",
       "path": "~/Oddities/Cow of Eternity"
+    {
+      "name": "CowOfEternityMilking",
+      "type": "procedure",
+      "sortid": 326,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cow_of_eternity_milking",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Oddities/Cow of Eternity"
+    },
+    {
+      "name": "CowOfEternityCraft",
+      "type": "recipe",
+      "sortid": 327,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cow_of_eternity_craft",
+      "path": "~/Oddities/Cow of Eternity"
     }
   ],
   "variable_elements": [],
@@ -4012,6 +4053,7 @@
     "en_us": {
       "block.piseks_utilities_ii.redstone_meter": "Redstone Meter",
       "item.piseks_utilities_ii.coin": "Coin",
+      "block.piseks_utilities_ii.cow_of_eternity": "Cow of Eternity",
       "item.piseks_utilities_ii.skeleton_chestplate": "Skeleton Ribs",
       "death.attack.charging": "%1$s charged to death.",
       "item.piseks_utilities_ii.tuning_fork": "Tuning Fork",
@@ -4284,6 +4326,10 @@
           },
           {
             "name": "Skeleton Armor",
+            "children": []
+          },
+          {
+            "name": "Cow of Eternity",
             "children": []
           }
         ]

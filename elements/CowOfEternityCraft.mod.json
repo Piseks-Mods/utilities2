@@ -1,0 +1,46 @@
+{
+  "_fv": 34,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Crafting",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "recipeRetstackSize": 1,
+    "group": "",
+    "recipeShapeless": false,
+    "recipeSlots": [
+      {
+        "value": "CUSTOM:SoulGlass"
+      },
+      {
+        "value": "Items.NETHER_STAR"
+      },
+      {
+        "value": "CUSTOM:SoulGlass"
+      },
+      {
+        "value": "CUSTOM:SoulGlass"
+      },
+      {
+        "value": "Items.BEEF"
+      },
+      {
+        "value": "CUSTOM:SoulGlass"
+      },
+      {
+        "value": "CUSTOM:SoulGlass"
+      },
+      {
+        "value": "CUSTOM:BrushedSoulGlass"
+      },
+      {
+        "value": "CUSTOM:SoulGlass"
+      }
+    ],
+    "recipeReturnStack": {
+      "value": "CUSTOM:CowOfEternity"
+    },
+    "name": "cow_of_eternity",
+    "namespace": "mod"
+  }
+}
