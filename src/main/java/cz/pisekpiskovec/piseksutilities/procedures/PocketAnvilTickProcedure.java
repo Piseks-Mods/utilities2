@@ -80,7 +80,22 @@ public class PocketAnvilTickProcedure {
 				}
 			}
 		}
-		if (((entity instanceof PlayerEntity) ? ((PlayerEntity) entity).experienceLevel : 0) >= 1) {
+		if (((entity instanceof PlayerEntity) ? ((PlayerEntity) entity).experienceLevel : 0) >= new Object() {
+			public int getAmount(int sltid) {
+				if (entity instanceof ServerPlayerEntity) {
+					Container _current = ((ServerPlayerEntity) entity).openContainer;
+					if (_current instanceof Supplier) {
+						Object invobj = ((Supplier) _current).get();
+						if (invobj instanceof Map) {
+							ItemStack stack = ((Slot) ((Map) invobj).get(sltid)).getStack();;
+							if (stack != null)
+								return stack.getCount();
+						}
+					}
+				}
+				return 0;
+			}
+		}.getAmount((int) (0))) {
 			itemCopy = (new Object() {
 				public ItemStack getItemStack(int sltid, ItemStack _isc) {
 					AtomicReference<ItemStack> _retval = new AtomicReference<>(ItemStack.EMPTY);

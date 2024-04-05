@@ -3137,7 +3137,7 @@
       "compiles": true,
       "locked_code": false,
       "registry_name": "pocket_anvil",
-      "path": "~/Oddities"
+      "path": "~/Oddities/Pocket Anvil"
     },
     {
       "name": "PocketAnvilGUI",
@@ -3146,7 +3146,7 @@
       "compiles": true,
       "locked_code": false,
       "registry_name": "pocket_anvil_gui",
-      "path": "~/Oddities"
+      "path": "~/Oddities/Pocket Anvil"
     },
     {
       "name": "PocketAnvilCraft",
@@ -3155,7 +3155,7 @@
       "compiles": true,
       "locked_code": false,
       "registry_name": "pocket_anvil_craft",
-      "path": "~/Oddities"
+      "path": "~/Oddities/Pocket Anvil"
     },
     {
       "name": "ThermoemittorCraft",
@@ -3215,7 +3215,7 @@
       "compiles": true,
       "locked_code": false,
       "registry_name": "brush",
-      "path": "~/Oddities"
+      "path": "~/Oddities/Brush"
     },
     {
       "name": "BushGUI",
@@ -3224,7 +3224,7 @@
       "compiles": true,
       "locked_code": false,
       "registry_name": "bush_gui",
-      "path": "~/Oddities"
+      "path": "~/Oddities/Brush"
     },
     {
       "name": "BrushRightBrushing",
@@ -3262,7 +3262,7 @@
           }
         ]
       },
-      "path": "~/Oddities"
+      "path": "~/Oddities/Brush"
     },
     {
       "name": "BrushCraft",
@@ -3271,7 +3271,7 @@
       "compiles": true,
       "locked_code": false,
       "registry_name": "brush_craft",
-      "path": "~/Oddities"
+      "path": "~/Oddities/Brush"
     },
     {
       "name": "TuningFork",
@@ -3748,7 +3748,7 @@
         "eb": false,
         "ec": true
       },
-      "path": "~/Oddities"
+      "path": "~/Oddities/Skeleton Armor"
     },
     {
       "name": "SkeletonHelmetCraft",
@@ -3757,7 +3757,7 @@
       "compiles": true,
       "locked_code": false,
       "registry_name": "skeleton_helmet_craft",
-      "path": "~/Oddities"
+      "path": "~/Oddities/Skeleton Armor"
     },
     {
       "name": "SkeletonChestplateCraft",
@@ -3766,7 +3766,7 @@
       "compiles": true,
       "locked_code": false,
       "registry_name": "skeleton_chestplate_craft",
-      "path": "~/Oddities"
+      "path": "~/Oddities/Skeleton Armor"
     },
     {
       "name": "WitherSkeleton",
@@ -3781,7 +3781,7 @@
         "eb": false,
         "ec": true
       },
-      "path": "~/Oddities"
+      "path": "~/Oddities/Skeleton Armor"
     },
     {
       "name": "WitherSkeletonArmorDrop",
@@ -3806,7 +3806,7 @@
           }
         ]
       },
-      "path": "~/Oddities"
+      "path": "~/Oddities/Skeleton Armor"
     },
     {
       "name": "GloveofWorldWrapping",
@@ -3884,7 +3884,7 @@
           }
         ]
       },
-      "path": "~/Oddities"
+      "path": "~/Oddities/Pocket Anvil"
     },
     {
       "name": "PocketAnvilTakeOut",
@@ -3901,7 +3901,7 @@
           }
         ]
       },
-      "path": "~/Oddities"
+      "path": "~/Oddities/Pocket Anvil"
     },
     {
       "name": "PocketAnvilFinish",
@@ -3938,7 +3938,7 @@
           }
         ]
       },
-      "path": "~/Oddities"
+      "path": "~/Oddities/Pocket Anvil"
     }
   ],
   "variable_elements": [],
@@ -3948,11 +3948,11 @@
       "block.piseks_utilities_ii.redstone_meter": "Redstone Meter",
       "item.piseks_utilities_ii.coin": "Coin",
       "item.piseks_utilities_ii.skeleton_chestplate": "Skeleton Ribs",
-      "death.attack.charging": "%1$s charged to death.",
       "item.piseks_utilities_ii.tuning_fork": "Tuning Fork",
+      "death.attack.charging": "%1$s charged to death.",
       "item.piseks_utilities_ii.brush": "Brush",
-      "block.piseks_utilities_ii.cactus_farm": "Cactus Farm",
       "block.piseks_utilities_ii.amber_slab": "Amber Slab",
+      "block.piseks_utilities_ii.cactus_farm": "Cactus Farm",
       "block.piseks_utilities_ii.netherite_drill_head": "Netherite Drill Head",
       "item.piseks_utilities_ii.apple_pie": "Apple Pie",
       "itemGroup.tabp_uii_building_blocks": "Pisek\u0027s Utilities II: Building Blocks",
@@ -3974,8 +3974,8 @@
       "block.piseks_utilities_ii.charcoal_block": "Block of Charcoal",
       "block.piseks_utilities_ii.titanium_ore": "Titanium Ore",
       "block.piseks_utilities_ii.upper_bend": "Upper Bend",
-      "block.piseks_utilities_ii.darkened_glass": "Darkened Glass",
       "block.piseks_utilities_ii.paper_wall": "Paper Wall",
+      "block.piseks_utilities_ii.darkened_glass": "Darkened Glass",
       "block.piseks_utilities_ii.cobblestone_farm": "Cobblestone Farm",
       "item.piseks_utilities_ii.charged_iron_ingot": "Charged Iron Ingot",
       "block.piseks_utilities_ii.mushroom_farm": "Mushroom Farm",
@@ -4201,7 +4201,20 @@
       },
       {
         "name": "Oddities",
-        "children": []
+        "children": [
+          {
+            "name": "Pocket Anvil",
+            "children": []
+          },
+          {
+            "name": "Brush",
+            "children": []
+          },
+          {
+            "name": "Skeleton Armor",
+            "children": []
+          }
+        ]
       },
       {
         "name": "Beans",

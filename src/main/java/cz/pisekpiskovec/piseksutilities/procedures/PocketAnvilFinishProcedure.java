@@ -11,11 +11,15 @@ import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.SoundCategory;
 import net.minecraft.util.ResourceLocation;
 import net.minecraft.item.ItemStack;
+import net.minecraft.inventory.container.Slot;
+import net.minecraft.inventory.container.Container;
+import net.minecraft.entity.player.ServerPlayerEntity;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.Entity;
 import net.minecraft.client.gui.widget.TextFieldWidget;
 
+import java.util.function.Supplier;
 import java.util.Random;
 import java.util.Map;
 import java.util.HashMap;
@@ -61,6 +65,23 @@ public class PocketAnvilFinishProcedure {
 		double z = dependencies.get("z") instanceof Integer ? (int) dependencies.get("z") : (double) dependencies.get("z");
 		Entity entity = (Entity) dependencies.get("entity");
 		HashMap guistate = (HashMap) dependencies.get("guistate");
+		if (entity instanceof PlayerEntity)
+			((PlayerEntity) entity).addExperienceLevel(-((int) (new Object() {
+				public int getAmount(int sltid) {
+					if (entity instanceof ServerPlayerEntity) {
+						Container _current = ((ServerPlayerEntity) entity).openContainer;
+						if (_current instanceof Supplier) {
+							Object invobj = ((Supplier) _current).get();
+							if (invobj instanceof Map) {
+								ItemStack stack = ((Slot) ((Map) invobj).get(sltid)).getStack();;
+								if (stack != null)
+									return stack.getCount();
+							}
+						}
+					}
+					return 0;
+				}
+			}.getAmount((int) (0)))));
 		{
 			ItemStack _isc = ((entity instanceof LivingEntity) ? ((LivingEntity) entity).getHeldItemMainhand() : ItemStack.EMPTY);
 			final ItemStack _setstack = (ItemStack.EMPTY);
@@ -71,6 +92,18 @@ public class PocketAnvilFinishProcedure {
 					((IItemHandlerModifiable) capability).setStackInSlot(_sltid, _setstack);
 				}
 			});
+		}
+		if (entity instanceof PlayerEntity) {
+			Container _current = ((PlayerEntity) entity).openContainer;
+			if (_current instanceof Supplier) {
+				Object invobj = ((Supplier) _current).get();
+				if (invobj instanceof Map) {
+					ItemStack _setstack = (ItemStack.EMPTY);
+					_setstack.setCount((int) 1);
+					((Slot) ((Map) invobj).get((int) (0))).putStack(_setstack);
+					_current.detectAndSendChanges();
+				}
+			}
 		}
 		{
 			TextFieldWidget _tf = (TextFieldWidget) guistate.get("text:itemRenameField");
@@ -87,7 +120,5 @@ public class PocketAnvilFinishProcedure {
 					(net.minecraft.util.SoundEvent) ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("block.anvil.use")),
 					SoundCategory.PLAYERS, (float) 1, (float) (MathHelper.nextInt(new Random(), (int) 0.9, 1)), false);
 		}
-		if (entity instanceof PlayerEntity)
-			((PlayerEntity) entity).addExperienceLevel(-((int) 1));
 	}
 }
