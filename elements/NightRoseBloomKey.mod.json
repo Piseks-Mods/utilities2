@@ -1,0 +1,12 @@
+{
+  "_fv": 34,
+  "_type": "keybind",
+  "definition": {
+    "triggerKey": "B",
+    "keyBindingName": "Night Rose Bloom",
+    "keyBindingCategoryKey": "gameplay",
+    "onKeyReleased": {
+      "name": "NightRoseBloom"
+    }
+  }
+}
