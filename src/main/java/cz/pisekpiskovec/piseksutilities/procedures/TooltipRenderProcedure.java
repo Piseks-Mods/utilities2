@@ -15,9 +15,11 @@ import java.util.Map;
 import java.util.List;
 import java.util.HashMap;
 
+import cz.pisekpiskovec.piseksutilities.item.BookOfKnowlidgeItem;
+import cz.pisekpiskovec.piseksutilities.item.AnimosityItem;
 import cz.pisekpiskovec.piseksutilities.PiseksUtilitiesIiMod;
 
-public class AnimosityIndicatorProcedure {
+public class TooltipRenderProcedure {
 	@Mod.EventBusSubscriber
 	private static class GlobalTrigger {
 		@OnlyIn(Dist.CLIENT)
@@ -40,19 +42,23 @@ public class AnimosityIndicatorProcedure {
 	public static void executeProcedure(Map<String, Object> dependencies) {
 		if (dependencies.get("itemstack") == null) {
 			if (!dependencies.containsKey("itemstack"))
-				PiseksUtilitiesIiMod.LOGGER.warn("Failed to load dependency itemstack for procedure AnimosityIndicator!");
+				PiseksUtilitiesIiMod.LOGGER.warn("Failed to load dependency itemstack for procedure TooltipRender!");
 			return;
 		}
 		if (dependencies.get("tooltip") == null) {
 			if (!dependencies.containsKey("tooltip"))
-				PiseksUtilitiesIiMod.LOGGER.warn("Failed to load dependency tooltip for procedure AnimosityIndicator!");
+				PiseksUtilitiesIiMod.LOGGER.warn("Failed to load dependency tooltip for procedure TooltipRender!");
 			return;
 		}
 		ItemStack itemstack = (ItemStack) dependencies.get("itemstack");
 		List<ITextComponent> tooltip = (List<ITextComponent>) dependencies.get("tooltip");
-		if (itemstack.getOrCreateTag().getDouble("echo") != 0) {
+		if (itemstack.getItem() == AnimosityItem.block) {
 			tooltip.add(
 					new StringTextComponent(("Cycles: " + new java.text.DecimalFormat("#").format(itemstack.getOrCreateTag().getDouble("echo")))));
+		}
+		if (itemstack.getItem() == BookOfKnowlidgeItem.block) {
+			tooltip.add(
+					new StringTextComponent(("Stored: " + new java.text.DecimalFormat("#").format(itemstack.getOrCreateTag().getDouble("bokExp")))));
 		}
 	}
 }

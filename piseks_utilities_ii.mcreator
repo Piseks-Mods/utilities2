@@ -2307,27 +2307,6 @@
       "path": "~/Experimental"
     },
     {
-      "name": "AnimosityIndicator",
-      "type": "procedure",
-      "sortid": 185,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "animosity_indicator",
-      "metadata": {
-        "dependencies": [
-          {
-            "name": "itemstack",
-            "type": "itemstack"
-          },
-          {
-            "name": "tooltip",
-            "type": "tooltip"
-          }
-        ]
-      },
-      "path": "~/Experimental"
-    },
-    {
       "name": "CookedTropicalFish",
       "type": "item",
       "sortid": 186,
@@ -4045,6 +4024,65 @@
       "locked_code": false,
       "registry_name": "cow_of_eternity_craft",
       "path": "~/Oddities/Cow of Eternity"
+    },
+    {
+      "name": "BookOfKnowlidge",
+      "type": "item",
+      "sortid": 354,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "book_of_knowlidge",
+      "path": "~/Precise Chanting"
+    },
+    {
+      "name": "BookOfKnowlidgeControl",
+      "type": "procedure",
+      "sortid": 355,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "book_of_knowlidge_control",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          }
+        ]
+      },
+      "path": "~/Precise Chanting"
+    },
+    {
+      "name": "TooltipRender",
+      "type": "procedure",
+      "sortid": 357,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "tooltip_render",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          },
+          {
+            "name": "tooltip",
+            "type": "tooltip"
+          }
+        ]
+      }
+    },
+    {
+      "name": "BookOfKnowlidgeCraft",
+      "type": "recipe",
+      "sortid": 358,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "book_of_knowlidge_craft",
+      "path": "~/Precise Chanting"
     }
   ],
   "variable_elements": [],
@@ -4055,8 +4093,8 @@
       "item.piseks_utilities_ii.coin": "Coin",
       "block.piseks_utilities_ii.cow_of_eternity": "Cow of Eternity",
       "item.piseks_utilities_ii.skeleton_chestplate": "Skeleton Ribs",
-      "death.attack.charging": "%1$s charged to death.",
       "item.piseks_utilities_ii.tuning_fork": "Tuning Fork",
+      "death.attack.charging": "%1$s charged to death.",
       "item.piseks_utilities_ii.brush": "Brush",
       "block.piseks_utilities_ii.cactus_farm": "Cactus Farm",
       "block.piseks_utilities_ii.amber_slab": "Amber Slab",
@@ -4134,6 +4172,7 @@
       "block.piseks_utilities_ii.reinforced_stone": "Reinforced Stone",
       "item.piseks_utilities_ii.play": "Play",
       "item.piseks_utilities_ii.fish_stew": "Fish Stew",
+      "item.piseks_utilities_ii.book_of_knowlidge": "Book Of Knowlidge",
       "item.piseks_utilities_ii.burnt_seeds": "Burnt Seeds",
       "block.piseks_utilities_ii.amber_stairs": "Amber Stairs",
       "item.piseks_utilities_ii.copper_ingot": "Copper Ingot",
@@ -4336,6 +4375,10 @@
       },
       {
         "name": "Beans",
+        "children": []
+      },
+      {
+        "name": "Precise Chanting",
         "children": []
       }
     ]
