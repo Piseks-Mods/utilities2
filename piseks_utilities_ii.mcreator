@@ -3983,6 +3983,7 @@
       "locked_code": false,
       "registry_name": "cow_of_eternity",
       "path": "~/Oddities/Cow of Eternity"
+    },
     {
       "name": "CowOfEternityMilking",
       "type": "procedure",

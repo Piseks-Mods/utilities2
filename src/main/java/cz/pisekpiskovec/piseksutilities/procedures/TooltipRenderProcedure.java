@@ -52,13 +52,21 @@ public class TooltipRenderProcedure {
 		}
 		ItemStack itemstack = (ItemStack) dependencies.get("itemstack");
 		List<ITextComponent> tooltip = (List<ITextComponent>) dependencies.get("tooltip");
+		double bokLevel = 0;
 		if (itemstack.getItem() == AnimosityItem.block) {
 			tooltip.add(
 					new StringTextComponent(("Cycles: " + new java.text.DecimalFormat("#").format(itemstack.getOrCreateTag().getDouble("echo")))));
 		}
 		if (itemstack.getItem() == BookOfKnowlidgeItem.block) {
-			tooltip.add(
-					new StringTextComponent(("Stored: " + new java.text.DecimalFormat("#").format(itemstack.getOrCreateTag().getDouble("bokExp")))));
+			if (itemstack.getOrCreateTag().getDouble("bokExp") <= 352) {
+				bokLevel = (Math.sqrt(itemstack.getOrCreateTag().getDouble("bokExp") + 9) - 3);
+			} else if (itemstack.getOrCreateTag().getDouble("bokExp") >= 1508) {
+				bokLevel = (81 / 10 + Math.sqrt((2 / 5) * (itemstack.getOrCreateTag().getDouble("bokExp") - 7839 / 40)));
+			} else {
+				bokLevel = (Math.sqrt((2 / 9) * (itemstack.getOrCreateTag().getDouble("bokExp") - 54215 / 72)) + 325 / 18);
+			}
+			tooltip.add(new StringTextComponent(("Stored: " + new java.text.DecimalFormat("#").format(itemstack.getOrCreateTag().getDouble("bokExp"))
+					+ " XP (Level: " + new java.text.DecimalFormat("##").format(bokLevel) + ")")));
 		}
 	}
 }
