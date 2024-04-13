@@ -1,0 +1,11 @@
+{
+  "mappings": {
+    "default": {
+      "map": {
+        "0": "cow",
+        "1": "reinforced_glass"
+      },
+      "name": "default"
+    }
+  }
+}

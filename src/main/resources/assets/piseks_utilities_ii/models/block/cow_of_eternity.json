@@ -1,12 +1,9 @@
 {
-  "parent": "block/cube",
+  "parent": "piseks_utilities_ii:custom/cow_of_eternity",
   "textures": {
-    "down": "piseks_utilities_ii:blocks/placeholder",
-    "up": "piseks_utilities_ii:blocks/placeholder",
-    "north": "piseks_utilities_ii:blocks/placeholder",
-    "east": "piseks_utilities_ii:blocks/placeholder",
-    "south": "piseks_utilities_ii:blocks/placeholder",
-    "west": "piseks_utilities_ii:blocks/placeholder",
-    "particle": "piseks_utilities_ii:blocks/placeholder"
+    "all": "piseks_utilities_ii:blocks/cow_of_eternity",
+    "particle": "piseks_utilities_ii:blocks/cow_of_eternity",
+    "0": "piseks_utilities_ii:blocks/cow",
+    "1": "piseks_utilities_ii:blocks/reinforced_glass"
   }
 }

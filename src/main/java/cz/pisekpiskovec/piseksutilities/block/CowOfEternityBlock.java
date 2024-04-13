@@ -2,7 +2,10 @@
 package cz.pisekpiskovec.piseksutilities.block;
 
 import net.minecraftforge.registries.ObjectHolder;
+import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
 import net.minecraftforge.common.util.ForgeSoundType;
+import net.minecraftforge.api.distmarker.OnlyIn;
+import net.minecraftforge.api.distmarker.Dist;
 
 import net.minecraft.world.World;
 import net.minecraft.world.IWorldReader;
@@ -19,6 +22,8 @@ import net.minecraft.item.ItemStack;
 import net.minecraft.item.Item;
 import net.minecraft.item.BlockItem;
 import net.minecraft.entity.player.PlayerEntity;
+import net.minecraft.client.renderer.RenderTypeLookup;
+import net.minecraft.client.renderer.RenderType;
 import net.minecraft.block.material.PushReaction;
 import net.minecraft.block.material.MaterialColor;
 import net.minecraft.block.material.Material;
@@ -52,12 +57,21 @@ public class CowOfEternityBlock extends PiseksUtilitiesIiModElements.ModElement 
 		elements.items.add(() -> new BlockItem(block, new Item.Properties().group(PUiiFoodItemGroup.tab)).setRegistryName(block.getRegistryName()));
 	}
 
+	@Override
+	@OnlyIn(Dist.CLIENT)
+	public void clientLoad(FMLClientSetupEvent event) {
+		RenderTypeLookup.setRenderLayer(block, RenderType.getCutout());
+	}
+
 	public static class CustomBlock extends FallingBlock {
 		public CustomBlock() {
-			super(Block.Properties.create(Material.GLASS, MaterialColor.SNOW).sound(new ForgeSoundType(1.0f, 1.0f,
-					() -> new SoundEvent(new ResourceLocation("entity.cow.death")), () -> new SoundEvent(new ResourceLocation("entity.cow.step")),
-					() -> new SoundEvent(new ResourceLocation("entity.cow.ambient")), () -> new SoundEvent(new ResourceLocation("entity.cow.hurt")),
-					() -> new SoundEvent(new ResourceLocation("entity.cow.step")))).hardnessAndResistance(0.3f, 0.3f).setLightLevel(s -> 0));
+			super(Block.Properties.create(Material.GLASS, MaterialColor.SNOW)
+					.sound(new ForgeSoundType(1.0f, 1.0f, () -> new SoundEvent(new ResourceLocation("entity.cow.death")),
+							() -> new SoundEvent(new ResourceLocation("entity.cow.step")),
+							() -> new SoundEvent(new ResourceLocation("entity.cow.ambient")),
+							() -> new SoundEvent(new ResourceLocation("entity.cow.hurt")),
+							() -> new SoundEvent(new ResourceLocation("entity.cow.step"))))
+					.hardnessAndResistance(0.3f, 0.3f).setLightLevel(s -> 0).notSolid().setOpaque((bs, br, bp) -> false));
 			setRegistryName("cow_of_eternity");
 		}
 
